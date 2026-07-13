@@ -1,0 +1,3 @@
+import type { Metadata } from "next"; import { DomainPage } from "@/components/domain-page"; import { quantumCategories,resources } from "@/lib/data";
+export const metadata:Metadata={title:"Quantum Physics",description:"Evidence-led guides to quantum mechanics, experiments, computing, and interpretation."};
+export default function QuantumPage(){return <DomainPage kicker="Evidence and experiment" title="Quantum physics, without the mystique." intro="Explore the mathematical ideas, decisive experiments, and open interpretations of quantum theory. Claims are labeled by their evidential status and grounded in reputable sources." categories={quantumCategories} resources={resources.filter(r=>r.domain==="Science")}/>}

@@ -1,0 +1,3 @@
+import type { Metadata } from "next"; import { CollectionCard } from "@/components/cards/collection-card"; import { collections } from "@/lib/data";
+export const metadata:Metadata={title:"Collections"};
+export default function Collections(){return <><header className="page-hero"><p className="kicker">Curated learning paths</p><h1 className="page-title mt-6">Ideas belong in context.</h1><p className="mt-8 max-w-xl text-base leading-8 text-mist">Follow editorially sequenced collections designed to build understanding, not just fill a reading list.</p></header><section className="shell grid gap-5 pb-28 lg:grid-cols-3">{collections.map(c=><CollectionCard collection={c} key={c.title}/>)}</section></>}

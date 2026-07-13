@@ -1,0 +1,2 @@
+import { Quote } from "lucide-react";
+export function QuoteCard(){return <section className="shell py-24 text-center"><Quote className="mx-auto mb-8 text-gold" size={26}/><blockquote className="mx-auto max-w-4xl font-serif text-4xl leading-tight text-ivory sm:text-6xl">“The important thing is not to stop questioning. Curiosity has its own reason for existing.”</blockquote><p className="mt-7 text-xs text-mist">Albert Einstein <span className="mx-2 text-gold">•</span> Lifelong inquiry</p></section>}

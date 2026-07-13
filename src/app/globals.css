@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:#07111f; color:#F4F2EC; }
+::selection { background:#D4AF37; color:#07111f; }
+@layer components {
+  .shell { @apply mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-12; }
+  .icon-button { @apply grid size-9 shrink-0 place-items-center rounded-md border border-white/15 text-mist transition hover:border-gold/50 hover:text-gold; }
+  .button-primary { @apply inline-flex h-11 items-center justify-center gap-2 rounded-md bg-gold px-5 text-xs font-semibold text-midnight transition hover:bg-[#e4c45a] focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-midnight; }
+  .button-secondary { @apply inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/20 px-5 text-xs font-medium text-ivory transition hover:border-gold/50 hover:text-gold; }
+  .kicker { @apply text-[10px] font-semibold uppercase tracking-[.22em] text-gold; }
+  .domain-label { @apply text-[9px] font-semibold uppercase tracking-[.16em] text-gold; }
+  .tag { @apply rounded border border-white/10 px-2 py-1 text-[9px] text-mist; }
+  .footer-label { @apply mb-4 text-[10px] font-semibold uppercase tracking-[.18em] text-ivory; }
+  .footer-link { @apply mb-3 block text-xs text-mist transition hover:text-gold; }
+  .page-hero { @apply shell pb-20 pt-36 sm:pb-24 sm:pt-44; }
+  .page-title { @apply max-w-4xl font-serif text-6xl leading-[.9] text-ivory sm:text-7xl lg:text-8xl; }
+  .section-title { @apply font-serif text-4xl leading-tight text-ivory sm:text-5xl; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
