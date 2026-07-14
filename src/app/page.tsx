@@ -1,54 +1,10 @@
 import Link from "next/link";
-import { ArrowRight, Atom, BookOpen, Brain, CalendarDays, Flower2, Heart, Play, Sparkles, Users } from "lucide-react";
+import { ArrowRight, Atom, BookOpen, Brain, Clock3, Headphones, MessageCircle, Sparkles } from "lucide-react";
+import { Artwork } from "@/components/art/artwork";
+import { EvidenceBadge } from "@/components/evidence-badge";
 
-const memories = [
-  { title: "Sunset with friends", meta: "By Alex · May 12, 2024", pos: "0% 0%" },
-  { title: "Hiking in the Rockies", meta: "By Sarah · Apr 28, 2024", pos: "100% 0%" },
-  { title: "Dad's 60th Birthday", meta: "By Michael · Mar 15, 2024", pos: "0% 100%" },
-  { title: "First day of school", meta: "By Lina · Sep 1, 2023", pos: "100% 100%" },
-];
-
-const highlights = [
-  { title: "Quantum Physics Explained Simply", source: "Live Talk with Dr. Akira Sharma", meta: "May 28, 2024 · 10:00 AM PT", pos: "0% 0%" },
-  { title: "Loving-Kindness Meditation", source: "Group Practice Session", meta: "May 26, 2024 · 7:00 PM PT", pos: "100% 100%" },
-  { title: "The Nature of Reality", source: "Discussion Circle", meta: "May 21, 2024 · 6:00 PM PT", pos: "100% 0%" },
-];
-
-export default function Home() {
-  return <div className="home-page">
-    <section className="home-hero">
-      <div className="home-hero-shade" />
-      <div className="home-hero-copy">
-        <h1>Where Quantum<br/>Meets Consciousness</h1>
-        <span className="gold-rule" />
-        <p>Explore the harmony between modern science and ancient wisdom. Cultivate inner peace, expand your mind, and connect with a compassionate community.</p>
-        <div className="hero-actions">
-          <Link href="/explore" className="home-primary">Explore Now</Link>
-          <Link href="/contact" className="home-secondary">Join Our Community</Link>
-        </div>
-      </div>
-    </section>
-
-    <section className="home-content">
-      <div className="path-grid">
-        <article className="path-card purple-card"><span className="path-icon"><Atom/></span><div><h2>Quantum &amp; Buddhism</h2><p>Discover the fascinating connections between quantum physics and Buddhist philosophy.</p><Link href="/quantum">Learn More <ArrowRight/></Link></div></article>
-        <article className="path-card green-card"><span className="path-icon"><Flower2/></span><div><h2>Daily Inspiration</h2><p>“The mind is everything. What you think you become.”</p><small>— Buddha</small><Link href="/buddhism">Explore Teachings <ArrowRight/></Link></div></article>
-        <article className="path-card blue-card"><span className="path-icon"><Brain/></span><div><h2>Mindful Practice</h2><p>Guided meditations and practices to help you live with awareness and compassion.</p><Link href="/perspectives">Start Practicing <ArrowRight/></Link></div></article>
-      </div>
-
-      <div className="home-lower-grid">
-        <section className="memories-panel">
-          <div className="panel-heading"><div><h2><Heart/> Shared Memories</h2><p>Cherish and share the beautiful moments that shape our lives.</p></div><button>Share Your Memory</button></div>
-          <div className="memory-grid">{memories.map((m) => <article className="memory-card" key={m.title}><div className="memory-photo" style={{backgroundPosition:m.pos}}/><h3>{m.title}</h3><p>{m.meta}</p></article>)}</div>
-        </section>
-
-        <aside className="highlights-panel">
-          <div className="panel-heading"><div><h2><Users/> Community Highlights</h2></div></div>
-          <div className="highlight-list">{highlights.map((h) => <article className="highlight" key={h.title}><div className="highlight-photo" style={{backgroundPosition:h.pos}}><Play/></div><div><h3>{h.title}</h3><p>{h.source}</p><small><CalendarDays/> {h.meta}</small></div></article>)}</div>
-          <Link href="/explore" className="events-link">View All Events <ArrowRight/></Link>
-        </aside>
-      </div>
-    </section>
-    <div className="home-quote"><BookOpen/><p>“Just as a single photon contains the whole universe of possibilities,<br/>within you lies the potential for infinite awakening.”</p><span><Sparkles/> Be kind. Be curious. Be you.</span></div>
-  </div>;
-}
+const pillars=[{icon:Atom,title:"Science",eyebrow:"Understand the outer world",text:"Clear, evidence-led guides to quantum mechanics, experiments, and the questions physics is still working to answer.",href:"/learn#quantum"},{icon:BookOpen,title:"Wisdom",eyebrow:"Explore the inner world",text:"Buddhist philosophy in historical context—from impermanence and non-self to compassion and interdependence.",href:"/learn#buddhism"},{icon:Brain,title:"Practice",eyebrow:"Bring insight into life",text:"Meditation, reflection, and humane daily practices that turn interesting ideas into a wiser way of living.",href:"/practice"}];
+export default function Home(){return <div className="q-home"><section className="q-hero"><div className="q-hero-buddha"/><Artwork type="orbit" className="q-hero-art"/><div className="q-hero-wash"/><div className="q-shell q-hero-content"><p className="q-kicker">Science · Wisdom · Conscious living</p><h1>Explore<br/><em>Reality.</em></h1><p className="q-hero-lead">A community exploring quantum physics, Buddhist philosophy, consciousness, and the practice of living wisely.</p><div className="q-hero-actions"><Link href="/learn" className="q-btn-primary">Start Learning <ArrowRight/></Link><Link href="/explore" className="q-btn-secondary">Explore Connections</Link><Link href="/practice" className="q-text-link">Practice Today <Clock3/></Link></div></div><div className="q-hero-note"><span>Q</span><p>Two lenses.<br/>One shared curiosity.</p></div></section>
+<section className="q-shell q-pillars"><div className="q-section-intro"><p className="q-kicker">Three ways in</p><h2>Understand. Reflect. Practice.</h2></div><div className="q-pillar-grid">{pillars.map(({icon:Icon,...p},i)=><Link href={p.href} className="q-pillar" key={p.title}><span>0{i+1}</span><Icon/><p>{p.eyebrow}</p><h3>{p.title}</h3><small>{p.text}</small><b>Enter this path <ArrowRight/></b></Link>)}</div></section>
+<section className="q-feature"><div className="q-shell q-feature-grid"><div className="q-feature-art"><Artwork type="wave"/><span>Featured inquiry</span></div><article><EvidenceBadge kind="Scientific evidence"/><p className="q-kicker">Featured article · 12 min read</p><h2>What the double-slit experiment actually tells us.</h2><p>The experiment is often used to make sweeping claims about consciousness. The real story—about interference, measurement, and probability—is more precise and more fascinating.</p><Link href="/research">Read the grounded guide <ArrowRight/></Link></article></div></section>
+<section className="q-shell q-today"><div className="q-section-intro"><p className="q-kicker">For today</p><h2>Small moments of discovery.</h2></div><div className="q-today-grid"><article className="q-reflection"><Sparkles/><EvidenceBadge kind="Personal reflection"/><blockquote>“What did you notice today without immediately judging it?”</blockquote><Link href="/practice#reflection">Write a reflection <ArrowRight/></Link></article><article><MessageCircle/><p className="q-kicker">Latest discussion</p><h3>Does observing always mean consciousness?</h3><p>Community members untangle a common confusion around measurement.</p><Link href="/community">Join the conversation <ArrowRight/></Link></article><article><Headphones/><p className="q-kicker">Featured meditation</p><h3>Ten minutes with change</h3><p>A quiet practice for noticing sensations arise, transform, and pass.</p><Link href="/practice">Begin practice <ArrowRight/></Link></article></div></section></div>}
