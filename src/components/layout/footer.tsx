@@ -1,1 +1,5 @@
-export function Footer(){return null;}
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { Logo } from "./navbar";
+const groups=[{title:"Discover",links:[["Learn","/learn"],["Connections","/explore"],["Research","/research"]]},{title:"Practice",links:[["Meditation","/practice"],["Daily reflection","/practice#reflection"],["Tracker","/practice#tracker"]]},{title:"Qunara",links:[["Community","/community"],["About","/about"],["Admin","/admin"]]}];
+export function Footer(){return <footer className="q-footer"><div className="q-shell q-footer-grid"><div><Link href="/" className="q-brand"><Logo/><span><b>QUNARA</b><small>Explore Reality Through Science and Wisdom</small></span></Link><p>A careful, welcoming place for science, philosophy, contemplative practice, and open questions.</p></div>{groups.map(g=><div key={g.title}><h2>{g.title}</h2>{g.links.map(([l,h])=><Link href={h} key={h}>{l}<ArrowUpRight/></Link>)}</div>)}</div><div className="q-shell q-footer-bottom"><span>© {new Date().getFullYear()} Qunara</span><span>Curiosity with rigor. Practice with compassion.</span></div></footer>}
