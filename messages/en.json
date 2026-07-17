@@ -1,0 +1,176 @@
+{
+  "layout": { "skipToContent": "Skip to content" },
+  "navigation": {
+    "homeLabel": "Qunara home", "tagline": "Science · Wisdom · Practice",
+    "mainLabel": "Main navigation", "mobileLabel": "Mobile navigation",
+    "learn": "Learn", "explore": "Explore", "practice": "Practice",
+    "community": "Community", "research": "Research", "about": "About",
+    "search": "Search", "searchLabel": "Search Qunara",
+    "startLearning": "Start learning", "openMenu": "Open navigation",
+    "closeMenu": "Close navigation"
+  },
+  "footer": {
+    "homeLabel": "Qunara home",
+    "tagline": "Explore Reality Through Science and Wisdom",
+    "description": "A careful, welcoming place for science, philosophy, contemplative practice, and open questions.",
+    "groups": {
+      "discover": { "title": "Discover", "learn": "Learn", "connections": "Connections", "research": "Research" },
+      "practice": { "title": "Practice", "meditation": "Meditation", "dailyReflection": "Daily reflection", "tracker": "Tracker" },
+      "qunara": { "title": "Qunara", "community": "Community", "about": "About", "admin": "Admin" }
+    },
+    "copyright": "© {year} Qunara",
+    "closingLine": "Curiosity with rigor. Practice with compassion."
+  },
+  "languageSwitcher": { "label": "Choose language" },
+  "buttons": {
+    "subscribe": "Subscribe", "saveResource": "Save resource",
+    "removeSavedResource": "Remove saved resource", "openCollection": "Open collection"
+  },
+  "searchBar": {
+    "label": "Search resources", "placeholder": "Search topics, authors, or ideas…",
+    "clear": "Clear search"
+  },
+  "newsletter": {
+    "eyebrow": "The Qunara Letter", "title": "One thoughtful idea, every other Sunday.",
+    "success": "You're on the list. Welcome.", "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com"
+  },
+  "collections": { "resourceCount": "{count, plural, one {# resource} other {# resources}}" },
+  "about": {
+    "metadata": {
+      "title": "About",
+      "description": "The personal journey from a Vietnamese Buddhist childhood through technology, AI, and quantum curiosity that led to Qunara."
+    },
+    "hero": {
+      "kicker": "The story behind Qunara", "titleOne": "I did not begin", "titleTwo": "with answers.",
+      "lead": "I began with questions that followed me from childhood, through technology, and into the unknown.",
+      "action": "Follow the journey",
+      "artLabel": "A quiet human silhouette stands before a deep night landscape and a restrained field of stars"
+    },
+    "timeline": {
+      "label": "Founder journey", "opening": "Opening", "childhood": "Childhood",
+      "technology": "Technology", "rediscovery": "Listening again", "questions": "New questions",
+      "purpose": "Why Qunara", "invitation": "Invitation"
+    },
+    "journey": {
+      "childhood": {
+        "eyebrow": "Growing up with Buddhism", "titleOne": "The sounds came", "titleTwo": "before the meaning.",
+        "quote": "The sounds were familiar long before their meaning became clear.",
+        "p1": "I grew up in a large Vietnamese family with a strong Buddhist tradition. My grandparents established a place of worship dedicated to Quan Âm in Vietnam. Quan Âm is the Vietnamese name for Avalokiteśvara, a Buddhist figure associated with compassion.",
+        "p2": "Chanting and Buddhist ceremonies were familiar sounds in my childhood. They belonged to the rhythm of family life.",
+        "p3": "But familiarity is not the same as understanding. At that age, I did not understand Buddhism deeply, and I did not pay much attention to it. It was part of my surroundings, not yet my personal journey."
+      },
+      "technology": {
+        "eyebrow": "A life in technology", "titleOne": "Learning to build.", "titleTwo": "Learning to question.",
+        "quote": "Technology taught me how systems work. Life made me ask why we suffer within them.",
+        "p1": "As I grew older, I chose a different direction: information technology. For more than 25 years, I worked through different roles and wave after wave of change.",
+        "p2": "The field trained me to think in logic and systems. I learned to follow evidence, test an idea, study what failed, and try again.",
+        "p3": "Those habits helped me solve difficult technical problems. But personal and professional challenges raised other questions—questions that technology alone could not answer."
+      },
+      "rediscovery": {
+        "eyebrow": "Rediscovering Buddhism", "titleOne": "Learning to hear", "titleTwo": "familiar words again.",
+        "quote": "The teachings had not changed. I had.",
+        "p1": "Life brought success, uncertainty, and personal and professional storms. Over time, those experiences changed the way I heard teachings that had been present since childhood.",
+        "p2": "Impermanence—the fact that everything changes—became visible in changes I could not prevent. The teaching on attachment helped me recognize the mind's habit of clinging to what cannot stay fixed.",
+        "p3": "Suffering, perception—the way we interpret experience—and compassion became practical questions rather than distant religious ideas. I did not arrive at a sudden conversion. I simply began listening differently, little by little."
+      },
+      "questions": {
+        "eyebrow": "AI and quantum curiosity", "titleOne": "New tools.", "titleTwo": "Older questions.",
+        "quote": "Science gave me new questions. Buddhism taught me to examine the mind asking them.",
+        "p1": "The questions about mind and experience later met another part of my life: artificial intelligence. As I became deeply involved in the AI revolution, I asked how information is represented, how computation processes it, and what we mean by consciousness—the capacity for experience.",
+        "p2": "That curiosity led me toward quantum physics. Quantum science challenged some everyday assumptions. Buddhist teachings questioned familiar ideas about permanence, separation, observation, and reality from a very different direction. I began to notice philosophical resonances—ideas that seemed to echo one another—as well as equally important differences.",
+        "p3": "Quantum physics does not prove Buddhism. Buddhist texts did not describe modern quantum mechanics. Placing them in conversation is an invitation to investigate carefully, not a scientific conclusion."
+      },
+      "purpose": {
+        "eyebrow": "Why Qunara exists", "titleOne": "A community for", "titleTwo": "careful inquiry.",
+        "p1": "I did not create Qunara because I had found all the answers. I created it because the questions became deeper, and because they deserved a thoughtful community.",
+        "p2": "Here, people can learn quantum science, understand Buddhist philosophy, explore similarities, recognize important differences, examine evidence, practice awareness and compassion, and share thoughtful experiences and questions.",
+        "statement": "Qunara is not an attempt to prove Buddhism through physics.",
+        "statementDetail": "It is a place to explore what each tradition may teach us when approached with curiosity, evidence and humility.",
+        "principles": {
+          "evidenceTitle": "Evidence", "evidenceText": "Scientific claims remain tied to scientific methods and sources.",
+          "contextTitle": "Context", "contextText": "Buddhist teachings are presented within their historical and philosophical traditions.",
+          "differenceTitle": "Difference", "differenceText": "Resemblance begins a conversation; it does not establish equivalence.",
+          "reflectionTitle": "Reflection", "reflectionText": "Open questions are labeled rather than filled with certainty.",
+          "practiceTitle": "Practice", "practiceText": "Awareness and compassion keep inquiry connected to human life.",
+          "communityTitle": "Community", "communityText": "People may disagree while remaining careful, respectful, and willing to learn."
+        }
+      }
+    },
+    "invitation": {
+      "kicker": "Scene 07 · An open invitation", "titleOne": "Let us explore", "titleTwo": "together.",
+      "body": "Qunara welcomes scientists, engineers, Buddhist practitioners, students, meditators, and curious people. Visitors do not need to agree. They need only to bring curiosity, respect, and a willingness to learn.",
+      "explore": "Begin Exploring", "learn": "Start Learning", "community": "Join the Community",
+      "quote": "The greatest discoveries are not only about the universe around us, but also about the universe within us."
+    },
+    "art": {
+      "childhoodLabel": "A modest Vietnamese family shrine, a bell, incense, and palm leaves in warm evening light",
+      "technologyLabel": "Calm architectural lines suggesting code, systems, and a human hand at a keyboard",
+      "returnLabel": "A familiar path seen differently after a storm",
+      "quantumLabel": "Wave interference and information patterns opening into a field of probabilities",
+      "communityLabel": "Many quiet paths meeting beneath a lotus-like geometry of stars",
+      "childhoodCaption": "Childhood · Vietnam", "technologyCaption": "Systems · Evidence · Change",
+      "returnCaption": "Change · Attention · Return", "quantumCaption": "Information · Probability · Inquiry",
+      "communityCaption": "Curiosity · Evidence · Humility", "measurement": "MEASUREMENT",
+      "contemplation": "CONTEMPLATION", "humanExperience": "HUMAN EXPERIENCE"
+    }
+  },
+  "home": {
+    "metadata": {
+      "title": "Qunara — Explore Reality Through Science and Wisdom",
+      "description": "A community exploring quantum physics, Buddhist philosophy, consciousness, and the practice of living wisely."
+    },
+    "hero": {
+      "kicker": "Science · Wisdom · Conscious living",
+      "titleLineOne": "Explore",
+      "titleLineTwo": "Reality.",
+      "lead": "A community exploring quantum physics, Buddhist philosophy, consciousness, and the practice of living wisely.",
+      "startLearning": "Start Learning",
+      "exploreConnections": "Explore Connections",
+      "practiceToday": "Practice Today",
+      "noteLineOne": "Two lenses.",
+      "noteLineTwo": "One shared curiosity."
+    },
+    "pillars": {
+      "kicker": "Three ways in",
+      "heading": "Understand. Reflect. Practice.",
+      "enterPath": "Enter this path",
+      "science": {
+        "title": "Science", "eyebrow": "Understand the outer world",
+        "text": "Clear, evidence-led guides to quantum mechanics, experiments, and the questions physics is still working to answer."
+      },
+      "wisdom": {
+        "title": "Wisdom", "eyebrow": "Explore the inner world",
+        "text": "Buddhist philosophy in historical context—from impermanence and non-self to compassion and interdependence."
+      },
+      "practice": {
+        "title": "Practice", "eyebrow": "Bring insight into life",
+        "text": "Meditation, reflection, and humane daily practices that turn interesting ideas into a wiser way of living."
+      }
+    },
+    "evidence": { "scientific": "Scientific evidence", "reflection": "Personal reflection" },
+    "feature": {
+      "artLabel": "Featured inquiry", "kicker": "Featured article · 12 min read",
+      "title": "What the double-slit experiment actually tells us.",
+      "description": "The experiment is often used to make sweeping claims about consciousness. The real story—about interference, measurement, and probability—is more precise and more fascinating.",
+      "readGuide": "Read the grounded guide"
+    },
+    "today": {
+      "kicker": "For today", "heading": "Small moments of discovery.",
+      "reflection": {
+        "question": "What did you notice today without immediately judging it?",
+        "action": "Write a reflection"
+      },
+      "discussion": {
+        "kicker": "Latest discussion", "title": "Does observing always mean consciousness?",
+        "description": "Community members untangle a common confusion around measurement.",
+        "action": "Join the conversation"
+      },
+      "meditation": {
+        "kicker": "Featured meditation", "title": "Ten minutes with change",
+        "description": "A quiet practice for noticing sensations arise, transform, and pass.",
+        "action": "Begin practice"
+      }
+    }
+  }
+}

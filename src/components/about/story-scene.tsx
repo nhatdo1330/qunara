@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { motion, useReducedMotion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { EditorialQuote } from "./editorial-quote";
 
 export type SceneArt = "childhood" | "technology" | "return" | "quantum" | "community";
@@ -23,18 +24,16 @@ export function StoryScene({ id, number, eyebrow, title, quote, art, reverse = f
 }
 
 function SceneStudy({ art }: { art: SceneArt }) {
+  const t = useTranslations("about.art");
   const labels: Record<SceneArt, string> = {
-    childhood: "A modest Vietnamese family shrine, a bell, incense, and palm leaves in warm evening light",
-    technology: "Calm architectural lines suggesting code, systems, and a human hand at a keyboard",
-    return: "A familiar path seen differently after a storm",
-    quantum: "Wave interference and information patterns opening into a field of probabilities",
-    community: "Many quiet paths meeting beneath a lotus-like geometry of stars",
+    childhood: t("childhoodLabel"), technology: t("technologyLabel"), return: t("returnLabel"),
+    quantum: t("quantumLabel"), community: t("communityLabel"),
   };
-  if (art === "childhood") return <ChildhoodStudy label={labels.childhood}/>;
-  if (art === "technology") return <TechnologyStudy label={labels.technology}/>;
-  if (art === "return") return <ReturnStudy label={labels.return}/>;
-  if (art === "quantum") return <QuantumStudy label={labels.quantum}/>;
-  if (art === "community") return <CommunityStudy label={labels.community}/>;
+  if (art === "childhood") return <ChildhoodStudy label={labels.childhood} caption={t("childhoodCaption")}/>;
+  if (art === "technology") return <TechnologyStudy label={labels.technology} caption={t("technologyCaption")}/>;
+  if (art === "return") return <ReturnStudy label={labels.return} caption={t("returnCaption")}/>;
+  if (art === "quantum") return <QuantumStudy label={labels.quantum} caption={t("quantumCaption")}/>;
+  if (art === "community") return <CommunityStudy label={labels.community} caption={t("communityCaption")} measurement={t("measurement")} contemplation={t("contemplation")} humanExperience={t("humanExperience")}/>;
   return <div className={`about-scene-study ${art}`} role="img" aria-label={labels[art]}>
     <svg viewBox="0 0 720 720" aria-hidden="true">
       <circle className="study-orbit one" cx="360" cy="360" r="215"/>
@@ -47,7 +46,7 @@ function SceneStudy({ art }: { art: SceneArt }) {
   </div>;
 }
 
-function ChildhoodStudy({ label }: { label: string }) {
+function ChildhoodStudy({ label, caption }: { label: string; caption:string }) {
   return <div className="about-scene-study childhood" role="img" aria-label={label}>
     <svg className="childhood-shrine-study" viewBox="0 0 720 720" aria-hidden="true">
       <defs>
@@ -86,11 +85,11 @@ function ChildhoodStudy({ label }: { label: string }) {
         <path d="M650 720Q615 545 636 376M635 455q-74-40-113-104M638 480q58-58 70-126M630 525q-82-16-130-60M634 550q48-45 76-101" strokeWidth="7"/>
       </g>
     </svg>
-    <span>Childhood · Vietnam</span>
+    <span>{caption}</span>
   </div>;
 }
 
-function TechnologyStudy({ label }: { label: string }) {
+function TechnologyStudy({ label, caption }: { label: string; caption:string }) {
   return <div className="about-scene-study technology" role="img" aria-label={label}>
     <svg className="technology-system-study" viewBox="0 0 720 720" aria-hidden="true">
       <defs>
@@ -123,11 +122,11 @@ function TechnologyStudy({ label }: { label: string }) {
       </g>
       <path d="M440 618h236" stroke="#d5ac4d" strokeOpacity=".28"/>
     </svg>
-    <span>Systems · Evidence · Change</span>
+    <span>{caption}</span>
   </div>;
 }
 
-function ReturnStudy({ label }: { label: string }) {
+function ReturnStudy({ label, caption }: { label: string; caption:string }) {
   return <div className="about-scene-study return" role="img" aria-label={label}>
     <svg className="returning-light-study" viewBox="0 0 720 720" aria-hidden="true">
       <defs>
@@ -157,11 +156,11 @@ function ReturnStudy({ label }: { label: string }) {
       </g>
       <path d="M445 548Q540 521 636 548" fill="none" stroke="#d5ac4d" strokeOpacity=".32" strokeWidth="2"/>
     </svg>
-    <span>Change · Attention · Return</span>
+    <span>{caption}</span>
   </div>;
 }
 
-function QuantumStudy({ label }: { label: string }) {
+function QuantumStudy({ label, caption }: { label: string; caption:string }) {
   return <div className="about-scene-study quantum" role="img" aria-label={label}>
     <svg className="ai-quantum-study" viewBox="0 0 720 720" aria-hidden="true">
       <defs>
@@ -194,11 +193,11 @@ function QuantumStudy({ label }: { label: string }) {
       </g>
       <path d="M294 620H676" stroke="#d5ac4d" strokeOpacity=".2"/>
     </svg>
-    <span>Information · Probability · Inquiry</span>
+    <span>{caption}</span>
   </div>;
 }
 
-function CommunityStudy({ label }: { label: string }) {
+function CommunityStudy({ label, caption, measurement, contemplation, humanExperience }: { label:string;caption:string;measurement:string;contemplation:string;humanExperience:string }) {
   return <div className="about-scene-study community" role="img" aria-label={label}>
     <svg className="qunara-composition-study" viewBox="0 0 720 720" aria-hidden="true">
       <defs>
@@ -221,8 +220,8 @@ function CommunityStudy({ label }: { label: string }) {
       <path className="qunara-human-path" d="M95 720C132 620 225 595 295 548s111-96 143-191" fill="none" stroke="#d5ac4d" strokeOpacity=".58" strokeWidth="3"/>
       <g className="qunara-walker" transform="translate(267 519)" fill="#060c11"><circle cx="18" cy="13" r="10"/><path d="M9 27q9-7 18 0l8 49H20l-3-27-7 27H-5Z"/></g>
       <g className="qunara-balance-lines" fill="none" stroke="#d5ac4d" strokeOpacity=".22"><circle cx="438" cy="350" r="188"/><circle cx="438" cy="350" r="245"/></g>
-      <g className="qunara-distinction-labels" fontFamily="sans-serif" fontSize="9" letterSpacing="2"><text x="74" y="321" fill="#9cb1ca">MEASUREMENT</text><text x="493" y="491" fill="#9db39e">CONTEMPLATION</text><text x="78" y="674" fill="#d6b961">HUMAN EXPERIENCE</text></g>
+      <g className="qunara-distinction-labels" fontFamily="sans-serif" fontSize="9" letterSpacing="2"><text x="74" y="321" fill="#9cb1ca">{measurement}</text><text x="493" y="491" fill="#9db39e">{contemplation}</text><text x="78" y="674" fill="#d6b961">{humanExperience}</text></g>
     </svg>
-    <span>Curiosity · Evidence · Humility</span>
+    <span>{caption}</span>
   </div>;
 }

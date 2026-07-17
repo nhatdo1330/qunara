@@ -1,0 +1,176 @@
+{
+  "layout": { "skipToContent": "Đi đến nội dung chính" },
+  "navigation": {
+    "homeLabel": "Trang chủ Qunara", "tagline": "Khoa học · Trí tuệ · Thực hành",
+    "mainLabel": "Điều hướng chính", "mobileLabel": "Điều hướng trên thiết bị di động",
+    "learn": "Học", "explore": "Khám phá", "practice": "Thực hành",
+    "community": "Cộng đồng", "research": "Nghiên cứu", "about": "Giới thiệu",
+    "search": "Tìm kiếm", "searchLabel": "Tìm kiếm trên Qunara",
+    "startLearning": "Bắt đầu học", "openMenu": "Mở bảng điều hướng",
+    "closeMenu": "Đóng bảng điều hướng"
+  },
+  "footer": {
+    "homeLabel": "Trang chủ Qunara",
+    "tagline": "Khám phá thực tại qua khoa học và trí tuệ",
+    "description": "Một không gian cẩn trọng và thân thiện dành cho khoa học, triết học, thực hành quán chiếu và những câu hỏi còn bỏ ngỏ.",
+    "groups": {
+      "discover": { "title": "Khám phá", "learn": "Học", "connections": "Các mối liên hệ", "research": "Nghiên cứu" },
+      "practice": { "title": "Thực hành", "meditation": "Thiền", "dailyReflection": "Suy ngẫm hằng ngày", "tracker": "Theo dõi" },
+      "qunara": { "title": "Qunara", "community": "Cộng đồng", "about": "Giới thiệu", "admin": "Quản trị" }
+    },
+    "copyright": "© {year} Qunara",
+    "closingLine": "Tò mò với sự nghiêm cẩn. Thực hành bằng lòng từ bi."
+  },
+  "languageSwitcher": { "label": "Chọn ngôn ngữ" },
+  "buttons": {
+    "subscribe": "Đăng ký", "saveResource": "Lưu tài liệu",
+    "removeSavedResource": "Bỏ tài liệu đã lưu", "openCollection": "Mở bộ sưu tập"
+  },
+  "searchBar": {
+    "label": "Tìm kiếm tài liệu", "placeholder": "Tìm chủ đề, tác giả hoặc ý tưởng…",
+    "clear": "Xóa nội dung tìm kiếm"
+  },
+  "newsletter": {
+    "eyebrow": "Thư Qunara", "title": "Một ý tưởng đáng suy ngẫm vào mỗi hai Chủ nhật.",
+    "success": "Bạn đã có tên trong danh sách. Chào mừng bạn.", "emailLabel": "Địa chỉ email",
+    "emailPlaceholder": "ban@example.com"
+  },
+  "collections": { "resourceCount": "{count} tài liệu" },
+  "about": {
+    "metadata": {
+      "title": "Giới thiệu",
+      "description": "Hành trình cá nhân từ tuổi thơ trong một gia đình Phật giáo Việt Nam, qua công nghệ, AI và sự tò mò về lượng tử, dẫn đến sự ra đời của Qunara."
+    },
+    "hero": {
+      "kicker": "Câu chuyện phía sau Qunara", "titleOne": "Tôi không bắt đầu", "titleTwo": "bằng những câu trả lời.",
+      "lead": "Tôi bắt đầu bằng những câu hỏi theo mình từ thời thơ ấu, đi qua công nghệ và bước vào miền chưa biết.",
+      "action": "Theo dõi hành trình",
+      "artLabel": "Một bóng người lặng yên đứng trước cảnh đêm sâu và bầu trời sao dịu nhẹ"
+    },
+    "timeline": {
+      "label": "Hành trình của người sáng lập", "opening": "Mở đầu", "childhood": "Tuổi thơ",
+      "technology": "Công nghệ", "rediscovery": "Lắng nghe lại", "questions": "Câu hỏi mới",
+      "purpose": "Vì sao có Qunara", "invitation": "Lời mời"
+    },
+    "journey": {
+      "childhood": {
+        "eyebrow": "Lớn lên cùng Phật giáo", "titleOne": "Âm thanh đến trước", "titleTwo": "ý nghĩa.",
+        "quote": "Những âm thanh ấy đã rất quen thuộc từ lâu trước khi ý nghĩa của chúng dần sáng rõ.",
+        "p1": "Tôi lớn lên trong một đại gia đình Việt Nam có truyền thống Phật giáo lâu đời. Ông bà tôi đã lập một nơi thờ Quan Âm tại Việt Nam. Quan Âm là danh xưng tiếng Việt của Avalokiteśvara, một hình tượng Phật giáo gắn với lòng từ bi.",
+        "p2": "Tiếng tụng kinh và những nghi lễ Phật giáo là âm thanh quen thuộc trong tuổi thơ tôi. Chúng hòa vào nhịp sống của gia đình.",
+        "p3": "Nhưng quen thuộc không có nghĩa là thấu hiểu. Khi ấy, tôi chưa hiểu sâu về Phật giáo và cũng không chú tâm nhiều. Phật giáo hiện diện quanh tôi, nhưng chưa trở thành hành trình riêng của tôi."
+      },
+      "technology": {
+        "eyebrow": "Một đời gắn với công nghệ", "titleOne": "Học cách kiến tạo.", "titleTwo": "Học cách chất vấn.",
+        "quote": "Công nghệ dạy tôi cách các hệ thống vận hành. Cuộc sống khiến tôi hỏi vì sao con người vẫn khổ đau trong những hệ thống ấy.",
+        "p1": "Khi trưởng thành, tôi chọn một hướng đi khác: công nghệ thông tin. Trong hơn 25 năm, tôi trải qua nhiều vai trò và hết làn sóng thay đổi này đến làn sóng khác.",
+        "p2": "Lĩnh vực ấy rèn cho tôi tư duy logic và hệ thống. Tôi học cách lần theo bằng chứng, kiểm thử một ý tưởng, xem điều gì chưa thành công rồi thử lại.",
+        "p3": "Những thói quen đó giúp tôi giải quyết nhiều bài toán kỹ thuật khó. Nhưng các thử thách trong công việc và đời sống lại mở ra những câu hỏi khác—những câu hỏi mà riêng công nghệ không thể trả lời."
+      },
+      "rediscovery": {
+        "eyebrow": "Tìm lại Phật giáo", "titleOne": "Học cách lắng nghe lại", "titleTwo": "những lời từng quen.",
+        "quote": "Giáo pháp không thay đổi. Người thay đổi là tôi.",
+        "p1": "Cuộc sống mang đến thành công, bất định cùng những giông bão trong đời tư và công việc. Theo thời gian, các trải nghiệm ấy thay đổi cách tôi lắng nghe những lời dạy đã hiện diện từ thuở nhỏ.",
+        "p2": "Vô thường—sự thật rằng mọi thứ đều đổi thay—hiện rõ qua những biến chuyển tôi không thể ngăn lại. Lời dạy về chấp thủ giúp tôi nhận ra thói quen níu giữ những gì vốn không thể đứng yên của tâm.",
+        "p3": "Khổ đau, nhận thức—cách ta diễn giải trải nghiệm—và lòng từ bi trở thành những câu hỏi thực tế, thay vì các ý niệm tôn giáo xa xôi. Đây không phải một sự cải đạo đột ngột. Tôi chỉ dần biết lắng nghe theo một cách khác."
+      },
+      "questions": {
+        "eyebrow": "AI và sự tò mò về lượng tử", "titleOne": "Công cụ mới.", "titleTwo": "Câu hỏi xưa.",
+        "quote": "Khoa học trao cho tôi những câu hỏi mới. Phật giáo dạy tôi quan sát chính cái tâm đang đặt câu hỏi.",
+        "p1": "Những câu hỏi về tâm và trải nghiệm sau đó gặp một phần khác trong cuộc đời tôi: trí tuệ nhân tạo. Khi tham gia sâu vào cuộc cách mạng AI, tôi tự hỏi thông tin được biểu diễn thế nào, phép tính xử lý nó ra sao, và ta thực sự muốn nói gì khi nhắc đến ý thức—khả năng có trải nghiệm.",
+        "p2": "Sự tò mò ấy đưa tôi đến vật lý lượng tử. Khoa học lượng tử thách thức một số giả định thường ngày. Từ một hướng rất khác, giáo lý Phật giáo cũng chất vấn những quan niệm quen thuộc về tính thường còn, sự tách biệt, quan sát và thực tại. Tôi bắt đầu nhận ra một số tiếng vọng triết học, đồng thời thấy rõ những khác biệt quan trọng không kém.",
+        "p3": "Vật lý lượng tử không chứng minh Phật giáo. Kinh điển Phật giáo không mô tả cơ học lượng tử hiện đại. Đặt hai truyền thống vào cuộc đối thoại là lời mời khảo sát cẩn trọng, không phải một kết luận khoa học."
+      },
+      "purpose": {
+        "eyebrow": "Vì sao Qunara tồn tại", "titleOne": "Một cộng đồng dành cho", "titleTwo": "sự tìm hiểu cẩn trọng.",
+        "p1": "Tôi không tạo ra Qunara vì đã tìm thấy mọi câu trả lời. Tôi tạo ra nơi này vì các câu hỏi ngày một sâu hơn, và vì chúng xứng đáng có một cộng đồng cùng suy xét.",
+        "p2": "Tại đây, mọi người có thể học khoa học lượng tử, tìm hiểu triết học Phật giáo, khám phá điểm tương đồng, nhận diện khác biệt quan trọng, xem xét bằng chứng, thực hành tỉnh thức và từ bi, rồi chia sẻ những trải nghiệm và câu hỏi chân thành.",
+        "statement": "Qunara không phải là một nỗ lực dùng vật lý để chứng minh Phật giáo.",
+        "statementDetail": "Đây là nơi khám phá điều mỗi truyền thống có thể trao cho ta khi được tiếp cận bằng sự tò mò, bằng chứng và khiêm nhường.",
+        "principles": {
+          "evidenceTitle": "Bằng chứng", "evidenceText": "Các khẳng định khoa học luôn gắn với phương pháp và nguồn khoa học.",
+          "contextTitle": "Bối cảnh", "contextText": "Giáo lý Phật giáo được trình bày trong truyền thống lịch sử và triết học của chính mình.",
+          "differenceTitle": "Khác biệt", "differenceText": "Sự tương đồng mở đầu một cuộc trò chuyện; nó không thiết lập tính đồng nhất.",
+          "reflectionTitle": "Suy ngẫm", "reflectionText": "Những câu hỏi còn mở được gọi đúng tên, thay vì được lấp đầy bằng sự chắc chắn.",
+          "practiceTitle": "Thực hành", "practiceText": "Tỉnh thức và từ bi giúp việc tìm hiểu luôn gắn với đời sống con người.",
+          "communityTitle": "Cộng đồng", "communityText": "Mọi người có thể bất đồng mà vẫn cẩn trọng, tôn trọng và sẵn lòng học hỏi."
+        }
+      }
+    },
+    "invitation": {
+      "kicker": "Cảnh 07 · Một lời mời rộng mở", "titleOne": "Hãy cùng nhau", "titleTwo": "khám phá.",
+      "body": "Qunara chào đón các nhà khoa học, kỹ sư, người thực hành Phật giáo, sinh viên, người hành thiền và tất cả những ai hiếu kỳ. Bạn không cần phải đồng ý với nhau. Chỉ cần mang theo sự tò mò, tôn trọng và tinh thần sẵn lòng học hỏi.",
+      "explore": "Bắt đầu khám phá", "learn": "Bắt đầu học", "community": "Tham gia cộng đồng",
+      "quote": "Những khám phá lớn lao không chỉ nói về vũ trụ quanh ta, mà còn về vũ trụ trong mỗi chúng ta."
+    },
+    "art": {
+      "childhoodLabel": "Một gian thờ gia đình Việt Nam mộc mạc với chuông, khói hương và lá cọ trong ánh chiều ấm",
+      "technologyLabel": "Những đường nét kiến trúc tĩnh lặng gợi nhắc mã lệnh, hệ thống và bàn tay con người bên bàn phím",
+      "returnLabel": "Một con đường quen được nhìn bằng đôi mắt khác sau cơn giông",
+      "quantumLabel": "Các vân giao thoa và mô thức thông tin mở ra một trường xác suất",
+      "communityLabel": "Nhiều lối đi lặng lẽ gặp nhau dưới hình học tựa hoa sen giữa các vì sao",
+      "childhoodCaption": "Tuổi thơ · Việt Nam", "technologyCaption": "Hệ thống · Bằng chứng · Đổi thay",
+      "returnCaption": "Đổi thay · Chú tâm · Trở về", "quantumCaption": "Thông tin · Xác suất · Tìm hiểu",
+      "communityCaption": "Tò mò · Bằng chứng · Khiêm nhường", "measurement": "ĐO LƯỜNG",
+      "contemplation": "QUÁN CHIẾU", "humanExperience": "TRẢI NGHIỆM CON NGƯỜI"
+    }
+  },
+  "home": {
+    "metadata": {
+      "title": "Qunara — Khám phá thực tại qua khoa học và trí tuệ",
+      "description": "Một cộng đồng cùng khám phá vật lý lượng tử, triết học Phật giáo, ý thức và cách sống sáng suốt."
+    },
+    "hero": {
+      "kicker": "Khoa học · Trí tuệ · Sống tỉnh thức",
+      "titleLineOne": "Khám phá",
+      "titleLineTwo": "Thực tại.",
+      "lead": "Một cộng đồng cùng khám phá vật lý lượng tử, triết học Phật giáo, ý thức và cách sống sáng suốt.",
+      "startLearning": "Bắt đầu học",
+      "exploreConnections": "Khám phá các mối liên hệ",
+      "practiceToday": "Thực hành hôm nay",
+      "noteLineOne": "Hai lăng kính.",
+      "noteLineTwo": "Một niềm tò mò chung."
+    },
+    "pillars": {
+      "kicker": "Ba lối vào",
+      "heading": "Hiểu biết. Suy ngẫm. Thực hành.",
+      "enterPath": "Bước vào hành trình",
+      "science": {
+        "title": "Khoa học", "eyebrow": "Tìm hiểu thế giới bên ngoài",
+        "text": "Những bài hướng dẫn rõ ràng, dựa trên bằng chứng về cơ học lượng tử, các thí nghiệm và những câu hỏi vật lý vẫn đang tìm lời giải."
+      },
+      "wisdom": {
+        "title": "Trí tuệ", "eyebrow": "Khám phá thế giới nội tâm",
+        "text": "Triết học Phật giáo trong bối cảnh lịch sử—từ vô thường và vô ngã đến lòng từ bi và tính tương duyên."
+      },
+      "practice": {
+        "title": "Thực hành", "eyebrow": "Đưa hiểu biết vào đời sống",
+        "text": "Thiền, suy ngẫm và những thực hành nhân văn hằng ngày giúp chuyển các ý tưởng thú vị thành một cách sống sáng suốt hơn."
+      }
+    },
+    "evidence": { "scientific": "Bằng chứng khoa học", "reflection": "Suy ngẫm cá nhân" },
+    "feature": {
+      "artLabel": "Chủ đề nổi bật", "kicker": "Bài viết nổi bật · 12 phút đọc",
+      "title": "Thí nghiệm hai khe thực sự cho chúng ta biết điều gì?",
+      "description": "Thí nghiệm này thường được dùng để đưa ra những khẳng định quá rộng về ý thức. Câu chuyện thật—về giao thoa, phép đo và xác suất—chính xác hơn và cũng hấp dẫn hơn.",
+      "readGuide": "Đọc bài giải thích dựa trên bằng chứng"
+    },
+    "today": {
+      "kicker": "Dành cho hôm nay", "heading": "Những khoảnh khắc khám phá nhỏ bé.",
+      "reflection": {
+        "question": "Hôm nay bạn đã nhận thấy điều gì mà không lập tức phán xét?",
+        "action": "Viết suy ngẫm"
+      },
+      "discussion": {
+        "kicker": "Thảo luận mới nhất", "title": "Quan sát có luôn đồng nghĩa với ý thức không?",
+        "description": "Các thành viên cộng đồng cùng làm rõ một nhầm lẫn phổ biến về phép đo.",
+        "action": "Tham gia trò chuyện"
+      },
+      "meditation": {
+        "kicker": "Bài thiền nổi bật", "title": "Mười phút cùng sự đổi thay",
+        "description": "Một thực hành yên tĩnh để nhận biết cảm giác sinh khởi, biến đổi rồi qua đi.",
+        "action": "Bắt đầu thực hành"
+      }
+    }
+  }
+}
