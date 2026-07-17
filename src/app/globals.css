@@ -139,3 +139,168 @@
   .explore-section-nav>div{scroll-snap-type:none}
   .cosmology-investigation,.water-investigation,.impermanence-investigation,.dependent-investigation,.entanglement-dialogue,.superposition-dialogue,.vacuum-dialogue{content-visibility:visible}
 }
+
+/* About documentary — Phase 1 */
+.about-documentary{overflow:clip;background:#07111d;color:#f2efe7}
+.about-reading-progress{position:fixed;left:0;right:0;top:76px;z-index:70;height:2px;background:#ffffff0a;pointer-events:none}
+.about-reading-progress i{display:block;width:100%;height:100%;transform-origin:left;background:linear-gradient(90deg,#92783f,#e3c56e)}
+.about-desktop-timeline{position:fixed;right:18px;top:50%;z-index:60;display:grid;gap:3px;translate:0 -50%}
+.about-desktop-timeline a{min-height:44px;padding:6px 10px;display:grid;grid-template-columns:24px 8px 96px;gap:8px;align-items:center;border:1px solid #ffffff0d;border-radius:2px;background:#07111de8;color:#b2bec6;font-size:11px;white-space:nowrap;backdrop-filter:blur(9px);transition:color .25s ease,border-color .25s ease}
+.about-desktop-timeline a span{font:italic 10px Georgia,serif;color:#b59b59}
+.about-desktop-timeline a i{width:6px;height:6px;border:1px solid #7c8992;border-radius:50%}
+.about-desktop-timeline a:hover,.about-desktop-timeline a:focus-visible,.about-desktop-timeline a.active{border-color:#d5ac4d44;color:#f0d37d}
+.about-desktop-timeline a.active i{border-color:#d5ac4d;background:#d5ac4d;box-shadow:0 0 9px #d5ac4d77}
+.about-film-hero{position:relative;min-height:min(920px,100svh);display:flex;align-items:flex-end;overflow:hidden}
+.about-hero-study{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;shape-rendering:geometricPrecision;transform:scale(1.015);transform-origin:center}
+.about-film-wash{position:absolute;inset:0;background:linear-gradient(90deg,#06101df4 0%,#06101dc2 43%,transparent 76%),linear-gradient(0deg,#07111d 0%,transparent 48%)}
+.about-film-copy{position:relative;z-index:2;padding-bottom:110px}
+.about-film-copy h1{max-width:1050px;margin:22px 0;font:400 clamp(68px,9vw,122px)/.88 Georgia,serif;letter-spacing:-.055em}
+.about-film-copy h1 em,.about-community-invitation h2 em,.about-scene-copy h2 em{font-weight:400;color:#d5ac4d}
+.about-film-copy>p:not(.q-kicker){max-width:610px;color:#c0cad1;font:italic 17px/1.9 Georgia,serif}
+.about-film-copy>a{width:max-content;min-height:44px;margin-top:30px;display:flex;align-items:center;gap:9px;color:#d9b85f;font-size:10px;text-transform:uppercase;letter-spacing:.13em}
+.about-film-copy>a svg{width:15px}
+.about-stars{animation:about-stars-breathe 9s ease-in-out infinite alternate}
+.about-gold-path{stroke-dasharray:3 9;animation:about-path-drift 14s linear infinite}
+.about-human{filter:drop-shadow(0 12px 16px #0008)}
+@keyframes about-stars-breathe{from{opacity:.68}to{opacity:1}}
+@keyframes about-path-drift{to{stroke-dashoffset:-72}}
+.about-founder-journey{background:#07111d}
+.about-story-scene{position:relative;padding-block:130px;border-top:1px solid #ffffff12;scroll-margin-top:95px}
+.about-story-scene:nth-child(even){background:#0a1724}
+.about-scene-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(420px,1.08fr);gap:90px;align-items:center}
+.about-story-scene.reverse .about-scene-copy{order:2}
+.about-story-scene.reverse .about-scene-study{order:1}
+.about-scene-copy{position:relative}
+.about-scene-number{position:absolute;right:0;top:0;color:#98a6b0;font:italic 14px Georgia,serif}
+.about-scene-copy h2{max-width:720px;margin:18px 0 34px;font:400 clamp(44px,5.2vw,72px)/1.03 Georgia,serif;letter-spacing:-.04em}
+.about-scene-prose{max-width:64ch}
+.about-scene-prose>p{margin-bottom:20px;color:#aeb9c2;font:400 15px/1.9 Georgia,serif}
+.about-editorial-quote{position:relative;max-width:620px;margin-top:42px;padding:28px 28px 28px 55px;border-left:1px solid #d5ac4d66;background:#d5ac4d08}
+.about-editorial-quote>span{position:absolute;left:18px;top:7px;color:#d5ac4d;font:italic 50px Georgia,serif}
+.about-editorial-quote blockquote{color:#ded7c7;font:italic 21px/1.6 Georgia,serif}
+.about-scene-study{position:relative;min-height:620px;overflow:hidden;border:1px solid #ffffff14;background:radial-gradient(circle at 68% 38%,#d5ac4d1c,transparent 27%),linear-gradient(145deg,#10283a,#091623)}
+.about-scene-study svg{position:absolute;inset:0;width:100%;height:100%}
+.about-scene-study>span{position:absolute;left:28px;bottom:25px;color:#e0c36f;font-size:11px;text-transform:uppercase;letter-spacing:.14em}
+.study-orbit,.study-line{fill:none;stroke:#d5ac4d;stroke-opacity:.3}
+.study-orbit.two{stroke:#8fa8c5;stroke-opacity:.24}
+.study-line{stroke-width:2}.study-line.secondary{stroke:#90aa9a;stroke-opacity:.26}
+.study-point{fill:#e5d7ac;opacity:.45}
+.about-scene-study.childhood{background:radial-gradient(circle at 72% 30%,#e0af572e,transparent 28%),linear-gradient(145deg,#2a211d,#0a1723)}
+.childhood-shrine-study{shape-rendering:geometricPrecision}
+.incense-smoke{opacity:.24;animation:about-incense-rise 8s ease-in-out infinite alternate;transform-origin:center}
+.temple-bell{filter:drop-shadow(0 12px 18px #0007)}
+.quan-am-symbol{filter:drop-shadow(0 0 12px #d5ac4d26)}
+@keyframes about-incense-rise{from{opacity:.16;transform:translateY(5px)}to{opacity:.34;transform:translateY(-8px)}}
+.about-scene-study.technology{background:linear-gradient(135deg,#071620,#102b3d)}
+.technology-system-study{shape-rendering:geometricPrecision}
+.system-nodes{filter:drop-shadow(0 0 7px #d5ac4d88)}
+.glass-code{filter:drop-shadow(0 18px 28px #0007)}
+.system-architecture path{stroke-dasharray:4 8;animation:about-data-move 16s linear infinite}
+.technology-human{filter:drop-shadow(0 15px 18px #0008)}
+@keyframes about-data-move{to{stroke-dashoffset:-96}}
+.about-scene-study.return{background:radial-gradient(circle at 30% 15%,#8ba58b2d,transparent 30%),linear-gradient(145deg,#0b2025,#121827)}
+.returning-light-study{shape-rendering:geometricPrecision}
+.water-lines{stroke-opacity:.24;stroke-width:2;stroke-dasharray:10 16;animation:about-water-pass 18s linear infinite}
+.return-leaves{opacity:.68;animation:about-leaves-fall 10s ease-in-out infinite alternate;transform-origin:center}
+.distant-temple{filter:drop-shadow(0 9px 14px #0007)}
+@keyframes about-water-pass{to{stroke-dashoffset:-104}}
+@keyframes about-leaves-fall{from{transform:translate3d(0,-5px,0) rotate(-1deg)}to{transform:translate3d(10px,13px,0) rotate(3deg)}}
+.about-scene-study.quantum{background:radial-gradient(circle at 66% 42%,#745e9b42,transparent 32%),linear-gradient(145deg,#12172a,#07141e)}
+.ai-quantum-study{shape-rendering:geometricPrecision}
+.information-field{animation:about-information-shift 14s linear infinite alternate}
+.interference-waves{stroke-width:2;stroke-dasharray:7 10;animation:about-wave-travel 18s linear infinite}
+.probability-points{animation:about-probability-breathe 8s ease-in-out infinite alternate}
+.lotus-geometry{filter:drop-shadow(0 0 9px #78977a22)}
+@keyframes about-information-shift{to{transform:translateY(12px)}}
+@keyframes about-wave-travel{to{stroke-dashoffset:-136}}
+@keyframes about-probability-breathe{from{opacity:.62}to{opacity:1}}
+.about-scene-study.community{background:radial-gradient(circle at 50% 50%,#d5ac4d21,transparent 35%),linear-gradient(145deg,#11232b,#0b1322)}
+.about-qunara-statement{max-width:700px;margin:38px 0 10px;padding:30px;border-block:1px solid #d5ac4d66;background:linear-gradient(90deg,#d5ac4d0b,transparent)}
+.about-qunara-statement strong,.about-qunara-statement span{display:block;font-family:Georgia,serif}
+.about-qunara-statement strong{color:#f0d37d;font-size:24px;font-weight:400;line-height:1.45}
+.about-qunara-statement span{margin-top:15px;color:#c4cdd2;font-size:17px;line-height:1.75}
+.qunara-composition-study{shape-rendering:geometricPrecision}
+.qunara-star-field{animation:about-qunara-stars 9s ease-in-out infinite alternate}
+.qunara-science-wave{stroke-dasharray:8 11;animation:about-qunara-wave 20s linear infinite}
+.qunara-lotus-form{transform-origin:438px 350px;animation:about-lotus-settle 10s ease-in-out infinite alternate}
+.qunara-human-path{stroke-dasharray:4 10;animation:about-human-path 18s linear infinite}
+.qunara-walker{filter:drop-shadow(0 8px 10px #0008)}
+@keyframes about-qunara-stars{from{opacity:.62}to{opacity:1}}
+@keyframes about-qunara-wave{to{stroke-dashoffset:-152}}
+@keyframes about-lotus-settle{from{opacity:.58}to{opacity:1}}
+@keyframes about-human-path{to{stroke-dashoffset:-112}}
+.about-scene-quantum .comparison-disclaimer{max-width:64ch;margin-top:30px}
+.about-principle-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;max-width:720px;margin-top:42px}
+.about-principle-grid article{padding:22px;border:1px solid #ffffff14;background:#ffffff03}
+.about-principle-grid svg{width:20px;margin-bottom:25px;color:#d5ac4d}
+.about-principle-grid h3{font:400 20px Georgia,serif}
+.about-principle-grid p{margin-top:9px;color:#b2bdc4;font-size:14px;line-height:1.7}
+.about-community-invitation{position:relative;min-height:760px;padding-block:150px;display:grid;place-items:center;overflow:hidden;text-align:center;border-top:1px solid #ffffff14;background:radial-gradient(circle at 50% 75%,#6f578b30,transparent 31%),#081522}
+.about-community-invitation>.q-shell{position:relative;z-index:2}
+.about-community-invitation h2{margin:20px auto;font:400 clamp(62px,8vw,108px)/.9 Georgia,serif;letter-spacing:-.05em}
+.about-community-invitation>.q-shell>p:not(.q-kicker){max-width:720px;margin-inline:auto;color:#abb7c0;font:400 16px/1.9 Georgia,serif}
+.about-community-invitation blockquote{max-width:880px;margin:62px auto 0;padding-top:34px;border-top:1px solid #d5ac4d55;color:#d8d3c8;font:italic 25px/1.6 Georgia,serif}
+.about-invitation-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:38px}
+.about-invitation-actions a{min-height:48px;padding:0 17px;display:flex;align-items:center;gap:9px;border:1px solid #ffffff36;color:#edf1f2;font-size:12px;text-transform:uppercase;letter-spacing:.07em}
+.about-invitation-actions a:first-child{border-color:#d5ac4d;background:#d5ac4d;color:#07111d}
+.about-invitation-actions svg{width:14px}
+.about-invitation-actions svg:last-child{width:11px}
+.about-invitation-study{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.58;shape-rendering:geometricPrecision}
+.invitation-stars{animation:about-invitation-stars 10s ease-in-out infinite alternate}
+.invitation-paths{stroke-width:2;stroke-dasharray:5 12;animation:about-invitation-paths 20s linear infinite}
+.invitation-horizon-light{filter:drop-shadow(0 0 18px #d5ac4d)}
+@keyframes about-invitation-stars{from{opacity:.58}to{opacity:1}}
+@keyframes about-invitation-paths{to{stroke-dashoffset:-136}}
+.about-documentary a:focus-visible{outline:3px solid #f0cc70;outline-offset:4px}
+
+@media(max-width:1450px){.about-desktop-timeline{display:none}}
+
+@media(max-width:900px){
+  .about-scene-grid{grid-template-columns:1fr;gap:55px}
+  .about-story-scene.reverse .about-scene-copy,.about-story-scene.reverse .about-scene-study{order:initial}
+  .about-scene-study{min-height:480px}
+}
+
+@media(max-width:600px){
+  .about-reading-progress{top:68px}
+  .about-film-hero{min-height:760px}
+  .about-hero-study{width:125%;max-width:none;left:-25%;object-position:center;transform:none}
+  .about-film-wash{background:linear-gradient(90deg,#06101df2,#06101d87),linear-gradient(0deg,#07111d,transparent 52%)}
+  .about-film-copy{padding-bottom:72px}
+  .about-film-copy h1{font-size:clamp(48px,15vw,66px);line-height:.94}
+  .about-film-copy>p:not(.q-kicker){font-size:15px}
+  .about-story-scene{padding-block:78px}
+  .about-scene-grid{gap:40px}
+  .about-scene-copy h2{font-size:40px}
+  .about-scene-prose>p{font-size:15px;line-height:1.8}
+  .about-editorial-quote{padding:24px 20px 24px 42px}
+  .about-editorial-quote blockquote{font-size:19px}
+  .about-scene-study{min-height:clamp(280px,95vw,360px)}
+  .about-qunara-statement{padding:24px 20px}
+  .about-qunara-statement strong{font-size:21px}
+  .about-qunara-statement span{font-size:16px}
+  .about-principle-grid{grid-template-columns:1fr}
+  .about-community-invitation{min-height:700px;padding-block:100px}
+  .about-community-invitation h2{font-size:54px}
+  .about-community-invitation>.q-shell>p:not(.q-kicker){font-size:15px}
+  .about-community-invitation blockquote{margin-top:45px;font-size:21px}
+  .about-invitation-actions{align-items:stretch;flex-direction:column}
+  .about-invitation-actions a{justify-content:center}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .about-documentary *,.about-documentary *::before,.about-documentary *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .about-hero-study{transform:none}
+  .incense-smoke{opacity:.26}
+  .system-architecture path{stroke-dashoffset:0}
+  .water-lines{stroke-dashoffset:0}
+  .return-leaves{transform:none}
+  .information-field{transform:none}
+  .interference-waves{stroke-dashoffset:0}
+  .probability-points{opacity:.8}
+  .qunara-star-field,.qunara-lotus-form{opacity:.82}
+  .qunara-science-wave,.qunara-human-path{stroke-dashoffset:0}
+  .invitation-stars{opacity:.82}
+  .invitation-paths{stroke-dashoffset:0}
+  .about-desktop-timeline a{transition:none}
+}

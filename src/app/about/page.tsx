@@ -1,7 +1,19 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight,Atom,Bot,Braces,CircleDot,FlaskConical,Heart,SearchCheck } from "lucide-react";
-import { ComparisonDisclaimer } from "@/components/comparison-disclaimer";
-export const metadata:Metadata={title:"About",description:"The personal story, principles, and editorial commitments behind Qunara."};
-const path=[{icon:CircleDot,title:"Roots in Buddhism",text:"I grew up with Buddhist teachings woven into everyday life. Compassion, impermanence, mindfulness, and questions about the self shaped how I learned to look at the world—and within."},{icon:Braces,title:"Becoming a software engineer",text:"Building software taught me to think in systems, relationships, causes, feedback loops, and layers of abstraction. It also taught me humility: elegant systems can still surprise us."},{icon:Bot,title:"Questions in the AI era",text:"As AI began transforming our work and lives, old questions became urgent. What is intelligence? What is consciousness? What makes experience meaningful?"},{icon:Atom,title:"Discovering quantum physics",text:"Quantum theory introduced a physical reality described through probability, interaction, uncertainty, and relationships. Some themes felt familiar—but familiarity is not proof."}];
-export default function About(){return <><header className="about-hero"><div className="q-shell"><p className="q-kicker">Why Qunara exists</p><h1>Two worlds.<br/><em>One honest inquiry.</em></h1><p>I grew up with Buddhist wisdom, became a software engineer, entered the AI era, and discovered in quantum physics a new language for questions I had carried for years.</p></div></header><main><section className="q-shell about-statement"><p className="q-kicker">My starting point</p><blockquote>Science explains the external universe. Buddhism explores internal experience. Qunara asks where these perspectives resonate, where they differ, and what we can learn from both.</blockquote><ComparisonDisclaimer/></section><section className="q-shell about-path"><div className="inner-head"><p className="q-kicker">The path here</p><h2>Inherited wisdom met a builder’s curiosity.</h2></div><div>{path.map(({icon:Icon,...x},i)=><article key={x.title}><span>0{i+1}</span><Icon/><h3>{x.title}</h3><p>{x.text}</p></article>)}</div></section><section className="about-principles"><div className="q-shell"><div className="inner-head"><p className="q-kicker">How Qunara works</p><h2>Wonder deserves intellectual honesty.</h2></div><div><article><FlaskConical/><h3>Evidence stays evidence</h3><p>Scientific claims prioritize peer-reviewed research, primary sources, and expert consensus.</p></article><article><SearchCheck/><h3>Interpretation is labeled</h3><p>Philosophy, historical context, personal reflection, and open questions remain visibly distinct.</p></article><article><Heart/><h3>Practice remains human</h3><p>Ideas matter most when they support attention, compassion, humility, and wiser action.</p></article></div></div></section><section className="q-shell about-cta"><h2>Help build a thoughtful community for the unknown.</h2><p>Scientists, engineers, practitioners, philosophers, and curious beginners are all welcome.</p><Link href="/community">Explore the community <ArrowRight/></Link></section></main></>}
+import { AboutHero } from "@/components/about/about-hero";
+import { AboutReadingProgress } from "@/components/about/about-reading-progress";
+import { CommunityInvitation } from "@/components/about/community-invitation";
+import { FounderJourney } from "@/components/about/founder-journey";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "The personal journey from a Vietnamese Buddhist childhood through technology, AI, and quantum curiosity that led to Qunara.",
+};
+
+export default function About() {
+  return <div className="about-documentary" id="about-documentary">
+    <AboutReadingProgress/>
+    <AboutHero/>
+    <FounderJourney/>
+    <CommunityInvitation/>
+  </div>;
+}
