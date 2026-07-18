@@ -2,19 +2,17 @@
 
 import { useEffect, useState } from "react";
 import { motion, useMotionValue, useReducedMotion, useSpring } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const scenes = [
-  ["about-opening", "Opening"],
-  ["childhood", "Childhood"],
-  ["technology", "Technology"],
-  ["rediscovery", "Listening again"],
-  ["ai-quantum", "New questions"],
-  ["principles", "Why Qunara"],
-  ["community-invitation", "Invitation"],
+  ["about-opening", "opening"], ["childhood", "childhood"], ["technology", "technology"],
+  ["rediscovery", "rediscovery"], ["ai-quantum", "questions"], ["principles", "purpose"],
+  ["community-invitation", "invitation"],
 ] as const;
 type SceneId = (typeof scenes)[number][0];
 
 export function AboutReadingProgress() {
+  const t = useTranslations("about.timeline");
   const measuredProgress = useMotionValue(0);
   const reduceMotion = useReducedMotion();
   const scaleX = useSpring(measuredProgress, reduceMotion ? { stiffness: 1000, damping: 1000 } : { stiffness: 120, damping: 28, mass: .35 });
@@ -46,8 +44,8 @@ export function AboutReadingProgress() {
 
   return <>
     <div className="about-reading-progress" aria-hidden="true"><motion.i style={{ scaleX }}/></div>
-    <nav className="about-desktop-timeline" aria-label="Founder journey">
-      {scenes.map(([id, label], index) => <a href={`#${id}`} className={active === id ? "active" : ""} aria-current={active === id ? "step" : undefined} key={id}><span>{String(index + 1).padStart(2, "0")}</span><i/>{label}</a>)}
+    <nav className="about-desktop-timeline" aria-label={t("label")}>
+      {scenes.map(([id, label], index) => <a href={`#${id}`} className={active === id ? "active" : ""} aria-current={active === id ? "step" : undefined} key={id}><span>{String(index + 1).padStart(2, "0")}</span><i/>{t(label)}</a>)}
     </nav>
   </>;
 }

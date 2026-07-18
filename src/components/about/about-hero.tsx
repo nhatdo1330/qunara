@@ -1,20 +1,22 @@
 import { ArrowDown } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
-export function AboutHero() {
+export async function AboutHero() {
+  const t = await getTranslations("about.hero");
   return <header className="about-film-hero" id="about-opening">
-    <HeroStudy/>
+    <HeroStudy label={t("artLabel")}/>
     <div className="about-film-wash"/>
     <div className="q-shell about-film-copy">
-      <p className="q-kicker">The story behind Qunara</p>
-      <h1>I did not begin<br/><em>with answers.</em></h1>
-      <p>I began with questions that followed me from childhood, through technology, and into the unknown.</p>
-      <a href="#founder-journey">Follow the journey <ArrowDown/></a>
+      <p className="q-kicker">{t("kicker")}</p>
+      <h1>{t("titleOne")}<br/><em>{t("titleTwo")}</em></h1>
+      <p>{t("lead")}</p>
+      <a href="#founder-journey">{t("action")} <ArrowDown/></a>
     </div>
   </header>;
 }
 
-function HeroStudy() {
-  return <svg className="about-hero-study" viewBox="0 0 1440 900" role="img" aria-label="A quiet human silhouette stands before a deep night landscape and a restrained field of stars">
+function HeroStudy({label}:{label:string}) {
+  return <svg className="about-hero-study" viewBox="0 0 1440 900" role="img" aria-label={label}>
     <defs>
       <linearGradient id="about-hero-bg" x2="1" y2="1"><stop stopColor="#050c15"/><stop offset=".55" stopColor="#102334"/><stop offset="1" stopColor="#17172a"/></linearGradient>
       <radialGradient id="about-hero-light"><stop stopColor="#d8b65b" stopOpacity=".26"/><stop offset=".55" stopColor="#a17f45" stopOpacity=".08"/><stop offset="1" stopColor="#d8b65b" stopOpacity="0"/></radialGradient>

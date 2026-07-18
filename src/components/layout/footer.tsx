@@ -1,5 +1,74 @@
-import Link from "next/link";
+"use client";
+
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+
+import { Link } from "@/i18n/navigation";
+
 import { Logo } from "./navbar";
-const groups=[{title:"Discover",links:[["Learn","/learn"],["Connections","/explore"],["Research","/research"]]},{title:"Practice",links:[["Meditation","/practice"],["Daily reflection","/practice#reflection"],["Tracker","/practice#tracker"]]},{title:"Qunara",links:[["Community","/community"],["About","/about"],["Admin","/admin"]]}];
-export function Footer(){return <footer className="q-footer"><div className="q-shell q-footer-grid"><div><Link href="/" className="q-brand"><Logo/><span><b>QUNARA</b><small>Explore Reality Through Science and Wisdom</small></span></Link><p>A careful, welcoming place for science, philosophy, contemplative practice, and open questions.</p></div>{groups.map(g=><div key={g.title}><h2>{g.title}</h2>{g.links.map(([l,h])=><Link href={h} key={h}>{l}<ArrowUpRight/></Link>)}</div>)}</div><div className="q-shell q-footer-bottom"><span>© {new Date().getFullYear()} Qunara</span><span>Curiosity with rigor. Practice with compassion.</span></div></footer>}
+
+const groups = [
+  {
+    key: "discover",
+    links: [
+      { key: "learn", href: "/learn" },
+      { key: "connections", href: "/explore" },
+      { key: "research", href: "/research" },
+    ],
+  },
+  {
+    key: "practice",
+    links: [
+      { key: "meditation", href: "/practice" },
+      { key: "dailyReflection", href: "/practice", hash: "reflection" },
+      { key: "tracker", href: "/practice", hash: "tracker" },
+    ],
+  },
+  {
+    key: "qunara",
+    links: [
+      { key: "community", href: "/community" },
+      { key: "about", href: "/about" },
+      { key: "admin", href: "/admin" },
+    ],
+  },
+] as const;
+
+export function Footer() {
+  const t = useTranslations("footer");
+
+  return (
+    <footer className="q-footer">
+      <div className="q-shell q-footer-grid">
+        <div>
+          <Link href="/" className="q-brand" aria-label={t("homeLabel")}>
+            <Logo />
+            <span>
+              <b>QUNARA</b>
+              <small>{t("tagline")}</small>
+            </span>
+          </Link>
+          <p>{t("description")}</p>
+        </div>
+        {groups.map((group) => (
+          <div key={group.key}>
+            <h2>{t(`groups.${group.key}.title`)}</h2>
+            {group.links.map((link) => (
+              <Link
+                href={{ pathname: link.href, hash: "hash" in link ? link.hash : undefined }}
+                key={`${link.href}-${"hash" in link ? link.hash : ""}`}
+              >
+                {t(`groups.${group.key}.${link.key}`)}
+                <ArrowUpRight />
+              </Link>
+            ))}
+          </div>
+        ))}
+      </div>
+      <div className="q-shell q-footer-bottom">
+        <span>{t("copyright", { year: new Date().getFullYear() })}</span>
+        <span>{t("closingLine")}</span>
+      </div>
+    </footer>
+  );
+}
