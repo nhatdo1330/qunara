@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "title": "Khám phá — Trí tuệ cổ xưa và khoa học hiện đại",
+    "description": "Một bảo tàng tương tác bằng tiếng Việt, nơi Phật học, khoa học và vật lý lượng tử được đặt cạnh nhau với sự tò mò, bằng chứng và những ranh giới rõ ràng.",
+    "keywords": ["Phật học", "vật lý lượng tử", "Vô thường", "Duyên khởi", "Tánh Không", "khoa học và Phật giáo"]
+  },
+  "hero": {
+    "kicker": "Khám phá",
+    "title": "Những câu hỏi cổ xưa. Những khám phá hiện đại.",
+    "body": "Các truyền thống Phật giáo khảo sát kinh nghiệm, khổ đau và con đường tự do qua giáo pháp và thực hành. Khoa học hiện đại tìm hiểu thế giới vật lý bằng phép đo, toán học và những thí nghiệm có thể lặp lại. Tại đây, hai phía được đặt vào đối thoại mà không bị đánh đồng.",
+    "ancientAction": "Khám phá trí tuệ cổ xưa",
+    "quantumAction": "Đi đến đối thoại lượng tử",
+    "boundary": "Nơi có tiếng vọng · Nơi có khác biệt · Điều vẫn chưa biết"
+  },
+  "editorial": {
+    "kicker": "Cam kết biên tập",
+    "quote": "Một phép so sánh tốt phải giúp ta hiểu sâu hơn cả hai phía, chứ không ép chúng thành cùng một câu trả lời.",
+    "body": "Phật học và khoa học hiện đại hình thành trong những thời đại khác nhau, đặt ra những loại câu hỏi khác nhau và dùng những tiêu chuẩn bằng chứng khác nhau. Qunara gìn giữ các khác biệt ấy, đồng thời mở chỗ cho một cuộc đối thoại cẩn trọng.",
+    "warningTitle": "Một phân biệt cần thiết",
+    "warning": "Các so sánh ở đây mang tính triết học và giáo dục. Chúng không hàm ý rằng vật lý lượng tử chứng minh giáo lý Phật giáo."
+  },
+  "modes": [
+    {"id":"story","label":"Câu chuyện","title":"Bắt đầu từ con người","text":"Gặp những con người, hoàn cảnh, câu hỏi và thời điểm lịch sử đã tạo nên hình hài của mỗi ý tưởng."},
+    {"id":"evidence","label":"Bằng chứng","title":"Theo sát điều có thể kiểm chứng","text":"Phân biệt kinh điển, thí nghiệm, diễn giải học thuật, tiếng vọng khái niệm và suy đoán còn bỏ ngỏ."},
+    {"id":"deep","label":"Đào sâu","title":"Ở lại với phần khó","text":"Đọc kỹ bối cảnh gốc, các bất đồng quan trọng, nguồn tham khảo và những câu hỏi chưa có đáp án dễ dàng."}
+  ],
+  "investigations": [
+    {
+      "id":"many-worlds","slug":"tam-thien-dai-thien-the-gioi","number":"01","category":"Quan sát cổ xưa, tiếng vọng hiện đại","title":"Tam Thiên Đại Thiên Thế Giới","subtitle":"Nhiều mặt trời. Nhiều mặt trăng. Nhiều thế giới.","readingTime":"12 phút đọc","difficulty":"Nền tảng",
+      "opening":"Trong bài kinh nay được đánh số AN 3.80, Ānanda hỏi tiếng nói của một bậc giác ngộ có thể vang xa đến đâu. Câu trả lời không bắt đầu bằng đơn vị đo. Nó mở ra một bức tranh vũ trụ: một hệ thế giới trở thành một nghìn, rồi lại được nhóm theo nghìn, thêm một lần nữa.",
+      "buddhist":"Tiểu thiên thế giới là một nghìn hệ thế giới. Một nghìn tiểu thiên tạo thành trung thiên; một nghìn trung thiên tạo thành đại thiên. “Tam thiên” ở đây chỉ ba tầng nhân theo một nghìn, không đơn giản là con số 3.000. Bức tranh còn có núi Sineru, các châu, biển và cõi trời—những yếu tố thuộc vũ trụ quan Ấn Độ cổ.",
+      "science":"Thiên văn học hiện đại nghiên cứu hành tinh, sao, thiên hà, cụm thiên hà và mạng lưới vũ trụ bằng kính thiên văn, quang phổ, mô hình vật lý và quan sát có thể kiểm tra độc lập. Galileo, Hubble và James Webb thuộc lịch sử quan sát ấy, không phải phần tiếp nối của mô hình kinh điển.",
+      "similarities":"Cả hai bức tranh đều mời con người bước ra khỏi ý nghĩ rằng bầu trời nhìn thấy bằng mắt là toàn bộ vũ trụ.",
+      "differences":"Một bên là vũ trụ quan tôn giáo cổ đại; một bên là mô hình vật lý được sửa đổi theo dữ liệu. Đơn vị, địa lý, phương pháp và mục tiêu giải thích không tương đương.",
+      "misconception":"Kinh văn không mô tả thiên hà bằng hấp dẫn học hiện đại, không đưa ra quang phổ hay khoảng cách, và không tiên đoán Galileo, Hubble hoặc Webb.",
+      "confidence":[["Nguồn lịch sử","Mạnh"],["Bằng chứng thiên văn","Mạnh"],["Tương đồng khái niệm","Giới hạn"],["Tương đương khoa học","Chưa được thiết lập"]],
+      "timeline":[["Ấn Độ cổ đại","Vũ trụ nhiều tầng trong kinh điển"],["1609–1612","Galileo hướng kính thiên văn lên trời"],["1923–1929","Hubble cho thấy Andromeda nằm ngoài Ngân Hà"],["07/2022","Những ảnh khoa học đầu tiên của Webb"],["Hiện nay","Vũ trụ có cấu trúc và luôn tiến hóa"]],
+      "reflection":"Khi hai ý tưởng trông giống nhau, điều gì giúp bạn nhận ra một hiểu biết chung hay chỉ là một mô thức quen mắt?",
+      "practice":"Tối nay, hãy nhìn một điểm sáng trên trời. Viết một câu về điều bạn thực sự quan sát và một câu về điều bạn tưởng tượng. Giữ hai câu riêng biệt.",
+      "discussion":"Một vũ trụ quan cổ có thể còn ý nghĩa triết học khi bức tranh vật lý của nó khác khoa học hiện đại không?",
+      "sources":[["AN 3.80 — Cūḷanikā Sutta","SuttaCentral · translation by Bhikkhu Sujato","https://suttacentral.net/an3.80/en/sujato"],["Galaxy Basics and Large-Scale Structures","NASA Science","https://science.nasa.gov/universe/galaxies/"],["Edwin Hubble","NASA Science","https://science.nasa.gov/people/edwin-hubble/"],["Webb’s First Images","NASA Science","https://science.nasa.gov/mission/webb/webbs-first-images/"]]
+    },
+    {
+      "id":"water","slug":"sinh-mang-trong-mot-chen-nuoc","number":"02","category":"Quan sát cổ xưa, tiếng vọng hiện đại","title":"Sinh Mạng Trong Một Chén Nước","subtitle":"Nước trong có thật sự trống rỗng?","readingTime":"10 phút đọc","difficulty":"Nền tảng",
+      "opening":"Sau một quãng đường dài, một vị tu sĩ dừng bên giếng. Nước trông trong, nhưng Luật tạng không cho phép vẻ ngoài quyết định mọi chuyện. Mối quan tâm trước hết là đạo đức: nếu có sinh vật trong nước, làm sao đáp ứng nhu cầu mà tránh gây hại bất cẩn?",
+      "buddhist":"Luật tạng đề cập đến nước được biết là có sinh vật và cho phép dùng dụng cụ lọc. Phạm trù cổ là “chúng sinh”, không phải “vi sinh vật” theo sinh học hiện đại. Một số giải thích truyền thống nói đến những sinh vật có thể nhận thấy bằng mắt.",
+      "science":"Nước chưa xử lý có thể chứa vi khuẩn, ký sinh trùng và các tác nhân khác; loại và lượng phụ thuộc nguồn nước, môi trường, xử lý và cách lấy mẫu. Kính hiển vi chỉ cho thấy những gì phù hợp với độ phóng đại và kỹ thuật chuẩn bị. Nước máy được quản lý không nên bị mô tả như mọi mẫu nước tự nhiên.",
+      "similarities":"Cả giới luật và y tế hiện đại đều nhắc rằng vẻ trong suốt không đủ để kết luận nước không có sự sống hay không có nguy cơ.",
+      "differences":"Giới luật hướng đến hành vi không làm hại. Vi sinh học phân loại, quan sát và kiểm nghiệm sinh vật bằng phương pháp hiện đại.",
+      "misconception":"Kinh văn không mô tả vi khuẩn bằng sinh học hiện đại và không cho phép khẳng định một con số sinh vật cố định trong mỗi chén nước.",
+      "confidence":[["Nguồn Luật tạng","Mạnh"],["Vi sinh học nước","Mạnh"],["Tương đồng","Giới hạn"],["“Đức Phật phát hiện vi khuẩn”","Không có cơ sở"]],
+      "timeline":[["Mắt thường","Nhận thấy màu và độ đục"],["10×","Thấy chi tiết lơ lửng lớn hơn"],["100×","Một số sự sống hiển vi lớn có thể hiện ra"],["1.000×","Một số tế bào và vi khuẩn có thể quan sát trong điều kiện phù hợp"]],
+      "reflection":"Có khi nào bạn đã xem điều không nhìn thấy là điều không tồn tại?",
+      "practice":"Quan sát một ly nước dưới ánh sáng. Chỉ ghi điều mắt thấy. Sau đó ghi riêng điều bạn suy đoán. Đừng uống nước chưa rõ độ an toàn.",
+      "discussion":"Sự cẩn trọng với sự sống không nhìn thấy có thể thay đổi cách ta dùng nước và chăm sóc môi trường ra sao?",
+      "sources":[["Pārivāra 1.1 — section on living beings","SuttaCentral · translation by Bhikkhu Brahmali","https://suttacentral.net/pli-tv-pvr1.1/en/brahmali"],["Water strainers and Pācittiya 62","The Buddhist Monastic Code · Ṭhānissaro Bhikkhu","https://www.dhammatalks.org/vinaya/bmc/Section0022.html"],["Germs That Can Contaminate Tap Water","U.S. Centers for Disease Control and Prevention","https://www.cdc.gov/drinking-water/causes/germs-that-can-contaminate-tap-water.html"],["Drinking-water fact sheet","World Health Organization","https://www.who.int/news-room/fact-sheets/detail/drinking-water"]]
+    },
+    {
+      "id":"impermanence","slug":"vo-thuong","number":"03","category":"Phật học và khoa học","title":"Vô Thường (Anicca)","subtitle":"Mọi pháp hữu vi đều đổi thay.","readingTime":"11 phút đọc","difficulty":"Nền tảng",
+      "opening":"Một ngôi sao ra đời, sống qua những khoảng thời gian vượt sức tưởng tượng rồi biến đổi. Vật chất từ các thế hệ sao tham gia vào hành tinh, đất, cây và thân người qua vô số con đường. Câu chuyện ấy không phải một đường thẳng; nó nhắc rằng không hình thái nào đứng yên.",
+      "buddhist":"Vô thường là dấu ấn của các pháp hữu vi: thân, cảm thọ, tri giác và những trạng thái tâm đều sinh rồi đổi. Đức Phật dạy vô thường không chỉ để mô tả biến đổi, mà để nhận ra vì sao bám chấp vào điều đổi thay dẫn đến bất an và khổ.",
+      "science":"Sao tiến hóa, tế bào thay đổi, cơ thể già đi, khí hậu biến chuyển và quần thể sinh vật tiến hóa qua nhiều thế hệ. Mỗi lĩnh vực dùng thang thời gian, cơ chế và bằng chứng riêng.",
+      "similarities":"Cả hai đều chống lại trực giác rằng sự vật có một trạng thái cố định mãi mãi.",
+      "differences":"Khoa học nghiên cứu cơ chế của biến đổi vật lý và sinh học. Phật học khảo sát kinh nghiệm, bám chấp và con đường bớt khổ trước những gì không thể giữ nguyên.",
+      "misconception":"Vô thường không có nghĩa mọi thứ biến mất ngay lập tức, cũng không phải lý do để thờ ơ trước mất mát hay biến đổi khí hậu.",
+      "confidence":[["Nguồn Phật học","Mạnh"],["Bằng chứng khoa học về biến đổi","Mạnh"],["Tiếng vọng khái niệm","Vừa phải"],["Hai truyền thống đồng nhất","Không"]],
+      "timeline":[["Sinh thành","Điều kiện hội đủ và một hình thái xuất hiện"],["Tiếp diễn","Hệ thống thay đổi trong khi vẫn được gọi bằng một tên"],["Chuyển biến","Những điều kiện mới làm đổi hướng"],["Tan rã","Cấu trúc cũ không còn duy trì như trước"]],
+      "reflection":"Bạn đang mong điều gì trong đời mình phải mãi không thay đổi?",
+      "practice":"Hôm nay quan sát năm thay đổi: ánh sáng trong phòng, một âm thanh, một cảm giác cơ thể, cường độ của một cảm xúc và một chiếc lá hoặc cây sau mưa.",
+      "discussion":"Vô thường đã dạy bạn điều gì mà không biến mất mát của người khác thành một bài học dành cho họ?",
+      "sources":[["Dhammapada 277 — Impermanence","SuttaCentral · translation by Bhikkhu Sujato","https://suttacentral.net/dhp277/en/sujato"],["SN 22.45 — Impermanent","SuttaCentral · translation by Bhikkhu Bodhi","https://suttacentral.net/sn22.45/en/bodhi"],["Stars: Birth, Life, and Death","NASA Science","https://science.nasa.gov/universe/stars/"],["The Effects of Climate Change","NASA Science","https://science.nasa.gov/climate-change/effects/"]]
+    },
+    {
+      "id":"dependent","slug":"duyen-khoi","number":"04","category":"Phật học và khoa học","title":"Duyên Khởi","subtitle":"Không gì tự mình hiện hữu.","readingTime":"13 phút đọc","difficulty":"Trung cấp",
+      "opening":"Một hạt giống nằm trong đất tối. Mưa đến, nấm trao đổi dưỡng chất quanh rễ, ánh sáng chạm lá non. Không một điều kiện riêng lẻ nào là khu rừng; cũng không có cái cây tự đứng ngoài mọi điều kiện.",
+      "buddhist":"Duyên khởi không chỉ nói “mọi thứ liên quan đến nhau”. Giáo lý khảo sát những điều kiện cụ thể khiến khổ đau sinh khởi và chấm dứt. Công thức “cái này có nên cái kia có; cái này sinh nên cái kia sinh” đi cùng chiều đoạn diệt của tiến trình.",
+      "science":"Tư duy hệ thống, khoa học mạng lưới, sinh thái học và nghiên cứu hệ phức hợp xem xét tương tác, phản hồi, tính trồi và tác động phi tuyến. Chúng dùng mô hình, quan sát, thí nghiệm và mô phỏng.",
+      "similarities":"Cả hai giúp ta rời cách nhìn một nguyên nhân đơn độc và chú ý đến mạng lưới điều kiện.",
+      "differences":"Khoa học hệ thống không chứa giáo lý Phật học về ái, thủ, khổ hay giải thoát. Ví dụ khu rừng và gia đình chỉ là phép gợi ý để tập nhìn điều kiện.",
+      "misconception":"Duyên khởi không đồng nghĩa với vướng víu lượng tử. Một giáo lý về sự sinh diệt có điều kiện không phải một trạng thái lượng tử chung được kiểm nghiệm trong phòng thí nghiệm.",
+      "confidence":[["Nguồn kinh điển","Mạnh"],["Khoa học hệ thống","Mạnh trong phạm vi riêng"],["Tương đồng","Giới hạn"],["Đồng nhất với vướng víu","Không"]],
+      "timeline":[["Thân","Cảm giác, năng lượng, đói, đau hay mệt"],["Sự kiện","Điều vừa xảy ra trước cảm xúc"],["Diễn giải","Ý nghĩa tâm gán cho sự kiện"],["Lịch sử","Ký ức và thói quen định hình phản ứng"],["Môi trường","Con người và áp lực đang hiện diện"]],
+      "reflection":"Chọn một cảm xúc và lần theo ít nhất năm điều kiện đã góp phần tạo nên nó.",
+      "practice":"Khi một cảm xúc mạnh xuất hiện, nhận biết tiếp xúc, sắc thái dễ chịu hay khó chịu, và dấu hiệu đầu tiên của ham muốn hoặc chống cự.",
+      "discussion":"Một điều kiện nào đã từng làm thay đổi cả hệ thống gia đình, công việc hay đời sống nội tâm của bạn?",
+      "sources":[["SN 12.20 — Conditions","SuttaCentral · translation by Bhikkhu Bodhi","https://suttacentral.net/sn12.20/en/bodhi"],["SN 12.37 — Not Yours","SuttaCentral · translation by Bhikkhu Bodhi","https://suttacentral.net/sn12.37/en/bodhi"],["Systems Biology","NIH Intramural Research Program","https://irp.nih.gov/our-research/scientific-focus-areas/systems-biology"],["Quantum Entanglement","Caltech Science Exchange","https://scienceexchange.caltech.edu/topics/quantum-science-explained/entanglement"]]
+    },
+    {
+      "id":"entanglement","slug":"vuong-viu-luong-tu-va-duyen-khoi","number":"05","category":"Đối thoại lượng tử","title":"Vướng Víu Lượng Tử và Duyên Khởi","subtitle":"Một tương quan vật lý không phải kết nối tâm linh.","readingTime":"14 phút đọc","difficulty":"Trung cấp",
+      "opening":"Hai hạt được chuẩn bị trong một trạng thái lượng tử chung rồi đi về hai phía. Khi nhiều phép đo được thực hiện với các cách đặt máy khác nhau, kết quả cho thấy những tương quan mà mô hình biến ẩn cục bộ không thể giải thích.",
+      "buddhist":"Duyên khởi nói về các tiến trình sinh và diệt tùy điều kiện, đặc biệt là tiến trình của khổ đau. Nó được học qua kinh điển, suy tư, đạo đức và thực hành quán chiếu.",
+      "science":"Vướng víu là tính chất của một trạng thái lượng tử chung: không thể gán cho mỗi phần một trạng thái độc lập đầy đủ. Các kiểm nghiệm bất đẳng thức Bell, cùng công trình của Clauser, Aspect và Zeilinger được Nobel Vật lý 2022 ghi nhận, hỗ trợ những dự đoán lượng tử.",
+      "similarities":"Cả hai làm lung lay hình ảnh những thực thể hoàn toàn tách biệt, tự mang mọi thuộc tính mà không cần quan hệ.",
+      "differences":"Vướng víu là khái niệm toán học và vật lý cho những hệ được chuẩn bị cụ thể. Duyên khởi là giáo lý về điều kiện, khổ và sự chấm dứt khổ. Chúng khác miền, phương pháp, bằng chứng và mục tiêu.",
+      "misconception":"Vướng víu không cho phép gửi thông điệp nhanh hơn ánh sáng, không phải giao tiếp tâm linh và không chứng minh một ý thức phổ quát.",
+      "confidence":[["Kiểm nghiệm Bell","Mạnh"],["Nguồn duyên khởi","Mạnh"],["Tương đồng triết học","Giới hạn"],["Kết nối tâm linh","Không có bằng chứng"]],
+      "timeline":[["1935","Einstein, Podolsky và Rosen nêu nghịch lý EPR"],["1964","John Bell đề xuất bất đẳng thức có thể kiểm nghiệm"],["1970–2010s","Nhiều thế hệ thí nghiệm thu hẹp kẽ hở"],["2022","Nobel Vật lý ghi nhận Clauser, Aspect và Zeilinger"]],
+      "reflection":"Một mối quan hệ có luôn đòi hỏi tiếp xúc vật lý trực tiếp không? Câu trả lời có thay đổi theo loại quan hệ không?",
+      "practice":"Chọn một mối quan hệ trong đời. Ghi điều kiện nuôi dưỡng nó, điều kiện làm nó yếu đi và phần trách nhiệm thực tế của bạn.",
+      "discussion":"Làm sao dùng từ “liên hệ” mà không trộn lẫn quan hệ con người với tương quan lượng tử?",
+      "sources":[["The Nobel Prize in Physics 2022","Nobel Prize Outreach","https://www.nobelprize.org/prizes/physics/2022/summary/"],["A strong loophole-free test of local realism","National Institute of Standards and Technology","https://www.nist.gov/publications/strong-loophole-free-test-local-realism"],["SN 12.20 — Conditions","SuttaCentral · translation by Bhikkhu Bodhi","https://suttacentral.net/sn12.20/en/bodhi"]]
+    },
+    {
+      "id":"superposition","slug":"chong-chap-luong-tu-va-tu-duy-bat-nhi","number":"06","category":"Đối thoại lượng tử","title":"Chồng Chập Lượng Tử và Tư Duy Bất Nhị","subtitle":"Hình ảnh tương tự, công việc khác nhau.","readingTime":"13 phút đọc","difficulty":"Trung cấp",
+      "opening":"Trước phép đo, hàm sóng biểu diễn một trạng thái lượng tử có thể gồm nhiều thành phần với biên độ và pha. Đây không phải danh sách những lựa chọn bí mật mà hạt đã chọn sẵn; các thành phần có thể giao thoa.",
+      "buddhist":"“Bất nhị” là tên gọi cho nhiều cách tiếp cận triết học và quán chiếu chất vấn những đối lập cứng nhắc, sự phân chia tự có hoặc hai cực tồn tại và không tồn tại. Các truyền thống không dùng thuật ngữ này theo một nghĩa duy nhất.",
+      "science":"Hàm sóng là đối tượng toán học dùng để biểu diễn trạng thái và dự đoán xác suất phép đo. Phép đo ghép hệ với thiết bị trong một cơ sở đo; một lần thử ghi một kết quả, nhiều lần thử cho thấy phân bố xác suất.",
+      "similarities":"Cả hai đôi khi dùng ngôn ngữ khiến cách phân đôi thường ngày trở nên không đủ.",
+      "differences":"Chồng chập là cấu trúc toán học có biên độ, pha và dự đoán kiểm nghiệm được. Tư duy bất nhị thuộc triết học và thực hành quán chiếu.",
+      "misconception":"Thiền không tạo ra trạng thái chồng chập lượng tử có kiểm soát cho não hay cơ thể. “Vừa thế này vừa thế kia” trong lời nói thường ngày không tự động là chồng chập.",
+      "confidence":[["Lý thuyết và thí nghiệm lượng tử","Mạnh"],["Nguồn triết học Phật giáo","Phụ thuộc truyền thống"],["Tương đồng ngôn ngữ","Giới hạn"],["Đồng nhất khái niệm","Không"]],
+      "timeline":[["Hàm sóng","Mô tả trạng thái"],["Các khả năng","Biên độ và pha có thể giao thoa"],["Phép đo","Đặt một câu hỏi vật lý qua thiết bị"],["Kết quả","Ghi nhận một kết quả cụ thể"]],
+      "reflection":"Ta có thể bớt mắc kẹt trong một cặp đối lập mà vẫn giữ sự chính xác cần thiết không?",
+      "practice":"Khi gặp một lựa chọn tưởng như chỉ có hai phía, hãy viết điều mỗi phía nhìn thấy đúng và điều mỗi phía bỏ sót. Đây là bài tập suy tư, không phải thí nghiệm lượng tử.",
+      "discussion":"Khi nào ngôn ngữ “cả hai” giúp ta hiểu sâu hơn, và khi nào nó che mờ một khác biệt thật?",
+      "sources":[["Quantum Computing Explained","National Institute of Standards and Technology","https://www.nist.gov/quantum-information-science/quantum-computing-explained"],["Superposition with Qiskit","IBM Quantum Learning","https://quantum.cloud.ibm.com/learning/en/modules/quantum-mechanics/superposition-with-qiskit"],["SN 12.15 — Kaccānagotta","SuttaCentral · translation by Bhikkhu Bodhi","https://suttacentral.net/sn12.15/en/bodhi"]]
+    },
+    {
+      "id":"measurement","slug":"phep-do-luong-tu-va-chanh-niem","number":"07","category":"Đối thoại lượng tử","title":"Phép Đo Lượng Tử và Chánh Niệm","subtitle":"Người quan sát không nhất thiết là ý thức.","readingTime":"9 phút đọc","difficulty":"Cần biên tập khoa học",
+      "opening":"Trong phòng thí nghiệm, “quan sát” có thể là một photon chạm bộ dò, một nguyên tử tương tác với thiết bị hoặc một tín hiệu được ghi lại trước khi bất kỳ ai xem dữ liệu.",
+      "buddhist":"Chánh niệm là một thực hành chú tâm có bối cảnh đạo đức và mục tiêu hiểu rõ kinh nghiệm, thân, cảm thọ và tâm. Nó không phải một bộ phận của thiết bị đo lượng tử.",
+      "science":"Trong cơ học lượng tử, phép đo là tương tác vật lý được mô hình hóa để liên hệ trạng thái với kết quả có thể ghi nhận. Cách diễn giải chính xác về bài toán phép đo vẫn là chủ đề tranh luận; không nên lấp khoảng trống đó bằng một khẳng định về ý thức.",
+      "similarities":"Cả hai đều khiến ta hỏi điều gì được ghi nhận, bằng cách nào và trong điều kiện nào.",
+      "differences":"Chánh niệm khảo sát kinh nghiệm sống và sự chú tâm. Phép đo lượng tử thuộc mô hình vật lý, thiết bị, dữ liệu và dự đoán xác suất.",
+      "misconception":"“Observer” trong vật lý không tự động có nghĩa là tâm người. Không có cơ sở ở đây để nói ý thức làm sụp đổ hàm sóng hoặc tạo ra thực tại.",
+      "confidence":[["Khái niệm phép đo","Mạnh ở mức nhập môn"],["Diễn giải bài toán phép đo","Còn tranh luận"],["Nguồn chánh niệm","Cần bổ sung bản dịch được duyệt"],["Ý thức điều khiển kết quả","Không được hỗ trợ"]],
+      "timeline":[["Chuẩn bị","Tạo điều kiện ban đầu cho hệ"],["Tương tác","Hệ ghép với thiết bị hoặc môi trường"],["Ghi nhận","Thiết bị lưu một kết quả"],["Diễn giải","Con người phân tích dữ liệu và lý thuyết"]],
+      "reflection":"Sự chú ý của bạn thay đổi trải nghiệm thế nào, và điều đó khác ra sao với việc thay đổi một hệ vật lý bằng tương tác?",
+      "practice":"Trong ba phút, ghi nhận âm thanh đến và đi mà không tìm cách điều khiển chúng. Đừng gọi đây là thí nghiệm lượng tử; đây là thực hành chú tâm.",
+      "discussion":"Vì sao từ “người quan sát” dễ khiến ý thức bị đưa vào một lý thuyết vật lý quá sớm?",
+      "sources":[]
+    },
+    {
+      "id":"vacuum","slug":"tanh-khong-va-chan-khong-luong-tu","number":"08","category":"Đối thoại lượng tử","title":"Tánh Không và Chân Không Lượng Tử","subtitle":"Không có tự tính không có nghĩa là không tồn tại.","readingTime":"14 phút đọc","difficulty":"Nâng cao",
+      "opening":"Một chiếc chén có thể “không” nước nhưng vẫn có đất, nhiệt của người thợ, hình dạng và công dụng. Trong Phật học, Tánh Không không chỉ tên một khoảng trống vật lý; nó chất vấn ý niệm rằng sự vật có bản chất độc lập, tự tồn.",
+      "buddhist":"Śūnyatā được trình bày khác nhau giữa các truyền thống. Trong ngữ cảnh Đại thừa, Tánh Không thường chỉ sự vắng mặt của tự tính độc lập; các pháp vẫn hiện hữu quy ước nhờ điều kiện. Vì vậy Tánh Không không phải hư vô luận.",
+      "science":"Trong lý thuyết trường lượng tử, chân không là trạng thái năng lượng thấp nhất của một lý thuyết hay trường trong điều kiện xác định. Nó là một trạng thái vật lý được mô tả bằng toán học, không đơn giản là “không có gì”.",
+      "similarities":"Cả hai khiến hình ảnh một khoảng trống hoàn toàn không có đặc tính trở nên không đủ.",
+      "differences":"Tánh Không là phân tích triết học và quán chiếu về cách các pháp tồn tại. Chân không lượng tử là trạng thái vật lý trong lý thuyết trường.",
+      "misconception":"Chân không lượng tử không phải Tánh Không. Không khái niệm nào ở đây chứng minh khái niệm kia, và Tánh Không không có nghĩa mọi thứ không tồn tại.",
+      "confidence":[["Nguồn Tánh Không","Mạnh trong văn bản được dẫn"],["Vật lý chân không","Mạnh"],["Tiếng vọng khái niệm","Rất giới hạn"],["Tương đương","Không"]],
+      "timeline":[["Tánh Không","Không có tự tính độc lập"],["Duyên khởi","Hiện hữu nhờ điều kiện"],["Chân không lượng tử","Trạng thái năng lượng thấp nhất"],["Ranh giới","Hai khái niệm thuộc hai miền khác nhau"]],
+      "reflection":"Một sự vật có thể không có tồn tại độc lập mà vẫn không phải là không tồn tại không?",
+      "practice":"Chọn một vật quen thuộc và lần theo vật liệu, người làm, vận chuyển, ngôn ngữ và nhu cầu đã khiến nó có mặt trong đời bạn.",
+      "discussion":"Làm sao nói về “trống rỗng” mà không rơi vào hư vô luận hoặc dùng vật lý như một phép ẩn dụ quá đà?",
+      "sources":[["The Heart Sūtra — Toh 21","84000: Translating the Words of the Buddha","https://84000.co/translation/toh21"],["SN 12.15 — Kaccānagotta","SuttaCentral · translation by Bhikkhu Bodhi","https://suttacentral.net/sn12.15/en/bodhi"],["Building a tower out of the vacuum","APS Physics","https://physics.aps.org/articles/v2/s11"],["The Vacuum: Is Empty Space Really Empty?","Fermilab · Connecting Quarks with the Cosmos","https://www.fnal.gov/pub/max/pdfs/Connecting%20Quarks%20with%20the%20Cosmos.pdf"]]
+    }
+  ],
+  "ui": {
+    "modesTitle":"Ba lăng kính đọc","modeHint":"Mỗi chuyên đề đều có đủ ba lăng kính. Hãy chọn lối vào phù hợp nhất với bạn.",
+    "contents":"Mục lục khám phá","story":"Câu chuyện mở đầu","buddhist":"Góc nhìn Phật học","science":"Góc nhìn khoa học",
+    "similarities":"Điểm tương đồng","differences":"Khác biệt quan trọng","misconception":"Điều dễ hiểu sai",
+    "confidence":"Mức độ bằng chứng và tin cậy","timeline":"Dòng thời gian và lộ trình khái niệm",
+    "reflection":"Suy ngẫm","practice":"Thực hành","discussion":"Thảo luận cộng đồng","sources":"Nguồn tham khảo",
+    "openSources":"Mở nguồn","noSources":"Chuyên đề này cần được biên tập viên khoa học và Phật học bổ sung nguồn được duyệt trước khi xuất bản chính thức.",
+    "educational":"Nội dung giáo dục · Không phải tuyên bố tương đương khoa học","read":"Đọc chuyên đề","back":"Trở lại trang Khám phá",
+    "continue":"Tiếp tục hành trình","continueTitle":"Giữ lại sự kỳ diệu. Làm cho câu hỏi chính xác hơn.",
+    "continueBody":"Hãy xây nền tảng qua lộ trình học, hoặc mang một câu hỏi được trình bày cẩn trọng đến cộng đồng.",
+    "learn":"Xây nền tảng","community":"Tham gia cộng đồng"
+  }
+}

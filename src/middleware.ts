@@ -8,11 +8,7 @@ const localeCookie = "NEXT_LOCALE";
 function preferredLocale(request: NextRequest): Locale {
   const savedLocale = request.cookies.get(localeCookie)?.value;
   if (isLocale(savedLocale)) return savedLocale;
-
-  const acceptedLanguages = request.headers.get("accept-language") ?? "";
-  return /(?:^|,)\s*vi(?:-|;|,|$)/i.test(acceptedLanguages)
-    ? "vi"
-    : defaultLocale;
+  return defaultLocale;
 }
 
 export function middleware(request: NextRequest) {
@@ -43,6 +39,39 @@ export function middleware(request: NextRequest) {
   if (resolved.pathname === "/about") {
     const destination = request.nextUrl.clone();
     destination.pathname = `/${resolved.locale}/about`;
+    const isCanonicalInternalPath = request.nextUrl.pathname === destination.pathname;
+    const response = isCanonicalInternalPath
+      ? NextResponse.next({ request: { headers: requestHeaders } })
+      : NextResponse.rewrite(destination, { request: { headers: requestHeaders } });
+    response.cookies.set(localeCookie, resolved.locale, {
+      maxAge: 60 * 60 * 24 * 365,
+      path: "/",
+      sameSite: "lax",
+    });
+    return response;
+  }
+
+  if (resolved.pathname === "/explore" || resolved.pathname.startsWith("/explore/")) {
+    const destination = request.nextUrl.clone();
+    destination.pathname = `/${resolved.locale}${resolved.pathname}`;
+    const isCanonicalInternalPath = request.nextUrl.pathname === destination.pathname;
+    const response = isCanonicalInternalPath
+      ? NextResponse.next({ request: { headers: requestHeaders } })
+      : NextResponse.rewrite(destination, { request: { headers: requestHeaders } });
+    response.cookies.set(localeCookie, resolved.locale, {
+      maxAge: 60 * 60 * 24 * 365,
+      path: "/",
+      sameSite: "lax",
+    });
+    return response;
+  }
+
+  if (resolved.pathname === "/learn" || resolved.pathname.startsWith("/learn/")) {
+    const destination = request.nextUrl.clone();
+    const internalPath = resolved.pathname === "/learn/doi-thoai"
+      ? "/learn/dialogue"
+      : resolved.pathname;
+    destination.pathname = `/${resolved.locale}${internalPath}`;
     const isCanonicalInternalPath = request.nextUrl.pathname === destination.pathname;
     const response = isCanonicalInternalPath
       ? NextResponse.next({ request: { headers: requestHeaders } })

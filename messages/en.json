@@ -36,6 +36,7 @@
     "emailPlaceholder": "you@example.com"
   },
   "collections": { "resourceCount": "{count, plural, one {# resource} other {# resources}}" },
+  "learn": {"startLesson":"Start lesson","next":"Next lesson","readingTime":"Estimated reading time","difficulty":"Difficulty","bookmark":"Bookmark","reflection":"Reflection","practice":"Practice","quiz":"Quiz"},
   "about": {
     "metadata": {
       "title": "About",
