@@ -155,6 +155,7 @@
 @media(max-width:900px){.anicca-editorial-story{grid-template-columns:1fr;gap:40px}.anicca-scroll-timeline{grid-template-columns:repeat(3,1fr)}.anicca-science-grid{grid-template-columns:1fr 1fr}.anicca-perspectives,.anicca-warnings>div>div,.anicca-ending{grid-template-columns:1fr}.anicca-buddhist article{padding:45px}}
 @media(max-width:600px){.anicca-cinematic-hero{min-height:760px}.anicca-cinematic-hero>.q-shell{padding-bottom:70px}.anicca-cinematic-hero h1{font-size:68px}.anicca-editorial-story,.anicca-timeline-section,.anicca-science,.anicca-buddhist,.anicca-comparison,.anicca-warnings,.anicca-ending{padding-block:72px}.anicca-story-copy>p{font-size:15px;line-height:1.9}.anicca-story-copy blockquote{padding:24px 0;font-size:23px}.anicca-scroll-timeline{grid-template-columns:1fr 1fr}.anicca-science-grid{grid-template-columns:1fr}.anicca-buddhist article{padding:28px}.anicca-buddhist h3{font-size:40px}.anicca-ending>article{min-height:420px;padding:30px}}
 @media(prefers-reduced-motion:reduce){.anicca-particles,.anicca-orbits,.anicca-leaves{animation:none!important}}
+.vi-featured-investigation{scroll-margin-top:120px}.vi-featured-investigation>.explore-museum{min-height:0}.vi-featured-investigation+.vi-featured-investigation{border-top:1px solid #ffffff18}
 
 /* About documentary — Phase 1 */
 .about-documentary{overflow:clip;background:#07111d;color:#f2efe7}
