@@ -5,7 +5,7 @@ import { useState, type ComponentType, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, ChevronDown, ExternalLink } from "lucide-react";
 
-export type InvestigationSource = { kind: string; title: string; publisher: string; note: string; href: string };
+export type InvestigationSource = { kind: string; title: string; publisher: string; note: string; href?: string };
 export type ConfidenceItem = { label: string; value: string; tone: "strong" | "limited" | "none"; detail?: string };
 type Icon = ComponentType<{ className?: string }>;
 
@@ -31,7 +31,7 @@ export function ConfidenceRating({ label, value, tone, detail }: ConfidenceItem)
 
 export function SourceDrawer({ className = "", subtitle, sources, noteTitle = "Editorial boundary", note }: { className?: string; subtitle: string; sources: InvestigationSource[]; noteTitle?: string; note: ReactNode }) {
   const [open, setOpen] = useState(false);
-  return <section className={`source-drawer ${className} q-shell`.trim()}><button onClick={() => setOpen(!open)} aria-expanded={open}><BookOpen/><span><b>Sources & editorial notes</b><small>{subtitle}</small></span><ChevronDown/></button>{open && <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }}>{sources.map(source => <article key={source.title}><span>{source.kind}</span><h3>{source.title}</h3><b>{source.publisher}</b><p>{source.note}</p><a href={source.href} target="_blank" rel="noreferrer">Open source <ExternalLink/></a></article>)}<aside><b>{noteTitle}</b><p>{note}</p></aside></motion.div>}</section>;
+  return <section className={`source-drawer ${className} q-shell`.trim()}><button onClick={() => setOpen(!open)} aria-expanded={open}><BookOpen/><span><b>Sources & editorial notes</b><small>{subtitle}</small></span><ChevronDown/></button>{open && <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }}>{sources.map(source => <article key={source.title}><span>{source.kind}</span><h3>{source.title}</h3><b>{source.publisher}</b><p>{source.note}</p>{source.href&&<a href={source.href} target="_blank" rel="noreferrer">Open source <ExternalLink/></a>}</article>)}<aside><b>{noteTitle}</b><p>{note}</p></aside></motion.div>}</section>;
 }
 
 function ActionCard({ icon: Icon, kicker, title, children, href, linkLabel }: { icon: Icon; kicker: string; title?: ReactNode; children?: ReactNode; href?: string; linkLabel?: string }) {
