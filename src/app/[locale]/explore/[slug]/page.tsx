@@ -5,6 +5,9 @@ import { VietnameseExploreExperience } from "@/components/explore/vietnamese-exp
 import {VietnameseManyWorldsInvestigation} from "@/components/explore/vietnamese-many-worlds-investigation";
 import {VietnameseLifeInWaterInvestigation} from "@/components/explore/vietnamese-life-in-water-investigation";
 import {VietnameseImpermanenceInvestigation} from "@/components/explore/vietnamese-impermanence-investigation";
+import {VietnameseDependentOriginationInvestigation} from "@/components/explore/vietnamese-dependent-origination-investigation";
+import {VietnameseEntanglementInvestigation} from "@/components/explore/vietnamese-entanglement-investigation";
+import {VietnameseSuperpositionInvestigation} from "@/components/explore/vietnamese-superposition-investigation";
 import {loadExploreMarkdown} from "@/lib/explore-markdown";
 import { getEnglishExploreSlug, getVietnameseInvestigation } from "@/lib/explore-localized-content";
 
@@ -28,6 +31,21 @@ export function generateMetadata({params}:Props):Metadata{
     const title=`${article.title} | Qunara`;
     return {title,description:article.title,alternates:{canonical:"/vi/kham-pha/vo-thuong",languages:{en:"/en/explore/impermanence",vi:"/vi/kham-pha/vo-thuong"}},openGraph:{title,description:article.title,locale:"vi_VN",type:"article"},twitter:{card:"summary_large_image",title,description:article.title}};
   }
+  if(params.locale==="vi"&&params.slug==="duyen-khoi"){
+    const article=loadExploreMarkdown("dependent-origination","vi");
+    const title=`${article.title} | Qunara`;
+    return {title,description:article.title,alternates:{canonical:"/vi/kham-pha/duyen-khoi",languages:{en:"/en/explore/dependent-origination",vi:"/vi/kham-pha/duyen-khoi"}},openGraph:{title,description:article.title,locale:"vi_VN",type:"article"},twitter:{card:"summary_large_image",title,description:article.title}};
+  }
+  if(params.locale==="vi"&&params.slug==="vuong-viu-luong-tu-va-duyen-khoi"){
+    const article=loadExploreMarkdown("entanglement","vi");
+    const title=`${article.title} | Qunara`;
+    return {title,description:article.title,alternates:{canonical:"/vi/kham-pha/vuong-viu-luong-tu-va-duyen-khoi",languages:{en:"/en/explore/entanglement",vi:"/vi/kham-pha/vuong-viu-luong-tu-va-duyen-khoi"}},openGraph:{title,description:article.title,locale:"vi_VN",type:"article"},twitter:{card:"summary_large_image",title,description:article.title}};
+  }
+  if(params.locale==="vi"&&params.slug==="chong-chap-luong-tu-va-tu-duy-bat-nhi"){
+    const article=loadExploreMarkdown("superposition","vi");
+    const title=`${article.title} | Qunara`;
+    return {title,description:article.title,alternates:{canonical:"/vi/kham-pha/chong-chap-luong-tu-va-tu-duy-bat-nhi",languages:{en:"/en/explore/superposition",vi:"/vi/kham-pha/chong-chap-luong-tu-va-tu-duy-bat-nhi"}},openGraph:{title,description:article.title,locale:"vi_VN",type:"article"},twitter:{card:"summary_large_image",title,description:article.title}};
+  }
   const item=getVietnameseInvestigation(params.slug);
   if(!item) return {};
   const title=`${item.title} | Qunara`;
@@ -47,5 +65,8 @@ export default function LocalizedExploreInvestigation({params}:Props){
   if(params.slug==="tam-thien-dai-thien-the-gioi") return <VietnameseManyWorldsInvestigation/>;
   if(params.slug==="sinh-mang-trong-mot-chen-nuoc") return <VietnameseLifeInWaterInvestigation/>;
   if(params.slug==="vo-thuong") return <VietnameseImpermanenceInvestigation/>;
+  if(params.slug==="duyen-khoi") return <VietnameseDependentOriginationInvestigation/>;
+  if(params.slug==="vuong-viu-luong-tu-va-duyen-khoi") return <VietnameseEntanglementInvestigation/>;
+  if(params.slug==="chong-chap-luong-tu-va-tu-duy-bat-nhi") return <VietnameseSuperpositionInvestigation/>;
   return <VietnameseExploreExperience slug={params.slug}/>;
 }

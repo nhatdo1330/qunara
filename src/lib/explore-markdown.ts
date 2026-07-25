@@ -60,7 +60,8 @@ export function loadExploreMarkdown(investigation: string, locale: "en" | "vi"):
 }
 
 export function loadExploreMetadata(investigation: string): Record<string, string> {
-  return JSON.parse(readFileSync(join(contentRoot, investigation, "metadata.json"), "utf8")) as Record<string, string>;
+  const source = readFileSync(join(contentRoot, investigation, "metadata.json"), "utf8").trim();
+  return source ? JSON.parse(source) as Record<string, string> : {};
 }
 
 export function loadExploreSources(investigation: string): ExploreSource[] {
