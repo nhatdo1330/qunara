@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { motion, MotionConfig } from "framer-motion";
 import { ArrowDown, ArrowLeft, ArrowRight, BookOpen, CheckCircle2, ChevronDown, Compass, FlaskConical, HelpCircle, MessageCircle, Scale, Sparkles } from "lucide-react";
 
@@ -10,10 +10,10 @@ import { ExploreArtwork } from "./explore-artwork";
 
 const modeIcons = [BookOpen, FlaskConical, Compass];
 
-export function VietnameseExploreExperience({ slug }: { slug?: string }) {
+export function VietnameseExploreExperience({ slug, featured, excludeIds = [] }: { slug?: string; featured?: ReactNode; excludeIds?: string[] }) {
   const [mode, setMode] = useState(0);
   const investigation = slug ? getVietnameseInvestigation(slug) : undefined;
-  const items = investigation ? [investigation] : vietnameseExplore.investigations;
+  const items = investigation ? [investigation] : vietnameseExplore.investigations.filter((item) => !excludeIds.includes(item.id));
   const { hero, editorial, ui } = vietnameseExplore;
 
   return <MotionConfig reducedMotion="user"><div className="explore-museum vi-explore">
@@ -23,7 +23,7 @@ export function VietnameseExploreExperience({ slug }: { slug?: string }) {
     <section className="explore-modes q-shell"><header><p className="q-kicker">{ui.contents}</p><h2>{ui.modesTitle}</h2></header><div className="mode-tabs" role="group" aria-label={ui.modesTitle}>{vietnameseExplore.modes.map((item,index)=>{const Icon=modeIcons[index];return <button key={item.id} aria-pressed={mode===index} className={mode===index?"active":""} onClick={()=>setMode(index)}><Icon/>{item.label}</button>})}</div><motion.article key={mode} initial={{opacity:0,y:12}} animate={{opacity:1,y:0}}><span>{vietnameseExplore.modes[mode].label}</span><h3>{vietnameseExplore.modes[mode].title}</h3><p>{vietnameseExplore.modes[mode].text}</p><small>{ui.modeHint}</small></motion.article></section>
     <nav className="explore-section-nav" aria-label={ui.contents}><div className="q-shell">{vietnameseExplore.investigations.map(item=><a href={`#vi-${item.id}`} key={item.id}><span>{item.number}</span>{item.title}</a>)}</div></nav></>}
 
-    <main id="vi-investigations">{items.map(item=><VietnameseInvestigationSection item={item} detail={Boolean(investigation)} key={item.id}/>)}</main>
+    <main id="vi-investigations">{featured}{items.map(item=><VietnameseInvestigationSection item={item} detail={Boolean(investigation)} key={item.id}/>)}</main>
 
     <section className="explore-phase-cta"><div className="q-shell"><Compass/><p className="q-kicker">{ui.continue}</p><h2>{ui.continueTitle}</h2><p>{ui.continueBody}</p><div><Link href="/learn">{ui.learn}<ArrowRight/></Link><Link href="/community">{ui.community}</Link></div></div></section>
   </div></MotionConfig>;

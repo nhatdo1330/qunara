@@ -1,9 +1,7 @@
-"use client";
-
 import Link from "next/link";
-import { useState, type ComponentType, type ReactNode } from "react";
-import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, ChevronDown, ExternalLink } from "lucide-react";
+import {type ComponentType, type ReactNode} from "react";
+import {ArrowRight} from "lucide-react";
+import {SourceDrawerClient} from "./source-drawer-client";
 
 export type InvestigationSource = { kind: string; title: string; publisher: string; note: string; href?: string };
 export type ConfidenceItem = { label: string; value: string; tone: "strong" | "limited" | "none"; detail?: string };
@@ -30,8 +28,7 @@ export function ConfidenceRatings({ className, kicker = "Evidence & confidence",
 export function ConfidenceRating({ label, value, tone, detail }: ConfidenceItem) { return <div className={`evidence-pill ${tone}`}><div><span>{label}</span><b>{value}</b></div>{detail && <p>{detail}</p>}</div>; }
 
 export function SourceDrawer({ className = "", subtitle, sources, noteTitle = "Editorial boundary", note }: { className?: string; subtitle: string; sources: InvestigationSource[]; noteTitle?: string; note: ReactNode }) {
-  const [open, setOpen] = useState(false);
-  return <section className={`source-drawer ${className} q-shell`.trim()}><button onClick={() => setOpen(!open)} aria-expanded={open}><BookOpen/><span><b>Sources & editorial notes</b><small>{subtitle}</small></span><ChevronDown/></button>{open && <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }}>{sources.map(source => <article key={source.title}><span>{source.kind}</span><h3>{source.title}</h3><b>{source.publisher}</b><p>{source.note}</p>{source.href&&<a href={source.href} target="_blank" rel="noreferrer">Open source <ExternalLink/></a>}</article>)}<aside><b>{noteTitle}</b><p>{note}</p></aside></motion.div>}</section>;
+  return <SourceDrawerClient className={className} subtitle={subtitle} sources={sources} noteTitle={noteTitle} note={note}/>;
 }
 
 function ActionCard({ icon: Icon, kicker, title, children, href, linkLabel }: { icon: Icon; kicker: string; title?: ReactNode; children?: ReactNode; href?: string; linkLabel?: string }) {
