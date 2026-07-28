@@ -1,0 +1,25 @@
+{
+  "id": "buddha-gift",
+  "type": "personal-story",
+  "author": "Qunara Founder",
+  "title": {
+    "en": "The Buddha I Never Expected to Receive",
+    "vi": "Bức tượng Phật mà tôi không bao giờ nghĩ mình sẽ có"
+  },
+  "subtitle": {
+    "en": "A story about conflict, generosity, and the quiet arrival of unexpected conditions",
+    "vi": "Một câu chuyện về bất đồng, lòng rộng lượng và một chữ duyên không thể sắp đặt"
+  },
+  "slug": {
+    "en": "the-buddha-i-never-expected-to-receive",
+    "vi": "buc-tuong-phat-toi-khong-bao-gio-nghi-minh-se-co"
+  },
+  "image": "/images/stories/buddha-gift/buddha-statue.jpg",
+  "readingTime": {
+    "en": "7 min",
+    "vi": "7 phút"
+  },
+  "featured": true,
+  "published": true,
+  "editorialStatus": "reviewed"
+}

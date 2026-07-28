@@ -1,0 +1,8 @@
+{
+  "slug": "wave-function-explorer",
+  "title": "Wave Function Explorer",
+  "description": "Change a probability wave and observe how its shape relates to possible outcomes.",
+  "difficulty": "Intermediate",
+  "explorationTime": "12 min",
+  "visual": "wave"
+}

@@ -15,6 +15,10 @@ export const pathnames = {
     en: "/explore/[slug]",
     vi: "/kham-pha/[slug]",
   },
+  "/stories/[slug]": {
+    en: "/stories/[slug]",
+    vi: "/cau-chuyen/[slug]",
+  },
   "/about": { en: "/about", vi: "/gioi-thieu" },
   "/community": { en: "/community", vi: "/cong-dong" },
   "/practice": "/practice",
@@ -42,12 +46,14 @@ const localizedSegments: Record<Locale, Record<string, string>> = {
     explore: "explore",
     about: "about",
     community: "community",
+    stories: "stories",
   },
   vi: {
     learn: "hoc",
     explore: "kham-pha",
     about: "gioi-thieu",
     community: "cong-dong",
+    stories: "cau-chuyen",
   },
 };
 
@@ -60,6 +66,10 @@ const exploreSlugs = {
   superposition: "chong-chap-luong-tu-va-tu-duy-bat-nhi",
   measurement: "phep-do-luong-tu-va-chanh-niem",
   emptiness: "tanh-khong-va-chan-khong-luong-tu",
+} as const;
+
+const storySlugs = {
+  "the-buddha-i-never-expected-to-receive": "buc-tuong-phat-toi-khong-bao-gio-nghi-minh-se-co",
 } as const;
 
 const learnPaths = {quantum: "vat-ly-luong-tu", buddhism: "phat-hoc"} as const;
@@ -103,6 +113,13 @@ export function localizePathname(pathname: string, locale: Locale): string {
         .find(([english,vietnamese]) => english === segments[1] || vietnamese === segments[1])?.[0] ?? segments[1];
       segments[1] = locale === "vi"
         ? exploreSlugs[englishSlug as keyof typeof exploreSlugs] ?? englishSlug
+        : englishSlug;
+    }
+    if (canonicalSegment === "stories" && segments[1]) {
+      const englishSlug = (Object.entries(storySlugs) as [string,string][])
+        .find(([english,vietnamese]) => english === segments[1] || vietnamese === segments[1])?.[0] ?? segments[1];
+      segments[1] = locale === "vi"
+        ? storySlugs[englishSlug as keyof typeof storySlugs] ?? englishSlug
         : englishSlug;
     }
     if (canonicalSegment === "learn" && segments[1]) {
