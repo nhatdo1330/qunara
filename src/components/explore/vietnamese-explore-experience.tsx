@@ -7,10 +7,12 @@ import { ArrowDown, ArrowLeft, ArrowRight, BookOpen, CheckCircle2, ChevronDown, 
 import { Link } from "@/i18n/navigation";
 import { getVietnameseInvestigation, vietnameseExplore, type VietnameseInvestigation } from "@/lib/explore-localized-content";
 import { ExploreArtwork } from "./explore-artwork";
+import { ExploreDiscoverySections } from "./explore-discovery-sections";
+import type { InteractiveCard, StoryCard } from "@/lib/explore-collections";
 
 const modeIcons = [BookOpen, FlaskConical, Compass];
 
-export function VietnameseExploreExperience({ slug, featured, excludeIds = [] }: { slug?: string; featured?: ReactNode; excludeIds?: string[] }) {
+export function VietnameseExploreExperience({ slug, featured, excludeIds = [], stories = [], interactive = [] }: { slug?: string; featured?: ReactNode; excludeIds?: string[]; stories?: StoryCard[]; interactive?: InteractiveCard[] }) {
   const [mode, setMode] = useState(0);
   const investigation = slug ? getVietnameseInvestigation(slug) : undefined;
   const items = investigation ? [investigation] : vietnameseExplore.investigations.filter((item) => !excludeIds.includes(item.id));
@@ -24,6 +26,8 @@ export function VietnameseExploreExperience({ slug, featured, excludeIds = [] }:
     <nav className="explore-section-nav" aria-label={ui.contents}><div className="q-shell">{vietnameseExplore.investigations.map(item=><a href={`#vi-${item.id}`} key={item.id}><span>{item.number}</span>{item.title}</a>)}</div></nav></>}
 
     <main id="vi-investigations">{featured}{items.map(item=><VietnameseInvestigationSection item={item} detail={Boolean(investigation)} key={item.id}/>)}</main>
+
+    {!investigation&&<ExploreDiscoverySections stories={stories} interactive={interactive} locale="vi"/>}
 
     <section className="explore-phase-cta"><div className="q-shell"><Compass/><p className="q-kicker">{ui.continue}</p><h2>{ui.continueTitle}</h2><p>{ui.continueBody}</p><div><Link href="/learn">{ui.learn}<ArrowRight/></Link><Link href="/community">{ui.community}</Link></div></div></section>
   </div></MotionConfig>;

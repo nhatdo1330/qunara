@@ -1,0 +1,8 @@
+{
+  "slug": "bell-experiment-simulator",
+  "title": "Bell Experiment Simulator",
+  "description": "Compare measurement choices and explore the correlations tested in Bell experiments.",
+  "difficulty": "Advanced",
+  "explorationTime": "15 min",
+  "visual": "bell"
+}
