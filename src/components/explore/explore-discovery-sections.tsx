@@ -31,7 +31,7 @@ const copy = {
 export function ExploreDiscoverySections({ stories, interactive, locale }: Props) {
   const labels = locale === "vi" ? copy.vi : copy.en;
   return <div className="explore-discovery">
-    <section className="explore-collection q-shell" aria-labelledby="stories-heading">
+    <section className="explore-collection q-shell" id="stories" aria-labelledby="stories-heading">
       <header className="explore-collection-heading">
         <p className="q-kicker">Editorial narratives</p>
         <h2 id="stories-heading">{labels.stories}</h2>
