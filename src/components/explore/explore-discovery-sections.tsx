@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Clock3, Gauge } from "lucide-react";
 
 import type { InteractiveCard, StoryCard } from "@/lib/explore-collections";
@@ -38,8 +39,8 @@ export function ExploreDiscoverySections({ stories, interactive, locale }: Props
         <p>{labels.storiesSubtitle}</p>
       </header>
       <div className="explore-card-grid">
-        {stories.map((story) => <Link className="story-card" href={`/${locale}/stories/${story.slug}`} key={story.slug}>
-          <CollectionArtwork visual={story.visual} kind="story"/>
+        {stories.map((story) => <Link className="story-card" href={`/${locale}/${locale === "vi" ? "cau-chuyen" : "stories"}/${story.slug}`} key={story.slug}>
+          {story.image ? <div className="story-card-photo"><Image src={story.image} alt={story.title} fill sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"/></div> : <CollectionArtwork visual={story.visual} kind="story"/>}
           <div className="story-card-copy">
             <span>{story.category}</span>
             <h3>{story.title}</h3>

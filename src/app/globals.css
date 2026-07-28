@@ -152,6 +152,7 @@
 .story-card:hover,.interactive-card:hover{transform:translateY(-5px);border-color:#d5ac4d66;background:#0f1e2c}
 .story-card:focus-visible,.interactive-card:focus-visible{outline:3px solid #f0cc70;outline-offset:5px}
 .collection-artwork{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:cover}
+.story-card-photo{position:relative;aspect-ratio:8/5;overflow:hidden;background:#17130f}.story-card-photo img{object-fit:cover;object-position:center 47%}
 .story-card-copy,.interactive-card-copy{display:flex;flex:1;flex-direction:column;padding:28px}
 .story-card-copy>span{color:#d5ac4d;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.14em}
 .story-card h3,.interactive-card h3{margin-top:17px;font:400 28px/1.12 Georgia,serif;letter-spacing:-.02em}
