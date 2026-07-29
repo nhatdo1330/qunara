@@ -14,7 +14,7 @@ editorialStatus: "reviewed"
 
 Bức tượng Phật mà tôi không bao giờ nghĩ mình sẽ có
 Đôi khi, món quà quý giá nhất lại đến từ chính người mà ta ít ngờ tới nhất.
-Hơn hai mươi lăm năm làm trong ngành công nghệ, tôi đã tham gia nhiều dự án khác nhau tại Adobe. Mỗi dự án đều mang đến những bài học mới, không chỉ về kỹ thuật, mà còn về con người.
+Trong nhiều năm tôi đã tham gia nhiều dự án khác nhau tại Adobe. Mỗi dự án đều mang đến những bài học mới, không chỉ về kỹ thuật, mà còn về con người.
 Có một dự án để lại trong tôi một ký ức rất đặc biệt.
 Trong nhóm có một anh đồng nghiệp người Việt, lớn hơn tôi khá nhiều tuổi. Ngay từ những ngày đầu làm việc cùng nhau, chúng tôi gần như không bao giờ thống nhất quan điểm. Những cuộc họp thường xuyên trở thành những cuộc tranh luận căng thẳng. Có lúc, tôi bước ra khỏi phòng họp chỉ với một suy nghĩ:
 "Mình thật sự không muốn tranh luận với anh ấy thêm lần nào nữa."
