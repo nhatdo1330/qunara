@@ -10,3 +10,5 @@ wav("river",10,(t)=>noise()*.055+Math.sin(t*2*Math.PI*130)*.008);
 wav("night",12,(t)=>noise()*.018+(Math.sin(t*2*Math.PI*2200)*Math.max(0,Math.sin(t*.9))*0.008));
 wav("temple",12,(t)=>{const p=t%6;return p<5?(Math.sin(p*2*Math.PI*220)+.45*Math.sin(p*2*Math.PI*441))*Math.exp(-p*1.4)*.22:0});
 wav("bell",4,(t)=>(Math.sin(t*2*Math.PI*440)+.5*Math.sin(t*2*Math.PI*883)+.2*Math.sin(t*2*Math.PI*1321))*Math.exp(-t*1.6)*.25);
+wav("air-tone",2,(t)=>(Math.sin(t*2*Math.PI*740)+.35*Math.sin(t*2*Math.PI*1110))*Math.sin(Math.PI*Math.min(1,t/.4))*Math.exp(-t*2.2)*.08);
+wav("ripple",2,(t)=>Math.sin(t*2*Math.PI*(250-t*45))*Math.exp(-t*2.4)*.12+noise()*.008*Math.exp(-t*3));
