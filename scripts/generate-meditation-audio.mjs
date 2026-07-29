@@ -12,3 +12,8 @@ wav("temple",12,(t)=>{const p=t%6;return p<5?(Math.sin(p*2*Math.PI*220)+.45*Math
 wav("bell",4,(t)=>(Math.sin(t*2*Math.PI*440)+.5*Math.sin(t*2*Math.PI*883)+.2*Math.sin(t*2*Math.PI*1321))*Math.exp(-t*1.6)*.25);
 wav("air-tone",2,(t)=>(Math.sin(t*2*Math.PI*740)+.35*Math.sin(t*2*Math.PI*1110))*Math.sin(Math.PI*Math.min(1,t/.4))*Math.exp(-t*2.2)*.08);
 wav("ripple",2,(t)=>Math.sin(t*2*Math.PI*(250-t*45))*Math.exp(-t*2.4)*.12+noise()*.008*Math.exp(-t*3));
+wav("wind",14,(t)=>noise()*(.055+.025*Math.sin(t*.31)));
+wav("insects",14,(t)=>noise()*.012+Math.sin(t*2*Math.PI*(1750+120*Math.sin(t)))*Math.max(0,Math.sin(t*1.7))*.025);
+wav("bowl",7,(t)=>(Math.sin(t*2*Math.PI*196)+.45*Math.sin(t*2*Math.PI*392)+.18*Math.sin(t*2*Math.PI*588))*Math.exp(-t*.58)*.28);
+wav("piano",16,(t)=>{const notes=[261.63,329.63,392,493.88],slot=Math.floor(t/4)%4,p=t%4;return(Math.sin(p*2*Math.PI*notes[slot])+.3*Math.sin(p*2*Math.PI*notes[slot]*2))*Math.exp(-p*.8)*.11});
+wav("choir",16,(t)=>(Math.sin(t*2*Math.PI*130.81)+.55*Math.sin(t*2*Math.PI*196)+.35*Math.sin(t*2*Math.PI*261.63))*(.65+.2*Math.sin(t*.4))*.035);
