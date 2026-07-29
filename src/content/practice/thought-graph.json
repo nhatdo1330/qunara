@@ -1,0 +1,4205 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "work-surface",
+      "label": {
+        "en": "Work",
+        "vi": "Công việc"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "meeting-echo",
+        "deadline-root",
+        "family-opening",
+        "ending-release"
+      ]
+    },
+    {
+      "id": "work-echo",
+      "label": {
+        "en": "Work",
+        "vi": "Công việc"
+      },
+      "tone": "beauty",
+      "connections": [
+        "meeting-root",
+        "deadline-opening",
+        "family-release",
+        "ending-surface"
+      ]
+    },
+    {
+      "id": "work-root",
+      "label": {
+        "en": "Work",
+        "vi": "Công việc"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "meeting-opening",
+        "deadline-release",
+        "family-surface",
+        "ending-echo"
+      ]
+    },
+    {
+      "id": "work-opening",
+      "label": {
+        "en": "Work",
+        "vi": "Công việc"
+      },
+      "tone": "possibility",
+      "connections": [
+        "meeting-release",
+        "deadline-surface",
+        "family-echo",
+        "ending-root"
+      ]
+    },
+    {
+      "id": "work-release",
+      "label": {
+        "en": "Work",
+        "vi": "Công việc"
+      },
+      "tone": "release",
+      "connections": [
+        "meeting-surface",
+        "deadline-echo",
+        "family-root",
+        "ending-opening"
+      ]
+    },
+    {
+      "id": "meeting-surface",
+      "label": {
+        "en": "Meeting",
+        "vi": "Cuộc họp"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "deadline-echo",
+        "purpose-root",
+        "parents-opening",
+        "beginning-release"
+      ]
+    },
+    {
+      "id": "meeting-echo",
+      "label": {
+        "en": "Meeting",
+        "vi": "Cuộc họp"
+      },
+      "tone": "beauty",
+      "connections": [
+        "deadline-root",
+        "purpose-opening",
+        "parents-release",
+        "beginning-surface"
+      ]
+    },
+    {
+      "id": "meeting-root",
+      "label": {
+        "en": "Meeting",
+        "vi": "Cuộc họp"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "deadline-opening",
+        "purpose-release",
+        "parents-surface",
+        "beginning-echo"
+      ]
+    },
+    {
+      "id": "meeting-opening",
+      "label": {
+        "en": "Meeting",
+        "vi": "Cuộc họp"
+      },
+      "tone": "possibility",
+      "connections": [
+        "deadline-release",
+        "purpose-surface",
+        "parents-echo",
+        "beginning-root"
+      ]
+    },
+    {
+      "id": "meeting-release",
+      "label": {
+        "en": "Meeting",
+        "vi": "Cuộc họp"
+      },
+      "tone": "release",
+      "connections": [
+        "deadline-surface",
+        "purpose-echo",
+        "parents-root",
+        "beginning-opening"
+      ]
+    },
+    {
+      "id": "deadline-surface",
+      "label": {
+        "en": "Deadline",
+        "vi": "Hạn chót"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "purpose-echo",
+        "pressure-root",
+        "children-opening",
+        "season-release"
+      ]
+    },
+    {
+      "id": "deadline-echo",
+      "label": {
+        "en": "Deadline",
+        "vi": "Hạn chót"
+      },
+      "tone": "beauty",
+      "connections": [
+        "purpose-root",
+        "pressure-opening",
+        "children-release",
+        "season-surface"
+      ]
+    },
+    {
+      "id": "deadline-root",
+      "label": {
+        "en": "Deadline",
+        "vi": "Hạn chót"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "purpose-opening",
+        "pressure-release",
+        "children-surface",
+        "season-echo"
+      ]
+    },
+    {
+      "id": "deadline-opening",
+      "label": {
+        "en": "Deadline",
+        "vi": "Hạn chót"
+      },
+      "tone": "possibility",
+      "connections": [
+        "purpose-release",
+        "pressure-surface",
+        "children-echo",
+        "season-root"
+      ]
+    },
+    {
+      "id": "deadline-release",
+      "label": {
+        "en": "Deadline",
+        "vi": "Hạn chót"
+      },
+      "tone": "release",
+      "connections": [
+        "purpose-surface",
+        "pressure-echo",
+        "children-root",
+        "season-opening"
+      ]
+    },
+    {
+      "id": "purpose-surface",
+      "label": {
+        "en": "Purpose",
+        "vi": "Mục đích"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "pressure-echo",
+        "growth-root",
+        "care-opening",
+        "renewal-release"
+      ]
+    },
+    {
+      "id": "purpose-echo",
+      "label": {
+        "en": "Purpose",
+        "vi": "Mục đích"
+      },
+      "tone": "beauty",
+      "connections": [
+        "pressure-root",
+        "growth-opening",
+        "care-release",
+        "renewal-surface"
+      ]
+    },
+    {
+      "id": "purpose-root",
+      "label": {
+        "en": "Purpose",
+        "vi": "Mục đích"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "pressure-opening",
+        "growth-release",
+        "care-surface",
+        "renewal-echo"
+      ]
+    },
+    {
+      "id": "purpose-opening",
+      "label": {
+        "en": "Purpose",
+        "vi": "Mục đích"
+      },
+      "tone": "possibility",
+      "connections": [
+        "pressure-release",
+        "growth-surface",
+        "care-echo",
+        "renewal-root"
+      ]
+    },
+    {
+      "id": "purpose-release",
+      "label": {
+        "en": "Purpose",
+        "vi": "Mục đích"
+      },
+      "tone": "release",
+      "connections": [
+        "pressure-surface",
+        "growth-echo",
+        "care-root",
+        "renewal-opening"
+      ]
+    },
+    {
+      "id": "pressure-surface",
+      "label": {
+        "en": "Pressure",
+        "vi": "Áp lực"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "growth-echo",
+        "work-root",
+        "belonging-opening",
+        "movement-release"
+      ]
+    },
+    {
+      "id": "pressure-echo",
+      "label": {
+        "en": "Pressure",
+        "vi": "Áp lực"
+      },
+      "tone": "beauty",
+      "connections": [
+        "growth-root",
+        "work-opening",
+        "belonging-release",
+        "movement-surface"
+      ]
+    },
+    {
+      "id": "pressure-root",
+      "label": {
+        "en": "Pressure",
+        "vi": "Áp lực"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "growth-opening",
+        "work-release",
+        "belonging-surface",
+        "movement-echo"
+      ]
+    },
+    {
+      "id": "pressure-opening",
+      "label": {
+        "en": "Pressure",
+        "vi": "Áp lực"
+      },
+      "tone": "possibility",
+      "connections": [
+        "growth-release",
+        "work-surface",
+        "belonging-echo",
+        "movement-root"
+      ]
+    },
+    {
+      "id": "pressure-release",
+      "label": {
+        "en": "Pressure",
+        "vi": "Áp lực"
+      },
+      "tone": "release",
+      "connections": [
+        "growth-surface",
+        "work-echo",
+        "belonging-root",
+        "movement-opening"
+      ]
+    },
+    {
+      "id": "growth-surface",
+      "label": {
+        "en": "Growth",
+        "vi": "Trưởng thành"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "work-echo",
+        "meeting-root",
+        "patience-opening",
+        "change-release"
+      ]
+    },
+    {
+      "id": "growth-echo",
+      "label": {
+        "en": "Growth",
+        "vi": "Trưởng thành"
+      },
+      "tone": "beauty",
+      "connections": [
+        "work-root",
+        "meeting-opening",
+        "patience-release",
+        "change-surface"
+      ]
+    },
+    {
+      "id": "growth-root",
+      "label": {
+        "en": "Growth",
+        "vi": "Trưởng thành"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "work-opening",
+        "meeting-release",
+        "patience-surface",
+        "change-echo"
+      ]
+    },
+    {
+      "id": "growth-opening",
+      "label": {
+        "en": "Growth",
+        "vi": "Trưởng thành"
+      },
+      "tone": "possibility",
+      "connections": [
+        "work-release",
+        "meeting-surface",
+        "patience-echo",
+        "change-root"
+      ]
+    },
+    {
+      "id": "growth-release",
+      "label": {
+        "en": "Growth",
+        "vi": "Trưởng thành"
+      },
+      "tone": "release",
+      "connections": [
+        "work-surface",
+        "meeting-echo",
+        "patience-root",
+        "change-opening"
+      ]
+    },
+    {
+      "id": "family-surface",
+      "label": {
+        "en": "Family",
+        "vi": "Gia đình"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "parents-echo",
+        "children-root",
+        "future-opening",
+        "meeting-release"
+      ]
+    },
+    {
+      "id": "family-echo",
+      "label": {
+        "en": "Family",
+        "vi": "Gia đình"
+      },
+      "tone": "beauty",
+      "connections": [
+        "parents-root",
+        "children-opening",
+        "future-release",
+        "meeting-surface"
+      ]
+    },
+    {
+      "id": "family-root",
+      "label": {
+        "en": "Family",
+        "vi": "Gia đình"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "parents-opening",
+        "children-release",
+        "future-surface",
+        "meeting-echo"
+      ]
+    },
+    {
+      "id": "family-opening",
+      "label": {
+        "en": "Family",
+        "vi": "Gia đình"
+      },
+      "tone": "possibility",
+      "connections": [
+        "parents-release",
+        "children-surface",
+        "future-echo",
+        "meeting-root"
+      ]
+    },
+    {
+      "id": "family-release",
+      "label": {
+        "en": "Family",
+        "vi": "Gia đình"
+      },
+      "tone": "release",
+      "connections": [
+        "parents-surface",
+        "children-echo",
+        "future-root",
+        "meeting-opening"
+      ]
+    },
+    {
+      "id": "parents-surface",
+      "label": {
+        "en": "Parents",
+        "vi": "Cha mẹ"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "children-echo",
+        "care-root",
+        "unknown-opening",
+        "deadline-release"
+      ]
+    },
+    {
+      "id": "parents-echo",
+      "label": {
+        "en": "Parents",
+        "vi": "Cha mẹ"
+      },
+      "tone": "beauty",
+      "connections": [
+        "children-root",
+        "care-opening",
+        "unknown-release",
+        "deadline-surface"
+      ]
+    },
+    {
+      "id": "parents-root",
+      "label": {
+        "en": "Parents",
+        "vi": "Cha mẹ"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "children-opening",
+        "care-release",
+        "unknown-surface",
+        "deadline-echo"
+      ]
+    },
+    {
+      "id": "parents-opening",
+      "label": {
+        "en": "Parents",
+        "vi": "Cha mẹ"
+      },
+      "tone": "possibility",
+      "connections": [
+        "children-release",
+        "care-surface",
+        "unknown-echo",
+        "deadline-root"
+      ]
+    },
+    {
+      "id": "parents-release",
+      "label": {
+        "en": "Parents",
+        "vi": "Cha mẹ"
+      },
+      "tone": "release",
+      "connections": [
+        "children-surface",
+        "care-echo",
+        "unknown-root",
+        "deadline-opening"
+      ]
+    },
+    {
+      "id": "children-surface",
+      "label": {
+        "en": "Children",
+        "vi": "Con cái"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "care-echo",
+        "belonging-root",
+        "choice-opening",
+        "purpose-release"
+      ]
+    },
+    {
+      "id": "children-echo",
+      "label": {
+        "en": "Children",
+        "vi": "Con cái"
+      },
+      "tone": "beauty",
+      "connections": [
+        "care-root",
+        "belonging-opening",
+        "choice-release",
+        "purpose-surface"
+      ]
+    },
+    {
+      "id": "children-root",
+      "label": {
+        "en": "Children",
+        "vi": "Con cái"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "care-opening",
+        "belonging-release",
+        "choice-surface",
+        "purpose-echo"
+      ]
+    },
+    {
+      "id": "children-opening",
+      "label": {
+        "en": "Children",
+        "vi": "Con cái"
+      },
+      "tone": "possibility",
+      "connections": [
+        "care-release",
+        "belonging-surface",
+        "choice-echo",
+        "purpose-root"
+      ]
+    },
+    {
+      "id": "children-release",
+      "label": {
+        "en": "Children",
+        "vi": "Con cái"
+      },
+      "tone": "release",
+      "connections": [
+        "care-surface",
+        "belonging-echo",
+        "choice-root",
+        "purpose-opening"
+      ]
+    },
+    {
+      "id": "care-surface",
+      "label": {
+        "en": "Care",
+        "vi": "Chăm sóc"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "belonging-echo",
+        "patience-root",
+        "possibility-opening",
+        "pressure-release"
+      ]
+    },
+    {
+      "id": "care-echo",
+      "label": {
+        "en": "Care",
+        "vi": "Chăm sóc"
+      },
+      "tone": "beauty",
+      "connections": [
+        "belonging-root",
+        "patience-opening",
+        "possibility-release",
+        "pressure-surface"
+      ]
+    },
+    {
+      "id": "care-root",
+      "label": {
+        "en": "Care",
+        "vi": "Chăm sóc"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "belonging-opening",
+        "patience-release",
+        "possibility-surface",
+        "pressure-echo"
+      ]
+    },
+    {
+      "id": "care-opening",
+      "label": {
+        "en": "Care",
+        "vi": "Chăm sóc"
+      },
+      "tone": "possibility",
+      "connections": [
+        "belonging-release",
+        "patience-surface",
+        "possibility-echo",
+        "pressure-root"
+      ]
+    },
+    {
+      "id": "care-release",
+      "label": {
+        "en": "Care",
+        "vi": "Chăm sóc"
+      },
+      "tone": "release",
+      "connections": [
+        "belonging-surface",
+        "patience-echo",
+        "possibility-root",
+        "pressure-opening"
+      ]
+    },
+    {
+      "id": "belonging-surface",
+      "label": {
+        "en": "Belonging",
+        "vi": "Gắn bó"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "patience-echo",
+        "family-root",
+        "courage-opening",
+        "growth-release"
+      ]
+    },
+    {
+      "id": "belonging-echo",
+      "label": {
+        "en": "Belonging",
+        "vi": "Gắn bó"
+      },
+      "tone": "beauty",
+      "connections": [
+        "patience-root",
+        "family-opening",
+        "courage-release",
+        "growth-surface"
+      ]
+    },
+    {
+      "id": "belonging-root",
+      "label": {
+        "en": "Belonging",
+        "vi": "Gắn bó"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "patience-opening",
+        "family-release",
+        "courage-surface",
+        "growth-echo"
+      ]
+    },
+    {
+      "id": "belonging-opening",
+      "label": {
+        "en": "Belonging",
+        "vi": "Gắn bó"
+      },
+      "tone": "possibility",
+      "connections": [
+        "patience-release",
+        "family-surface",
+        "courage-echo",
+        "growth-root"
+      ]
+    },
+    {
+      "id": "belonging-release",
+      "label": {
+        "en": "Belonging",
+        "vi": "Gắn bó"
+      },
+      "tone": "release",
+      "connections": [
+        "patience-surface",
+        "family-echo",
+        "courage-root",
+        "growth-opening"
+      ]
+    },
+    {
+      "id": "patience-surface",
+      "label": {
+        "en": "Patience",
+        "vi": "Kiên nhẫn"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "family-echo",
+        "parents-root",
+        "trust-opening",
+        "work-release"
+      ]
+    },
+    {
+      "id": "patience-echo",
+      "label": {
+        "en": "Patience",
+        "vi": "Kiên nhẫn"
+      },
+      "tone": "beauty",
+      "connections": [
+        "family-root",
+        "parents-opening",
+        "trust-release",
+        "work-surface"
+      ]
+    },
+    {
+      "id": "patience-root",
+      "label": {
+        "en": "Patience",
+        "vi": "Kiên nhẫn"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "family-opening",
+        "parents-release",
+        "trust-surface",
+        "work-echo"
+      ]
+    },
+    {
+      "id": "patience-opening",
+      "label": {
+        "en": "Patience",
+        "vi": "Kiên nhẫn"
+      },
+      "tone": "possibility",
+      "connections": [
+        "family-release",
+        "parents-surface",
+        "trust-echo",
+        "work-root"
+      ]
+    },
+    {
+      "id": "patience-release",
+      "label": {
+        "en": "Patience",
+        "vi": "Kiên nhẫn"
+      },
+      "tone": "release",
+      "connections": [
+        "family-surface",
+        "parents-echo",
+        "trust-root",
+        "work-opening"
+      ]
+    },
+    {
+      "id": "future-surface",
+      "label": {
+        "en": "Future",
+        "vi": "Tương lai"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "unknown-echo",
+        "choice-root",
+        "money-opening",
+        "parents-release"
+      ]
+    },
+    {
+      "id": "future-echo",
+      "label": {
+        "en": "Future",
+        "vi": "Tương lai"
+      },
+      "tone": "beauty",
+      "connections": [
+        "unknown-root",
+        "choice-opening",
+        "money-release",
+        "parents-surface"
+      ]
+    },
+    {
+      "id": "future-root",
+      "label": {
+        "en": "Future",
+        "vi": "Tương lai"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "unknown-opening",
+        "choice-release",
+        "money-surface",
+        "parents-echo"
+      ]
+    },
+    {
+      "id": "future-opening",
+      "label": {
+        "en": "Future",
+        "vi": "Tương lai"
+      },
+      "tone": "possibility",
+      "connections": [
+        "unknown-release",
+        "choice-surface",
+        "money-echo",
+        "parents-root"
+      ]
+    },
+    {
+      "id": "future-release",
+      "label": {
+        "en": "Future",
+        "vi": "Tương lai"
+      },
+      "tone": "release",
+      "connections": [
+        "unknown-surface",
+        "choice-echo",
+        "money-root",
+        "parents-opening"
+      ]
+    },
+    {
+      "id": "unknown-surface",
+      "label": {
+        "en": "Unknown",
+        "vi": "Điều chưa biết"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "choice-echo",
+        "possibility-root",
+        "security-opening",
+        "children-release"
+      ]
+    },
+    {
+      "id": "unknown-echo",
+      "label": {
+        "en": "Unknown",
+        "vi": "Điều chưa biết"
+      },
+      "tone": "beauty",
+      "connections": [
+        "choice-root",
+        "possibility-opening",
+        "security-release",
+        "children-surface"
+      ]
+    },
+    {
+      "id": "unknown-root",
+      "label": {
+        "en": "Unknown",
+        "vi": "Điều chưa biết"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "choice-opening",
+        "possibility-release",
+        "security-surface",
+        "children-echo"
+      ]
+    },
+    {
+      "id": "unknown-opening",
+      "label": {
+        "en": "Unknown",
+        "vi": "Điều chưa biết"
+      },
+      "tone": "possibility",
+      "connections": [
+        "choice-release",
+        "possibility-surface",
+        "security-echo",
+        "children-root"
+      ]
+    },
+    {
+      "id": "unknown-release",
+      "label": {
+        "en": "Unknown",
+        "vi": "Điều chưa biết"
+      },
+      "tone": "release",
+      "connections": [
+        "choice-surface",
+        "possibility-echo",
+        "security-root",
+        "children-opening"
+      ]
+    },
+    {
+      "id": "choice-surface",
+      "label": {
+        "en": "Choice",
+        "vi": "Lựa chọn"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "possibility-echo",
+        "courage-root",
+        "enough-opening",
+        "care-release"
+      ]
+    },
+    {
+      "id": "choice-echo",
+      "label": {
+        "en": "Choice",
+        "vi": "Lựa chọn"
+      },
+      "tone": "beauty",
+      "connections": [
+        "possibility-root",
+        "courage-opening",
+        "enough-release",
+        "care-surface"
+      ]
+    },
+    {
+      "id": "choice-root",
+      "label": {
+        "en": "Choice",
+        "vi": "Lựa chọn"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "possibility-opening",
+        "courage-release",
+        "enough-surface",
+        "care-echo"
+      ]
+    },
+    {
+      "id": "choice-opening",
+      "label": {
+        "en": "Choice",
+        "vi": "Lựa chọn"
+      },
+      "tone": "possibility",
+      "connections": [
+        "possibility-release",
+        "courage-surface",
+        "enough-echo",
+        "care-root"
+      ]
+    },
+    {
+      "id": "choice-release",
+      "label": {
+        "en": "Choice",
+        "vi": "Lựa chọn"
+      },
+      "tone": "release",
+      "connections": [
+        "possibility-surface",
+        "courage-echo",
+        "enough-root",
+        "care-opening"
+      ]
+    },
+    {
+      "id": "possibility-surface",
+      "label": {
+        "en": "Possibility",
+        "vi": "Khả năng"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "courage-echo",
+        "trust-root",
+        "giving-opening",
+        "belonging-release"
+      ]
+    },
+    {
+      "id": "possibility-echo",
+      "label": {
+        "en": "Possibility",
+        "vi": "Khả năng"
+      },
+      "tone": "beauty",
+      "connections": [
+        "courage-root",
+        "trust-opening",
+        "giving-release",
+        "belonging-surface"
+      ]
+    },
+    {
+      "id": "possibility-root",
+      "label": {
+        "en": "Possibility",
+        "vi": "Khả năng"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "courage-opening",
+        "trust-release",
+        "giving-surface",
+        "belonging-echo"
+      ]
+    },
+    {
+      "id": "possibility-opening",
+      "label": {
+        "en": "Possibility",
+        "vi": "Khả năng"
+      },
+      "tone": "possibility",
+      "connections": [
+        "courage-release",
+        "trust-surface",
+        "giving-echo",
+        "belonging-root"
+      ]
+    },
+    {
+      "id": "possibility-release",
+      "label": {
+        "en": "Possibility",
+        "vi": "Khả năng"
+      },
+      "tone": "release",
+      "connections": [
+        "courage-surface",
+        "trust-echo",
+        "giving-root",
+        "belonging-opening"
+      ]
+    },
+    {
+      "id": "courage-surface",
+      "label": {
+        "en": "Courage",
+        "vi": "Can đảm"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "trust-echo",
+        "future-root",
+        "freedom-opening",
+        "patience-release"
+      ]
+    },
+    {
+      "id": "courage-echo",
+      "label": {
+        "en": "Courage",
+        "vi": "Can đảm"
+      },
+      "tone": "beauty",
+      "connections": [
+        "trust-root",
+        "future-opening",
+        "freedom-release",
+        "patience-surface"
+      ]
+    },
+    {
+      "id": "courage-root",
+      "label": {
+        "en": "Courage",
+        "vi": "Can đảm"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "trust-opening",
+        "future-release",
+        "freedom-surface",
+        "patience-echo"
+      ]
+    },
+    {
+      "id": "courage-opening",
+      "label": {
+        "en": "Courage",
+        "vi": "Can đảm"
+      },
+      "tone": "possibility",
+      "connections": [
+        "trust-release",
+        "future-surface",
+        "freedom-echo",
+        "patience-root"
+      ]
+    },
+    {
+      "id": "courage-release",
+      "label": {
+        "en": "Courage",
+        "vi": "Can đảm"
+      },
+      "tone": "release",
+      "connections": [
+        "trust-surface",
+        "future-echo",
+        "freedom-root",
+        "patience-opening"
+      ]
+    },
+    {
+      "id": "trust-surface",
+      "label": {
+        "en": "Trust",
+        "vi": "Tin tưởng"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "future-echo",
+        "unknown-root",
+        "simplicity-opening",
+        "family-release"
+      ]
+    },
+    {
+      "id": "trust-echo",
+      "label": {
+        "en": "Trust",
+        "vi": "Tin tưởng"
+      },
+      "tone": "beauty",
+      "connections": [
+        "future-root",
+        "unknown-opening",
+        "simplicity-release",
+        "family-surface"
+      ]
+    },
+    {
+      "id": "trust-root",
+      "label": {
+        "en": "Trust",
+        "vi": "Tin tưởng"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "future-opening",
+        "unknown-release",
+        "simplicity-surface",
+        "family-echo"
+      ]
+    },
+    {
+      "id": "trust-opening",
+      "label": {
+        "en": "Trust",
+        "vi": "Tin tưởng"
+      },
+      "tone": "possibility",
+      "connections": [
+        "future-release",
+        "unknown-surface",
+        "simplicity-echo",
+        "family-root"
+      ]
+    },
+    {
+      "id": "trust-release",
+      "label": {
+        "en": "Trust",
+        "vi": "Tin tưởng"
+      },
+      "tone": "release",
+      "connections": [
+        "future-surface",
+        "unknown-echo",
+        "simplicity-root",
+        "family-opening"
+      ]
+    },
+    {
+      "id": "money-surface",
+      "label": {
+        "en": "Money",
+        "vi": "Tiền bạc"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "security-echo",
+        "enough-root",
+        "health-opening",
+        "unknown-release"
+      ]
+    },
+    {
+      "id": "money-echo",
+      "label": {
+        "en": "Money",
+        "vi": "Tiền bạc"
+      },
+      "tone": "beauty",
+      "connections": [
+        "security-root",
+        "enough-opening",
+        "health-release",
+        "unknown-surface"
+      ]
+    },
+    {
+      "id": "money-root",
+      "label": {
+        "en": "Money",
+        "vi": "Tiền bạc"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "security-opening",
+        "enough-release",
+        "health-surface",
+        "unknown-echo"
+      ]
+    },
+    {
+      "id": "money-opening",
+      "label": {
+        "en": "Money",
+        "vi": "Tiền bạc"
+      },
+      "tone": "possibility",
+      "connections": [
+        "security-release",
+        "enough-surface",
+        "health-echo",
+        "unknown-root"
+      ]
+    },
+    {
+      "id": "money-release",
+      "label": {
+        "en": "Money",
+        "vi": "Tiền bạc"
+      },
+      "tone": "release",
+      "connections": [
+        "security-surface",
+        "enough-echo",
+        "health-root",
+        "unknown-opening"
+      ]
+    },
+    {
+      "id": "security-surface",
+      "label": {
+        "en": "Security",
+        "vi": "An toàn"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "enough-echo",
+        "giving-root",
+        "body-opening",
+        "choice-release"
+      ]
+    },
+    {
+      "id": "security-echo",
+      "label": {
+        "en": "Security",
+        "vi": "An toàn"
+      },
+      "tone": "beauty",
+      "connections": [
+        "enough-root",
+        "giving-opening",
+        "body-release",
+        "choice-surface"
+      ]
+    },
+    {
+      "id": "security-root",
+      "label": {
+        "en": "Security",
+        "vi": "An toàn"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "enough-opening",
+        "giving-release",
+        "body-surface",
+        "choice-echo"
+      ]
+    },
+    {
+      "id": "security-opening",
+      "label": {
+        "en": "Security",
+        "vi": "An toàn"
+      },
+      "tone": "possibility",
+      "connections": [
+        "enough-release",
+        "giving-surface",
+        "body-echo",
+        "choice-root"
+      ]
+    },
+    {
+      "id": "security-release",
+      "label": {
+        "en": "Security",
+        "vi": "An toàn"
+      },
+      "tone": "release",
+      "connections": [
+        "enough-surface",
+        "giving-echo",
+        "body-root",
+        "choice-opening"
+      ]
+    },
+    {
+      "id": "enough-surface",
+      "label": {
+        "en": "Enough",
+        "vi": "Đủ đầy"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "giving-echo",
+        "freedom-root",
+        "energy-opening",
+        "possibility-release"
+      ]
+    },
+    {
+      "id": "enough-echo",
+      "label": {
+        "en": "Enough",
+        "vi": "Đủ đầy"
+      },
+      "tone": "beauty",
+      "connections": [
+        "giving-root",
+        "freedom-opening",
+        "energy-release",
+        "possibility-surface"
+      ]
+    },
+    {
+      "id": "enough-root",
+      "label": {
+        "en": "Enough",
+        "vi": "Đủ đầy"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "giving-opening",
+        "freedom-release",
+        "energy-surface",
+        "possibility-echo"
+      ]
+    },
+    {
+      "id": "enough-opening",
+      "label": {
+        "en": "Enough",
+        "vi": "Đủ đầy"
+      },
+      "tone": "possibility",
+      "connections": [
+        "giving-release",
+        "freedom-surface",
+        "energy-echo",
+        "possibility-root"
+      ]
+    },
+    {
+      "id": "enough-release",
+      "label": {
+        "en": "Enough",
+        "vi": "Đủ đầy"
+      },
+      "tone": "release",
+      "connections": [
+        "giving-surface",
+        "freedom-echo",
+        "energy-root",
+        "possibility-opening"
+      ]
+    },
+    {
+      "id": "giving-surface",
+      "label": {
+        "en": "Giving",
+        "vi": "Sẻ chia"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "freedom-echo",
+        "simplicity-root",
+        "healing-opening",
+        "courage-release"
+      ]
+    },
+    {
+      "id": "giving-echo",
+      "label": {
+        "en": "Giving",
+        "vi": "Sẻ chia"
+      },
+      "tone": "beauty",
+      "connections": [
+        "freedom-root",
+        "simplicity-opening",
+        "healing-release",
+        "courage-surface"
+      ]
+    },
+    {
+      "id": "giving-root",
+      "label": {
+        "en": "Giving",
+        "vi": "Sẻ chia"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "freedom-opening",
+        "simplicity-release",
+        "healing-surface",
+        "courage-echo"
+      ]
+    },
+    {
+      "id": "giving-opening",
+      "label": {
+        "en": "Giving",
+        "vi": "Sẻ chia"
+      },
+      "tone": "possibility",
+      "connections": [
+        "freedom-release",
+        "simplicity-surface",
+        "healing-echo",
+        "courage-root"
+      ]
+    },
+    {
+      "id": "giving-release",
+      "label": {
+        "en": "Giving",
+        "vi": "Sẻ chia"
+      },
+      "tone": "release",
+      "connections": [
+        "freedom-surface",
+        "simplicity-echo",
+        "healing-root",
+        "courage-opening"
+      ]
+    },
+    {
+      "id": "freedom-surface",
+      "label": {
+        "en": "Freedom",
+        "vi": "Tự do"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "simplicity-echo",
+        "money-root",
+        "strength-opening",
+        "trust-release"
+      ]
+    },
+    {
+      "id": "freedom-echo",
+      "label": {
+        "en": "Freedom",
+        "vi": "Tự do"
+      },
+      "tone": "beauty",
+      "connections": [
+        "simplicity-root",
+        "money-opening",
+        "strength-release",
+        "trust-surface"
+      ]
+    },
+    {
+      "id": "freedom-root",
+      "label": {
+        "en": "Freedom",
+        "vi": "Tự do"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "simplicity-opening",
+        "money-release",
+        "strength-surface",
+        "trust-echo"
+      ]
+    },
+    {
+      "id": "freedom-opening",
+      "label": {
+        "en": "Freedom",
+        "vi": "Tự do"
+      },
+      "tone": "possibility",
+      "connections": [
+        "simplicity-release",
+        "money-surface",
+        "strength-echo",
+        "trust-root"
+      ]
+    },
+    {
+      "id": "freedom-release",
+      "label": {
+        "en": "Freedom",
+        "vi": "Tự do"
+      },
+      "tone": "release",
+      "connections": [
+        "simplicity-surface",
+        "money-echo",
+        "strength-root",
+        "trust-opening"
+      ]
+    },
+    {
+      "id": "simplicity-surface",
+      "label": {
+        "en": "Simplicity",
+        "vi": "Giản dị"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "money-echo",
+        "security-root",
+        "tenderness-opening",
+        "future-release"
+      ]
+    },
+    {
+      "id": "simplicity-echo",
+      "label": {
+        "en": "Simplicity",
+        "vi": "Giản dị"
+      },
+      "tone": "beauty",
+      "connections": [
+        "money-root",
+        "security-opening",
+        "tenderness-release",
+        "future-surface"
+      ]
+    },
+    {
+      "id": "simplicity-root",
+      "label": {
+        "en": "Simplicity",
+        "vi": "Giản dị"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "money-opening",
+        "security-release",
+        "tenderness-surface",
+        "future-echo"
+      ]
+    },
+    {
+      "id": "simplicity-opening",
+      "label": {
+        "en": "Simplicity",
+        "vi": "Giản dị"
+      },
+      "tone": "possibility",
+      "connections": [
+        "money-release",
+        "security-surface",
+        "tenderness-echo",
+        "future-root"
+      ]
+    },
+    {
+      "id": "simplicity-release",
+      "label": {
+        "en": "Simplicity",
+        "vi": "Giản dị"
+      },
+      "tone": "release",
+      "connections": [
+        "money-surface",
+        "security-echo",
+        "tenderness-root",
+        "future-opening"
+      ]
+    },
+    {
+      "id": "health-surface",
+      "label": {
+        "en": "Health",
+        "vi": "Sức khỏe"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "body-echo",
+        "energy-root",
+        "love-opening",
+        "security-release"
+      ]
+    },
+    {
+      "id": "health-echo",
+      "label": {
+        "en": "Health",
+        "vi": "Sức khỏe"
+      },
+      "tone": "beauty",
+      "connections": [
+        "body-root",
+        "energy-opening",
+        "love-release",
+        "security-surface"
+      ]
+    },
+    {
+      "id": "health-root",
+      "label": {
+        "en": "Health",
+        "vi": "Sức khỏe"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "body-opening",
+        "energy-release",
+        "love-surface",
+        "security-echo"
+      ]
+    },
+    {
+      "id": "health-opening",
+      "label": {
+        "en": "Health",
+        "vi": "Sức khỏe"
+      },
+      "tone": "possibility",
+      "connections": [
+        "body-release",
+        "energy-surface",
+        "love-echo",
+        "security-root"
+      ]
+    },
+    {
+      "id": "health-release",
+      "label": {
+        "en": "Health",
+        "vi": "Sức khỏe"
+      },
+      "tone": "release",
+      "connections": [
+        "body-surface",
+        "energy-echo",
+        "love-root",
+        "security-opening"
+      ]
+    },
+    {
+      "id": "body-surface",
+      "label": {
+        "en": "Body",
+        "vi": "Thân thể"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "energy-echo",
+        "healing-root",
+        "closeness-opening",
+        "enough-release"
+      ]
+    },
+    {
+      "id": "body-echo",
+      "label": {
+        "en": "Body",
+        "vi": "Thân thể"
+      },
+      "tone": "beauty",
+      "connections": [
+        "energy-root",
+        "healing-opening",
+        "closeness-release",
+        "enough-surface"
+      ]
+    },
+    {
+      "id": "body-root",
+      "label": {
+        "en": "Body",
+        "vi": "Thân thể"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "energy-opening",
+        "healing-release",
+        "closeness-surface",
+        "enough-echo"
+      ]
+    },
+    {
+      "id": "body-opening",
+      "label": {
+        "en": "Body",
+        "vi": "Thân thể"
+      },
+      "tone": "possibility",
+      "connections": [
+        "energy-release",
+        "healing-surface",
+        "closeness-echo",
+        "enough-root"
+      ]
+    },
+    {
+      "id": "body-release",
+      "label": {
+        "en": "Body",
+        "vi": "Thân thể"
+      },
+      "tone": "release",
+      "connections": [
+        "energy-surface",
+        "healing-echo",
+        "closeness-root",
+        "enough-opening"
+      ]
+    },
+    {
+      "id": "energy-surface",
+      "label": {
+        "en": "Energy",
+        "vi": "Năng lượng"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "healing-echo",
+        "strength-root",
+        "distance-opening",
+        "giving-release"
+      ]
+    },
+    {
+      "id": "energy-echo",
+      "label": {
+        "en": "Energy",
+        "vi": "Năng lượng"
+      },
+      "tone": "beauty",
+      "connections": [
+        "healing-root",
+        "strength-opening",
+        "distance-release",
+        "giving-surface"
+      ]
+    },
+    {
+      "id": "energy-root",
+      "label": {
+        "en": "Energy",
+        "vi": "Năng lượng"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "healing-opening",
+        "strength-release",
+        "distance-surface",
+        "giving-echo"
+      ]
+    },
+    {
+      "id": "energy-opening",
+      "label": {
+        "en": "Energy",
+        "vi": "Năng lượng"
+      },
+      "tone": "possibility",
+      "connections": [
+        "healing-release",
+        "strength-surface",
+        "distance-echo",
+        "giving-root"
+      ]
+    },
+    {
+      "id": "energy-release",
+      "label": {
+        "en": "Energy",
+        "vi": "Năng lượng"
+      },
+      "tone": "release",
+      "connections": [
+        "healing-surface",
+        "strength-echo",
+        "distance-root",
+        "giving-opening"
+      ]
+    },
+    {
+      "id": "healing-surface",
+      "label": {
+        "en": "Recovery",
+        "vi": "Hồi phục"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "strength-echo",
+        "tenderness-root",
+        "listening-opening",
+        "freedom-release"
+      ]
+    },
+    {
+      "id": "healing-echo",
+      "label": {
+        "en": "Recovery",
+        "vi": "Hồi phục"
+      },
+      "tone": "beauty",
+      "connections": [
+        "strength-root",
+        "tenderness-opening",
+        "listening-release",
+        "freedom-surface"
+      ]
+    },
+    {
+      "id": "healing-root",
+      "label": {
+        "en": "Recovery",
+        "vi": "Hồi phục"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "strength-opening",
+        "tenderness-release",
+        "listening-surface",
+        "freedom-echo"
+      ]
+    },
+    {
+      "id": "healing-opening",
+      "label": {
+        "en": "Recovery",
+        "vi": "Hồi phục"
+      },
+      "tone": "possibility",
+      "connections": [
+        "strength-release",
+        "tenderness-surface",
+        "listening-echo",
+        "freedom-root"
+      ]
+    },
+    {
+      "id": "healing-release",
+      "label": {
+        "en": "Recovery",
+        "vi": "Hồi phục"
+      },
+      "tone": "release",
+      "connections": [
+        "strength-surface",
+        "tenderness-echo",
+        "listening-root",
+        "freedom-opening"
+      ]
+    },
+    {
+      "id": "strength-surface",
+      "label": {
+        "en": "Strength",
+        "vi": "Sức mạnh"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "tenderness-echo",
+        "health-root",
+        "kindness-opening",
+        "simplicity-release"
+      ]
+    },
+    {
+      "id": "strength-echo",
+      "label": {
+        "en": "Strength",
+        "vi": "Sức mạnh"
+      },
+      "tone": "beauty",
+      "connections": [
+        "tenderness-root",
+        "health-opening",
+        "kindness-release",
+        "simplicity-surface"
+      ]
+    },
+    {
+      "id": "strength-root",
+      "label": {
+        "en": "Strength",
+        "vi": "Sức mạnh"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "tenderness-opening",
+        "health-release",
+        "kindness-surface",
+        "simplicity-echo"
+      ]
+    },
+    {
+      "id": "strength-opening",
+      "label": {
+        "en": "Strength",
+        "vi": "Sức mạnh"
+      },
+      "tone": "possibility",
+      "connections": [
+        "tenderness-release",
+        "health-surface",
+        "kindness-echo",
+        "simplicity-root"
+      ]
+    },
+    {
+      "id": "strength-release",
+      "label": {
+        "en": "Strength",
+        "vi": "Sức mạnh"
+      },
+      "tone": "release",
+      "connections": [
+        "tenderness-surface",
+        "health-echo",
+        "kindness-root",
+        "simplicity-opening"
+      ]
+    },
+    {
+      "id": "tenderness-surface",
+      "label": {
+        "en": "Tenderness",
+        "vi": "Dịu dàng"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "health-echo",
+        "body-root",
+        "letting-go-opening",
+        "money-release"
+      ]
+    },
+    {
+      "id": "tenderness-echo",
+      "label": {
+        "en": "Tenderness",
+        "vi": "Dịu dàng"
+      },
+      "tone": "beauty",
+      "connections": [
+        "health-root",
+        "body-opening",
+        "letting-go-release",
+        "money-surface"
+      ]
+    },
+    {
+      "id": "tenderness-root",
+      "label": {
+        "en": "Tenderness",
+        "vi": "Dịu dàng"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "health-opening",
+        "body-release",
+        "letting-go-surface",
+        "money-echo"
+      ]
+    },
+    {
+      "id": "tenderness-opening",
+      "label": {
+        "en": "Tenderness",
+        "vi": "Dịu dàng"
+      },
+      "tone": "possibility",
+      "connections": [
+        "health-release",
+        "body-surface",
+        "letting-go-echo",
+        "money-root"
+      ]
+    },
+    {
+      "id": "tenderness-release",
+      "label": {
+        "en": "Tenderness",
+        "vi": "Dịu dàng"
+      },
+      "tone": "release",
+      "connections": [
+        "health-surface",
+        "body-echo",
+        "letting-go-root",
+        "money-opening"
+      ]
+    },
+    {
+      "id": "love-surface",
+      "label": {
+        "en": "Love",
+        "vi": "Tình yêu"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "closeness-echo",
+        "distance-root",
+        "memory-opening",
+        "body-release"
+      ]
+    },
+    {
+      "id": "love-echo",
+      "label": {
+        "en": "Love",
+        "vi": "Tình yêu"
+      },
+      "tone": "beauty",
+      "connections": [
+        "closeness-root",
+        "distance-opening",
+        "memory-release",
+        "body-surface"
+      ]
+    },
+    {
+      "id": "love-root",
+      "label": {
+        "en": "Love",
+        "vi": "Tình yêu"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "closeness-opening",
+        "distance-release",
+        "memory-surface",
+        "body-echo"
+      ]
+    },
+    {
+      "id": "love-opening",
+      "label": {
+        "en": "Love",
+        "vi": "Tình yêu"
+      },
+      "tone": "possibility",
+      "connections": [
+        "closeness-release",
+        "distance-surface",
+        "memory-echo",
+        "body-root"
+      ]
+    },
+    {
+      "id": "love-release",
+      "label": {
+        "en": "Love",
+        "vi": "Tình yêu"
+      },
+      "tone": "release",
+      "connections": [
+        "closeness-surface",
+        "distance-echo",
+        "memory-root",
+        "body-opening"
+      ]
+    },
+    {
+      "id": "closeness-surface",
+      "label": {
+        "en": "Closeness",
+        "vi": "Gần gũi"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "distance-echo",
+        "listening-root",
+        "childhood-opening",
+        "energy-release"
+      ]
+    },
+    {
+      "id": "closeness-echo",
+      "label": {
+        "en": "Closeness",
+        "vi": "Gần gũi"
+      },
+      "tone": "beauty",
+      "connections": [
+        "distance-root",
+        "listening-opening",
+        "childhood-release",
+        "energy-surface"
+      ]
+    },
+    {
+      "id": "closeness-root",
+      "label": {
+        "en": "Closeness",
+        "vi": "Gần gũi"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "distance-opening",
+        "listening-release",
+        "childhood-surface",
+        "energy-echo"
+      ]
+    },
+    {
+      "id": "closeness-opening",
+      "label": {
+        "en": "Closeness",
+        "vi": "Gần gũi"
+      },
+      "tone": "possibility",
+      "connections": [
+        "distance-release",
+        "listening-surface",
+        "childhood-echo",
+        "energy-root"
+      ]
+    },
+    {
+      "id": "closeness-release",
+      "label": {
+        "en": "Closeness",
+        "vi": "Gần gũi"
+      },
+      "tone": "release",
+      "connections": [
+        "distance-surface",
+        "listening-echo",
+        "childhood-root",
+        "energy-opening"
+      ]
+    },
+    {
+      "id": "distance-surface",
+      "label": {
+        "en": "Distance",
+        "vi": "Khoảng cách"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "listening-echo",
+        "kindness-root",
+        "regret-opening",
+        "healing-release"
+      ]
+    },
+    {
+      "id": "distance-echo",
+      "label": {
+        "en": "Distance",
+        "vi": "Khoảng cách"
+      },
+      "tone": "beauty",
+      "connections": [
+        "listening-root",
+        "kindness-opening",
+        "regret-release",
+        "healing-surface"
+      ]
+    },
+    {
+      "id": "distance-root",
+      "label": {
+        "en": "Distance",
+        "vi": "Khoảng cách"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "listening-opening",
+        "kindness-release",
+        "regret-surface",
+        "healing-echo"
+      ]
+    },
+    {
+      "id": "distance-opening",
+      "label": {
+        "en": "Distance",
+        "vi": "Khoảng cách"
+      },
+      "tone": "possibility",
+      "connections": [
+        "listening-release",
+        "kindness-surface",
+        "regret-echo",
+        "healing-root"
+      ]
+    },
+    {
+      "id": "distance-release",
+      "label": {
+        "en": "Distance",
+        "vi": "Khoảng cách"
+      },
+      "tone": "release",
+      "connections": [
+        "listening-surface",
+        "kindness-echo",
+        "regret-root",
+        "healing-opening"
+      ]
+    },
+    {
+      "id": "listening-surface",
+      "label": {
+        "en": "Listening",
+        "vi": "Lắng nghe"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "kindness-echo",
+        "letting-go-root",
+        "gratitude-opening",
+        "strength-release"
+      ]
+    },
+    {
+      "id": "listening-echo",
+      "label": {
+        "en": "Listening",
+        "vi": "Lắng nghe"
+      },
+      "tone": "beauty",
+      "connections": [
+        "kindness-root",
+        "letting-go-opening",
+        "gratitude-release",
+        "strength-surface"
+      ]
+    },
+    {
+      "id": "listening-root",
+      "label": {
+        "en": "Listening",
+        "vi": "Lắng nghe"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "kindness-opening",
+        "letting-go-release",
+        "gratitude-surface",
+        "strength-echo"
+      ]
+    },
+    {
+      "id": "listening-opening",
+      "label": {
+        "en": "Listening",
+        "vi": "Lắng nghe"
+      },
+      "tone": "possibility",
+      "connections": [
+        "kindness-release",
+        "letting-go-surface",
+        "gratitude-echo",
+        "strength-root"
+      ]
+    },
+    {
+      "id": "listening-release",
+      "label": {
+        "en": "Listening",
+        "vi": "Lắng nghe"
+      },
+      "tone": "release",
+      "connections": [
+        "kindness-surface",
+        "letting-go-echo",
+        "gratitude-root",
+        "strength-opening"
+      ]
+    },
+    {
+      "id": "kindness-surface",
+      "label": {
+        "en": "Kindness",
+        "vi": "Tử tế"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "letting-go-echo",
+        "love-root",
+        "forgiveness-opening",
+        "tenderness-release"
+      ]
+    },
+    {
+      "id": "kindness-echo",
+      "label": {
+        "en": "Kindness",
+        "vi": "Tử tế"
+      },
+      "tone": "beauty",
+      "connections": [
+        "letting-go-root",
+        "love-opening",
+        "forgiveness-release",
+        "tenderness-surface"
+      ]
+    },
+    {
+      "id": "kindness-root",
+      "label": {
+        "en": "Kindness",
+        "vi": "Tử tế"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "letting-go-opening",
+        "love-release",
+        "forgiveness-surface",
+        "tenderness-echo"
+      ]
+    },
+    {
+      "id": "kindness-opening",
+      "label": {
+        "en": "Kindness",
+        "vi": "Tử tế"
+      },
+      "tone": "possibility",
+      "connections": [
+        "letting-go-release",
+        "love-surface",
+        "forgiveness-echo",
+        "tenderness-root"
+      ]
+    },
+    {
+      "id": "kindness-release",
+      "label": {
+        "en": "Kindness",
+        "vi": "Tử tế"
+      },
+      "tone": "release",
+      "connections": [
+        "letting-go-surface",
+        "love-echo",
+        "forgiveness-root",
+        "tenderness-opening"
+      ]
+    },
+    {
+      "id": "letting-go-surface",
+      "label": {
+        "en": "Letting go",
+        "vi": "Buông nhẹ"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "love-echo",
+        "closeness-root",
+        "story-opening",
+        "health-release"
+      ]
+    },
+    {
+      "id": "letting-go-echo",
+      "label": {
+        "en": "Letting go",
+        "vi": "Buông nhẹ"
+      },
+      "tone": "beauty",
+      "connections": [
+        "love-root",
+        "closeness-opening",
+        "story-release",
+        "health-surface"
+      ]
+    },
+    {
+      "id": "letting-go-root",
+      "label": {
+        "en": "Letting go",
+        "vi": "Buông nhẹ"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "love-opening",
+        "closeness-release",
+        "story-surface",
+        "health-echo"
+      ]
+    },
+    {
+      "id": "letting-go-opening",
+      "label": {
+        "en": "Letting go",
+        "vi": "Buông nhẹ"
+      },
+      "tone": "possibility",
+      "connections": [
+        "love-release",
+        "closeness-surface",
+        "story-echo",
+        "health-root"
+      ]
+    },
+    {
+      "id": "letting-go-release",
+      "label": {
+        "en": "Letting go",
+        "vi": "Buông nhẹ"
+      },
+      "tone": "release",
+      "connections": [
+        "love-surface",
+        "closeness-echo",
+        "story-root",
+        "health-opening"
+      ]
+    },
+    {
+      "id": "memory-surface",
+      "label": {
+        "en": "Memory",
+        "vi": "Ký ức"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "childhood-echo",
+        "regret-root",
+        "responsibility-opening",
+        "closeness-release"
+      ]
+    },
+    {
+      "id": "memory-echo",
+      "label": {
+        "en": "Memory",
+        "vi": "Ký ức"
+      },
+      "tone": "beauty",
+      "connections": [
+        "childhood-root",
+        "regret-opening",
+        "responsibility-release",
+        "closeness-surface"
+      ]
+    },
+    {
+      "id": "memory-root",
+      "label": {
+        "en": "Memory",
+        "vi": "Ký ức"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "childhood-opening",
+        "regret-release",
+        "responsibility-surface",
+        "closeness-echo"
+      ]
+    },
+    {
+      "id": "memory-opening",
+      "label": {
+        "en": "Memory",
+        "vi": "Ký ức"
+      },
+      "tone": "possibility",
+      "connections": [
+        "childhood-release",
+        "regret-surface",
+        "responsibility-echo",
+        "closeness-root"
+      ]
+    },
+    {
+      "id": "memory-release",
+      "label": {
+        "en": "Memory",
+        "vi": "Ký ức"
+      },
+      "tone": "release",
+      "connections": [
+        "childhood-surface",
+        "regret-echo",
+        "responsibility-root",
+        "closeness-opening"
+      ]
+    },
+    {
+      "id": "childhood-surface",
+      "label": {
+        "en": "Childhood",
+        "vi": "Tuổi thơ"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "regret-echo",
+        "gratitude-root",
+        "duty-opening",
+        "distance-release"
+      ]
+    },
+    {
+      "id": "childhood-echo",
+      "label": {
+        "en": "Childhood",
+        "vi": "Tuổi thơ"
+      },
+      "tone": "beauty",
+      "connections": [
+        "regret-root",
+        "gratitude-opening",
+        "duty-release",
+        "distance-surface"
+      ]
+    },
+    {
+      "id": "childhood-root",
+      "label": {
+        "en": "Childhood",
+        "vi": "Tuổi thơ"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "regret-opening",
+        "gratitude-release",
+        "duty-surface",
+        "distance-echo"
+      ]
+    },
+    {
+      "id": "childhood-opening",
+      "label": {
+        "en": "Childhood",
+        "vi": "Tuổi thơ"
+      },
+      "tone": "possibility",
+      "connections": [
+        "regret-release",
+        "gratitude-surface",
+        "duty-echo",
+        "distance-root"
+      ]
+    },
+    {
+      "id": "childhood-release",
+      "label": {
+        "en": "Childhood",
+        "vi": "Tuổi thơ"
+      },
+      "tone": "release",
+      "connections": [
+        "regret-surface",
+        "gratitude-echo",
+        "duty-root",
+        "distance-opening"
+      ]
+    },
+    {
+      "id": "regret-surface",
+      "label": {
+        "en": "Regret",
+        "vi": "Tiếc nuối"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "gratitude-echo",
+        "forgiveness-root",
+        "expectation-opening",
+        "listening-release"
+      ]
+    },
+    {
+      "id": "regret-echo",
+      "label": {
+        "en": "Regret",
+        "vi": "Tiếc nuối"
+      },
+      "tone": "beauty",
+      "connections": [
+        "gratitude-root",
+        "forgiveness-opening",
+        "expectation-release",
+        "listening-surface"
+      ]
+    },
+    {
+      "id": "regret-root",
+      "label": {
+        "en": "Regret",
+        "vi": "Tiếc nuối"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "gratitude-opening",
+        "forgiveness-release",
+        "expectation-surface",
+        "listening-echo"
+      ]
+    },
+    {
+      "id": "regret-opening",
+      "label": {
+        "en": "Regret",
+        "vi": "Tiếc nuối"
+      },
+      "tone": "possibility",
+      "connections": [
+        "gratitude-release",
+        "forgiveness-surface",
+        "expectation-echo",
+        "listening-root"
+      ]
+    },
+    {
+      "id": "regret-release",
+      "label": {
+        "en": "Regret",
+        "vi": "Tiếc nuối"
+      },
+      "tone": "release",
+      "connections": [
+        "gratitude-surface",
+        "forgiveness-echo",
+        "expectation-root",
+        "listening-opening"
+      ]
+    },
+    {
+      "id": "gratitude-surface",
+      "label": {
+        "en": "Gratitude",
+        "vi": "Biết ơn"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "forgiveness-echo",
+        "story-root",
+        "balance-opening",
+        "kindness-release"
+      ]
+    },
+    {
+      "id": "gratitude-echo",
+      "label": {
+        "en": "Gratitude",
+        "vi": "Biết ơn"
+      },
+      "tone": "beauty",
+      "connections": [
+        "forgiveness-root",
+        "story-opening",
+        "balance-release",
+        "kindness-surface"
+      ]
+    },
+    {
+      "id": "gratitude-root",
+      "label": {
+        "en": "Gratitude",
+        "vi": "Biết ơn"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "forgiveness-opening",
+        "story-release",
+        "balance-surface",
+        "kindness-echo"
+      ]
+    },
+    {
+      "id": "gratitude-opening",
+      "label": {
+        "en": "Gratitude",
+        "vi": "Biết ơn"
+      },
+      "tone": "possibility",
+      "connections": [
+        "forgiveness-release",
+        "story-surface",
+        "balance-echo",
+        "kindness-root"
+      ]
+    },
+    {
+      "id": "gratitude-release",
+      "label": {
+        "en": "Gratitude",
+        "vi": "Biết ơn"
+      },
+      "tone": "release",
+      "connections": [
+        "forgiveness-surface",
+        "story-echo",
+        "balance-root",
+        "kindness-opening"
+      ]
+    },
+    {
+      "id": "forgiveness-surface",
+      "label": {
+        "en": "Forgiveness",
+        "vi": "Tha thứ"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "story-echo",
+        "memory-root",
+        "boundaries-opening",
+        "letting-go-release"
+      ]
+    },
+    {
+      "id": "forgiveness-echo",
+      "label": {
+        "en": "Forgiveness",
+        "vi": "Tha thứ"
+      },
+      "tone": "beauty",
+      "connections": [
+        "story-root",
+        "memory-opening",
+        "boundaries-release",
+        "letting-go-surface"
+      ]
+    },
+    {
+      "id": "forgiveness-root",
+      "label": {
+        "en": "Forgiveness",
+        "vi": "Tha thứ"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "story-opening",
+        "memory-release",
+        "boundaries-surface",
+        "letting-go-echo"
+      ]
+    },
+    {
+      "id": "forgiveness-opening",
+      "label": {
+        "en": "Forgiveness",
+        "vi": "Tha thứ"
+      },
+      "tone": "possibility",
+      "connections": [
+        "story-release",
+        "memory-surface",
+        "boundaries-echo",
+        "letting-go-root"
+      ]
+    },
+    {
+      "id": "forgiveness-release",
+      "label": {
+        "en": "Forgiveness",
+        "vi": "Tha thứ"
+      },
+      "tone": "release",
+      "connections": [
+        "story-surface",
+        "memory-echo",
+        "boundaries-root",
+        "letting-go-opening"
+      ]
+    },
+    {
+      "id": "story-surface",
+      "label": {
+        "en": "Story",
+        "vi": "Câu chuyện"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "memory-echo",
+        "childhood-root",
+        "rest-opening",
+        "love-release"
+      ]
+    },
+    {
+      "id": "story-echo",
+      "label": {
+        "en": "Story",
+        "vi": "Câu chuyện"
+      },
+      "tone": "beauty",
+      "connections": [
+        "memory-root",
+        "childhood-opening",
+        "rest-release",
+        "love-surface"
+      ]
+    },
+    {
+      "id": "story-root",
+      "label": {
+        "en": "Story",
+        "vi": "Câu chuyện"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "memory-opening",
+        "childhood-release",
+        "rest-surface",
+        "love-echo"
+      ]
+    },
+    {
+      "id": "story-opening",
+      "label": {
+        "en": "Story",
+        "vi": "Câu chuyện"
+      },
+      "tone": "possibility",
+      "connections": [
+        "memory-release",
+        "childhood-surface",
+        "rest-echo",
+        "love-root"
+      ]
+    },
+    {
+      "id": "story-release",
+      "label": {
+        "en": "Story",
+        "vi": "Câu chuyện"
+      },
+      "tone": "release",
+      "connections": [
+        "memory-surface",
+        "childhood-echo",
+        "rest-root",
+        "love-opening"
+      ]
+    },
+    {
+      "id": "responsibility-surface",
+      "label": {
+        "en": "Responsibility",
+        "vi": "Trách nhiệm"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "duty-echo",
+        "expectation-root",
+        "fear-opening",
+        "childhood-release"
+      ]
+    },
+    {
+      "id": "responsibility-echo",
+      "label": {
+        "en": "Responsibility",
+        "vi": "Trách nhiệm"
+      },
+      "tone": "beauty",
+      "connections": [
+        "duty-root",
+        "expectation-opening",
+        "fear-release",
+        "childhood-surface"
+      ]
+    },
+    {
+      "id": "responsibility-root",
+      "label": {
+        "en": "Responsibility",
+        "vi": "Trách nhiệm"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "duty-opening",
+        "expectation-release",
+        "fear-surface",
+        "childhood-echo"
+      ]
+    },
+    {
+      "id": "responsibility-opening",
+      "label": {
+        "en": "Responsibility",
+        "vi": "Trách nhiệm"
+      },
+      "tone": "possibility",
+      "connections": [
+        "duty-release",
+        "expectation-surface",
+        "fear-echo",
+        "childhood-root"
+      ]
+    },
+    {
+      "id": "responsibility-release",
+      "label": {
+        "en": "Responsibility",
+        "vi": "Trách nhiệm"
+      },
+      "tone": "release",
+      "connections": [
+        "duty-surface",
+        "expectation-echo",
+        "fear-root",
+        "childhood-opening"
+      ]
+    },
+    {
+      "id": "duty-surface",
+      "label": {
+        "en": "Duty",
+        "vi": "Bổn phận"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "expectation-echo",
+        "balance-root",
+        "doubt-opening",
+        "regret-release"
+      ]
+    },
+    {
+      "id": "duty-echo",
+      "label": {
+        "en": "Duty",
+        "vi": "Bổn phận"
+      },
+      "tone": "beauty",
+      "connections": [
+        "expectation-root",
+        "balance-opening",
+        "doubt-release",
+        "regret-surface"
+      ]
+    },
+    {
+      "id": "duty-root",
+      "label": {
+        "en": "Duty",
+        "vi": "Bổn phận"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "expectation-opening",
+        "balance-release",
+        "doubt-surface",
+        "regret-echo"
+      ]
+    },
+    {
+      "id": "duty-opening",
+      "label": {
+        "en": "Duty",
+        "vi": "Bổn phận"
+      },
+      "tone": "possibility",
+      "connections": [
+        "expectation-release",
+        "balance-surface",
+        "doubt-echo",
+        "regret-root"
+      ]
+    },
+    {
+      "id": "duty-release",
+      "label": {
+        "en": "Duty",
+        "vi": "Bổn phận"
+      },
+      "tone": "release",
+      "connections": [
+        "expectation-surface",
+        "balance-echo",
+        "doubt-root",
+        "regret-opening"
+      ]
+    },
+    {
+      "id": "expectation-surface",
+      "label": {
+        "en": "Expectation",
+        "vi": "Kỳ vọng"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "balance-echo",
+        "boundaries-root",
+        "risk-opening",
+        "gratitude-release"
+      ]
+    },
+    {
+      "id": "expectation-echo",
+      "label": {
+        "en": "Expectation",
+        "vi": "Kỳ vọng"
+      },
+      "tone": "beauty",
+      "connections": [
+        "balance-root",
+        "boundaries-opening",
+        "risk-release",
+        "gratitude-surface"
+      ]
+    },
+    {
+      "id": "expectation-root",
+      "label": {
+        "en": "Expectation",
+        "vi": "Kỳ vọng"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "balance-opening",
+        "boundaries-release",
+        "risk-surface",
+        "gratitude-echo"
+      ]
+    },
+    {
+      "id": "expectation-opening",
+      "label": {
+        "en": "Expectation",
+        "vi": "Kỳ vọng"
+      },
+      "tone": "possibility",
+      "connections": [
+        "balance-release",
+        "boundaries-surface",
+        "risk-echo",
+        "gratitude-root"
+      ]
+    },
+    {
+      "id": "expectation-release",
+      "label": {
+        "en": "Expectation",
+        "vi": "Kỳ vọng"
+      },
+      "tone": "release",
+      "connections": [
+        "balance-surface",
+        "boundaries-echo",
+        "risk-root",
+        "gratitude-opening"
+      ]
+    },
+    {
+      "id": "balance-surface",
+      "label": {
+        "en": "Balance",
+        "vi": "Cân bằng"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "boundaries-echo",
+        "rest-root",
+        "acceptance-opening",
+        "forgiveness-release"
+      ]
+    },
+    {
+      "id": "balance-echo",
+      "label": {
+        "en": "Balance",
+        "vi": "Cân bằng"
+      },
+      "tone": "beauty",
+      "connections": [
+        "boundaries-root",
+        "rest-opening",
+        "acceptance-release",
+        "forgiveness-surface"
+      ]
+    },
+    {
+      "id": "balance-root",
+      "label": {
+        "en": "Balance",
+        "vi": "Cân bằng"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "boundaries-opening",
+        "rest-release",
+        "acceptance-surface",
+        "forgiveness-echo"
+      ]
+    },
+    {
+      "id": "balance-opening",
+      "label": {
+        "en": "Balance",
+        "vi": "Cân bằng"
+      },
+      "tone": "possibility",
+      "connections": [
+        "boundaries-release",
+        "rest-surface",
+        "acceptance-echo",
+        "forgiveness-root"
+      ]
+    },
+    {
+      "id": "balance-release",
+      "label": {
+        "en": "Balance",
+        "vi": "Cân bằng"
+      },
+      "tone": "release",
+      "connections": [
+        "boundaries-surface",
+        "rest-echo",
+        "acceptance-root",
+        "forgiveness-opening"
+      ]
+    },
+    {
+      "id": "boundaries-surface",
+      "label": {
+        "en": "Boundaries",
+        "vi": "Giới hạn"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "rest-echo",
+        "responsibility-root",
+        "hope-opening",
+        "story-release"
+      ]
+    },
+    {
+      "id": "boundaries-echo",
+      "label": {
+        "en": "Boundaries",
+        "vi": "Giới hạn"
+      },
+      "tone": "beauty",
+      "connections": [
+        "rest-root",
+        "responsibility-opening",
+        "hope-release",
+        "story-surface"
+      ]
+    },
+    {
+      "id": "boundaries-root",
+      "label": {
+        "en": "Boundaries",
+        "vi": "Giới hạn"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "rest-opening",
+        "responsibility-release",
+        "hope-surface",
+        "story-echo"
+      ]
+    },
+    {
+      "id": "boundaries-opening",
+      "label": {
+        "en": "Boundaries",
+        "vi": "Giới hạn"
+      },
+      "tone": "possibility",
+      "connections": [
+        "rest-release",
+        "responsibility-surface",
+        "hope-echo",
+        "story-root"
+      ]
+    },
+    {
+      "id": "boundaries-release",
+      "label": {
+        "en": "Boundaries",
+        "vi": "Giới hạn"
+      },
+      "tone": "release",
+      "connections": [
+        "rest-surface",
+        "responsibility-echo",
+        "hope-root",
+        "story-opening"
+      ]
+    },
+    {
+      "id": "rest-surface",
+      "label": {
+        "en": "Rest",
+        "vi": "Nghỉ ngơi"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "responsibility-echo",
+        "duty-root",
+        "steadiness-opening",
+        "memory-release"
+      ]
+    },
+    {
+      "id": "rest-echo",
+      "label": {
+        "en": "Rest",
+        "vi": "Nghỉ ngơi"
+      },
+      "tone": "beauty",
+      "connections": [
+        "responsibility-root",
+        "duty-opening",
+        "steadiness-release",
+        "memory-surface"
+      ]
+    },
+    {
+      "id": "rest-root",
+      "label": {
+        "en": "Rest",
+        "vi": "Nghỉ ngơi"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "responsibility-opening",
+        "duty-release",
+        "steadiness-surface",
+        "memory-echo"
+      ]
+    },
+    {
+      "id": "rest-opening",
+      "label": {
+        "en": "Rest",
+        "vi": "Nghỉ ngơi"
+      },
+      "tone": "possibility",
+      "connections": [
+        "responsibility-release",
+        "duty-surface",
+        "steadiness-echo",
+        "memory-root"
+      ]
+    },
+    {
+      "id": "rest-release",
+      "label": {
+        "en": "Rest",
+        "vi": "Nghỉ ngơi"
+      },
+      "tone": "release",
+      "connections": [
+        "responsibility-surface",
+        "duty-echo",
+        "steadiness-root",
+        "memory-opening"
+      ]
+    },
+    {
+      "id": "fear-surface",
+      "label": {
+        "en": "Fear",
+        "vi": "Sợ hãi"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "doubt-echo",
+        "risk-root",
+        "change-opening",
+        "duty-release"
+      ]
+    },
+    {
+      "id": "fear-echo",
+      "label": {
+        "en": "Fear",
+        "vi": "Sợ hãi"
+      },
+      "tone": "beauty",
+      "connections": [
+        "doubt-root",
+        "risk-opening",
+        "change-release",
+        "duty-surface"
+      ]
+    },
+    {
+      "id": "fear-root",
+      "label": {
+        "en": "Fear",
+        "vi": "Sợ hãi"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "doubt-opening",
+        "risk-release",
+        "change-surface",
+        "duty-echo"
+      ]
+    },
+    {
+      "id": "fear-opening",
+      "label": {
+        "en": "Fear",
+        "vi": "Sợ hãi"
+      },
+      "tone": "possibility",
+      "connections": [
+        "doubt-release",
+        "risk-surface",
+        "change-echo",
+        "duty-root"
+      ]
+    },
+    {
+      "id": "fear-release",
+      "label": {
+        "en": "Fear",
+        "vi": "Sợ hãi"
+      },
+      "tone": "release",
+      "connections": [
+        "doubt-surface",
+        "risk-echo",
+        "change-root",
+        "duty-opening"
+      ]
+    },
+    {
+      "id": "doubt-surface",
+      "label": {
+        "en": "Doubt",
+        "vi": "Hoài nghi"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "risk-echo",
+        "acceptance-root",
+        "ending-opening",
+        "expectation-release"
+      ]
+    },
+    {
+      "id": "doubt-echo",
+      "label": {
+        "en": "Doubt",
+        "vi": "Hoài nghi"
+      },
+      "tone": "beauty",
+      "connections": [
+        "risk-root",
+        "acceptance-opening",
+        "ending-release",
+        "expectation-surface"
+      ]
+    },
+    {
+      "id": "doubt-root",
+      "label": {
+        "en": "Doubt",
+        "vi": "Hoài nghi"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "risk-opening",
+        "acceptance-release",
+        "ending-surface",
+        "expectation-echo"
+      ]
+    },
+    {
+      "id": "doubt-opening",
+      "label": {
+        "en": "Doubt",
+        "vi": "Hoài nghi"
+      },
+      "tone": "possibility",
+      "connections": [
+        "risk-release",
+        "acceptance-surface",
+        "ending-echo",
+        "expectation-root"
+      ]
+    },
+    {
+      "id": "doubt-release",
+      "label": {
+        "en": "Doubt",
+        "vi": "Hoài nghi"
+      },
+      "tone": "release",
+      "connections": [
+        "risk-surface",
+        "acceptance-echo",
+        "ending-root",
+        "expectation-opening"
+      ]
+    },
+    {
+      "id": "risk-surface",
+      "label": {
+        "en": "Risk",
+        "vi": "Rủi ro"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "acceptance-echo",
+        "hope-root",
+        "beginning-opening",
+        "balance-release"
+      ]
+    },
+    {
+      "id": "risk-echo",
+      "label": {
+        "en": "Risk",
+        "vi": "Rủi ro"
+      },
+      "tone": "beauty",
+      "connections": [
+        "acceptance-root",
+        "hope-opening",
+        "beginning-release",
+        "balance-surface"
+      ]
+    },
+    {
+      "id": "risk-root",
+      "label": {
+        "en": "Risk",
+        "vi": "Rủi ro"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "acceptance-opening",
+        "hope-release",
+        "beginning-surface",
+        "balance-echo"
+      ]
+    },
+    {
+      "id": "risk-opening",
+      "label": {
+        "en": "Risk",
+        "vi": "Rủi ro"
+      },
+      "tone": "possibility",
+      "connections": [
+        "acceptance-release",
+        "hope-surface",
+        "beginning-echo",
+        "balance-root"
+      ]
+    },
+    {
+      "id": "risk-release",
+      "label": {
+        "en": "Risk",
+        "vi": "Rủi ro"
+      },
+      "tone": "release",
+      "connections": [
+        "acceptance-surface",
+        "hope-echo",
+        "beginning-root",
+        "balance-opening"
+      ]
+    },
+    {
+      "id": "acceptance-surface",
+      "label": {
+        "en": "Acceptance",
+        "vi": "Chấp nhận"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "hope-echo",
+        "steadiness-root",
+        "season-opening",
+        "boundaries-release"
+      ]
+    },
+    {
+      "id": "acceptance-echo",
+      "label": {
+        "en": "Acceptance",
+        "vi": "Chấp nhận"
+      },
+      "tone": "beauty",
+      "connections": [
+        "hope-root",
+        "steadiness-opening",
+        "season-release",
+        "boundaries-surface"
+      ]
+    },
+    {
+      "id": "acceptance-root",
+      "label": {
+        "en": "Acceptance",
+        "vi": "Chấp nhận"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "hope-opening",
+        "steadiness-release",
+        "season-surface",
+        "boundaries-echo"
+      ]
+    },
+    {
+      "id": "acceptance-opening",
+      "label": {
+        "en": "Acceptance",
+        "vi": "Chấp nhận"
+      },
+      "tone": "possibility",
+      "connections": [
+        "hope-release",
+        "steadiness-surface",
+        "season-echo",
+        "boundaries-root"
+      ]
+    },
+    {
+      "id": "acceptance-release",
+      "label": {
+        "en": "Acceptance",
+        "vi": "Chấp nhận"
+      },
+      "tone": "release",
+      "connections": [
+        "hope-surface",
+        "steadiness-echo",
+        "season-root",
+        "boundaries-opening"
+      ]
+    },
+    {
+      "id": "hope-surface",
+      "label": {
+        "en": "Hope",
+        "vi": "Hy vọng"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "steadiness-echo",
+        "fear-root",
+        "renewal-opening",
+        "rest-release"
+      ]
+    },
+    {
+      "id": "hope-echo",
+      "label": {
+        "en": "Hope",
+        "vi": "Hy vọng"
+      },
+      "tone": "beauty",
+      "connections": [
+        "steadiness-root",
+        "fear-opening",
+        "renewal-release",
+        "rest-surface"
+      ]
+    },
+    {
+      "id": "hope-root",
+      "label": {
+        "en": "Hope",
+        "vi": "Hy vọng"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "steadiness-opening",
+        "fear-release",
+        "renewal-surface",
+        "rest-echo"
+      ]
+    },
+    {
+      "id": "hope-opening",
+      "label": {
+        "en": "Hope",
+        "vi": "Hy vọng"
+      },
+      "tone": "possibility",
+      "connections": [
+        "steadiness-release",
+        "fear-surface",
+        "renewal-echo",
+        "rest-root"
+      ]
+    },
+    {
+      "id": "hope-release",
+      "label": {
+        "en": "Hope",
+        "vi": "Hy vọng"
+      },
+      "tone": "release",
+      "connections": [
+        "steadiness-surface",
+        "fear-echo",
+        "renewal-root",
+        "rest-opening"
+      ]
+    },
+    {
+      "id": "steadiness-surface",
+      "label": {
+        "en": "Steadiness",
+        "vi": "Vững chãi"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "fear-echo",
+        "doubt-root",
+        "movement-opening",
+        "responsibility-release"
+      ]
+    },
+    {
+      "id": "steadiness-echo",
+      "label": {
+        "en": "Steadiness",
+        "vi": "Vững chãi"
+      },
+      "tone": "beauty",
+      "connections": [
+        "fear-root",
+        "doubt-opening",
+        "movement-release",
+        "responsibility-surface"
+      ]
+    },
+    {
+      "id": "steadiness-root",
+      "label": {
+        "en": "Steadiness",
+        "vi": "Vững chãi"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "fear-opening",
+        "doubt-release",
+        "movement-surface",
+        "responsibility-echo"
+      ]
+    },
+    {
+      "id": "steadiness-opening",
+      "label": {
+        "en": "Steadiness",
+        "vi": "Vững chãi"
+      },
+      "tone": "possibility",
+      "connections": [
+        "fear-release",
+        "doubt-surface",
+        "movement-echo",
+        "responsibility-root"
+      ]
+    },
+    {
+      "id": "steadiness-release",
+      "label": {
+        "en": "Steadiness",
+        "vi": "Vững chãi"
+      },
+      "tone": "release",
+      "connections": [
+        "fear-surface",
+        "doubt-echo",
+        "movement-root",
+        "responsibility-opening"
+      ]
+    },
+    {
+      "id": "change-surface",
+      "label": {
+        "en": "Change",
+        "vi": "Thay đổi"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "ending-echo",
+        "beginning-root",
+        "work-opening",
+        "doubt-release"
+      ]
+    },
+    {
+      "id": "change-echo",
+      "label": {
+        "en": "Change",
+        "vi": "Thay đổi"
+      },
+      "tone": "beauty",
+      "connections": [
+        "ending-root",
+        "beginning-opening",
+        "work-release",
+        "doubt-surface"
+      ]
+    },
+    {
+      "id": "change-root",
+      "label": {
+        "en": "Change",
+        "vi": "Thay đổi"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "ending-opening",
+        "beginning-release",
+        "work-surface",
+        "doubt-echo"
+      ]
+    },
+    {
+      "id": "change-opening",
+      "label": {
+        "en": "Change",
+        "vi": "Thay đổi"
+      },
+      "tone": "possibility",
+      "connections": [
+        "ending-release",
+        "beginning-surface",
+        "work-echo",
+        "doubt-root"
+      ]
+    },
+    {
+      "id": "change-release",
+      "label": {
+        "en": "Change",
+        "vi": "Thay đổi"
+      },
+      "tone": "release",
+      "connections": [
+        "ending-surface",
+        "beginning-echo",
+        "work-root",
+        "doubt-opening"
+      ]
+    },
+    {
+      "id": "ending-surface",
+      "label": {
+        "en": "Ending",
+        "vi": "Kết thúc"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "beginning-echo",
+        "season-root",
+        "meeting-opening",
+        "risk-release"
+      ]
+    },
+    {
+      "id": "ending-echo",
+      "label": {
+        "en": "Ending",
+        "vi": "Kết thúc"
+      },
+      "tone": "beauty",
+      "connections": [
+        "beginning-root",
+        "season-opening",
+        "meeting-release",
+        "risk-surface"
+      ]
+    },
+    {
+      "id": "ending-root",
+      "label": {
+        "en": "Ending",
+        "vi": "Kết thúc"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "beginning-opening",
+        "season-release",
+        "meeting-surface",
+        "risk-echo"
+      ]
+    },
+    {
+      "id": "ending-opening",
+      "label": {
+        "en": "Ending",
+        "vi": "Kết thúc"
+      },
+      "tone": "possibility",
+      "connections": [
+        "beginning-release",
+        "season-surface",
+        "meeting-echo",
+        "risk-root"
+      ]
+    },
+    {
+      "id": "ending-release",
+      "label": {
+        "en": "Ending",
+        "vi": "Kết thúc"
+      },
+      "tone": "release",
+      "connections": [
+        "beginning-surface",
+        "season-echo",
+        "meeting-root",
+        "risk-opening"
+      ]
+    },
+    {
+      "id": "beginning-surface",
+      "label": {
+        "en": "Beginning",
+        "vi": "Khởi đầu"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "season-echo",
+        "renewal-root",
+        "deadline-opening",
+        "acceptance-release"
+      ]
+    },
+    {
+      "id": "beginning-echo",
+      "label": {
+        "en": "Beginning",
+        "vi": "Khởi đầu"
+      },
+      "tone": "beauty",
+      "connections": [
+        "season-root",
+        "renewal-opening",
+        "deadline-release",
+        "acceptance-surface"
+      ]
+    },
+    {
+      "id": "beginning-root",
+      "label": {
+        "en": "Beginning",
+        "vi": "Khởi đầu"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "season-opening",
+        "renewal-release",
+        "deadline-surface",
+        "acceptance-echo"
+      ]
+    },
+    {
+      "id": "beginning-opening",
+      "label": {
+        "en": "Beginning",
+        "vi": "Khởi đầu"
+      },
+      "tone": "possibility",
+      "connections": [
+        "season-release",
+        "renewal-surface",
+        "deadline-echo",
+        "acceptance-root"
+      ]
+    },
+    {
+      "id": "beginning-release",
+      "label": {
+        "en": "Beginning",
+        "vi": "Khởi đầu"
+      },
+      "tone": "release",
+      "connections": [
+        "season-surface",
+        "renewal-echo",
+        "deadline-root",
+        "acceptance-opening"
+      ]
+    },
+    {
+      "id": "season-surface",
+      "label": {
+        "en": "Season",
+        "vi": "Mùa"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "renewal-echo",
+        "movement-root",
+        "purpose-opening",
+        "hope-release"
+      ]
+    },
+    {
+      "id": "season-echo",
+      "label": {
+        "en": "Season",
+        "vi": "Mùa"
+      },
+      "tone": "beauty",
+      "connections": [
+        "renewal-root",
+        "movement-opening",
+        "purpose-release",
+        "hope-surface"
+      ]
+    },
+    {
+      "id": "season-root",
+      "label": {
+        "en": "Season",
+        "vi": "Mùa"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "renewal-opening",
+        "movement-release",
+        "purpose-surface",
+        "hope-echo"
+      ]
+    },
+    {
+      "id": "season-opening",
+      "label": {
+        "en": "Season",
+        "vi": "Mùa"
+      },
+      "tone": "possibility",
+      "connections": [
+        "renewal-release",
+        "movement-surface",
+        "purpose-echo",
+        "hope-root"
+      ]
+    },
+    {
+      "id": "season-release",
+      "label": {
+        "en": "Season",
+        "vi": "Mùa"
+      },
+      "tone": "release",
+      "connections": [
+        "renewal-surface",
+        "movement-echo",
+        "purpose-root",
+        "hope-opening"
+      ]
+    },
+    {
+      "id": "renewal-surface",
+      "label": {
+        "en": "Renewal",
+        "vi": "Đổi mới"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "movement-echo",
+        "change-root",
+        "pressure-opening",
+        "steadiness-release"
+      ]
+    },
+    {
+      "id": "renewal-echo",
+      "label": {
+        "en": "Renewal",
+        "vi": "Đổi mới"
+      },
+      "tone": "beauty",
+      "connections": [
+        "movement-root",
+        "change-opening",
+        "pressure-release",
+        "steadiness-surface"
+      ]
+    },
+    {
+      "id": "renewal-root",
+      "label": {
+        "en": "Renewal",
+        "vi": "Đổi mới"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "movement-opening",
+        "change-release",
+        "pressure-surface",
+        "steadiness-echo"
+      ]
+    },
+    {
+      "id": "renewal-opening",
+      "label": {
+        "en": "Renewal",
+        "vi": "Đổi mới"
+      },
+      "tone": "possibility",
+      "connections": [
+        "movement-release",
+        "change-surface",
+        "pressure-echo",
+        "steadiness-root"
+      ]
+    },
+    {
+      "id": "renewal-release",
+      "label": {
+        "en": "Renewal",
+        "vi": "Đổi mới"
+      },
+      "tone": "release",
+      "connections": [
+        "movement-surface",
+        "change-echo",
+        "pressure-root",
+        "steadiness-opening"
+      ]
+    },
+    {
+      "id": "movement-surface",
+      "label": {
+        "en": "Movement",
+        "vi": "Chuyển động"
+      },
+      "tone": "difficulty",
+      "connections": [
+        "change-echo",
+        "ending-root",
+        "growth-opening",
+        "fear-release"
+      ]
+    },
+    {
+      "id": "movement-echo",
+      "label": {
+        "en": "Movement",
+        "vi": "Chuyển động"
+      },
+      "tone": "beauty",
+      "connections": [
+        "change-root",
+        "ending-opening",
+        "growth-release",
+        "fear-surface"
+      ]
+    },
+    {
+      "id": "movement-root",
+      "label": {
+        "en": "Movement",
+        "vi": "Chuyển động"
+      },
+      "tone": "wisdom",
+      "connections": [
+        "change-opening",
+        "ending-release",
+        "growth-surface",
+        "fear-echo"
+      ]
+    },
+    {
+      "id": "movement-opening",
+      "label": {
+        "en": "Movement",
+        "vi": "Chuyển động"
+      },
+      "tone": "possibility",
+      "connections": [
+        "change-release",
+        "ending-surface",
+        "growth-echo",
+        "fear-root"
+      ]
+    },
+    {
+      "id": "movement-release",
+      "label": {
+        "en": "Movement",
+        "vi": "Chuyển động"
+      },
+      "tone": "release",
+      "connections": [
+        "change-surface",
+        "ending-echo",
+        "growth-root",
+        "fear-opening"
+      ]
+    }
+  ]
+}
