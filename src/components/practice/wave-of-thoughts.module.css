@@ -7,3 +7,4 @@
 
 /* Runtime values avoid depending on experimental CSS arithmetic. */
 .environment .moon{opacity:var(--moon-opacity)}.environment .mist{opacity:var(--mist-opacity)}.environment .moonPath{opacity:var(--path-opacity)}.environment .galaxy{opacity:var(--galaxy-opacity)}.environment .lotus{filter:drop-shadow(0 0 20px #d6ad5b77)}
+.lantern.departing{pointer-events:none;animation:lanternDepart 3s ease forwards}@keyframes lanternDepart{0%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--drift)),-85%) scale(.82);filter:blur(3px)}}@media(prefers-reduced-motion:reduce){.lantern.departing{animation:none!important;opacity:0}}
