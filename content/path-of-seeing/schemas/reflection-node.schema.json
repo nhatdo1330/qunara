@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qunara.ai/schema/path-of-seeing/reflection-node.schema.json",
+  "title": "Qunara Path of Seeing Reflection Node",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "id",
+    "label",
+    "question",
+    "theme",
+    "stage",
+    "depth",
+    "intensity",
+    "connections",
+    "sourceFoundation",
+    "editorial",
+    "metadata"
+  ],
+
+  "properties": {
+
+    "id": {
+      "type": "string",
+      "pattern": "^POS-T\\d{2}-S\\d{2}-(VG|G|M|D)-\\d{4}$"
+    },
+
+    "label": {
+      "type": "object",
+      "required": ["en","vi"],
+      "properties": {
+        "en": { "type":"string", "minLength":3, "maxLength":80 },
+        "vi": { "type":"string", "minLength":3, "maxLength":80 }
+      }
+    },
+
+    "question": {
+      "type":"object",
+      "required":["en","vi"],
+      "properties":{
+        "en":{
+          "type":"string",
+          "minLength":10,
+          "maxLength":350
+        },
+        "vi":{
+          "type":"string",
+          "minLength":10,
+          "maxLength":350
+        }
+      }
+    },
+
+    "theme":{
+
+      "type":"object",
+
+      "required":["primary","secondary"],
+
+      "properties":{
+
+        "primary":{
+          "type":"string",
+          "enum":[
+            "impermanence",
+            "attachment",
+            "suffering",
+            "non_self",
+            "dependent_origination",
+            "compassion",
+            "self_compassion",
+            "mindfulness",
+            "breath",
+            "emotions",
+            "fear",
+            "anger",
+            "forgiveness",
+            "deep_listening",
+            "interbeing",
+            "gratitude",
+            "letting_go",
+            "mortality",
+            "happiness",
+            "conscious_action"
+          ]
+        },
+
+        "secondary":{
+          "type":"array",
+          "minItems":0,
+          "maxItems":2,
+          "uniqueItems":true,
+          "items":{
+            "$ref":"#/$defs/theme"
+          }
+        }
+
+      }
+
+    },
+
+    "stage":{
+      "type":"string",
+      "enum":[
+        "noticing",
+        "staying",
+        "conditions",
+        "loosening",
+        "perspective",
+        "connection",
+        "letting_go",
+        "daily_life"
+      ]
+    },
+
+    "depth":{
+      "type":"integer",
+      "minimum":1,
+      "maximum":5
+    },
+
+    "intensity":{
+      "type":"string",
+      "enum":[
+        "very_gentle",
+        "gentle",
+        "moderate",
+        "deep"
+      ]
+    },
+
+    "connections":{
+      "type":"array",
+      "minItems":3,
+      "maxItems":8,
+      "uniqueItems":true,
+      "items":{
+        "type":"string"
+      }
+    },
+
+    "sourceFoundation":{
+
+      "type":"object",
+
+      "required":[
+        "type",
+        "teacher",
+        "sourceIds",
+        "isDirectQuote"
+      ],
+
+      "properties":{
+
+        "type":{
+          "type":"string",
+          "enum":[
+            "canonical",
+            "teacher_teaching",
+            "modern_commentary",
+            "qunara_editorial"
+          ]
+        },
+
+        "teacher":{
+          "type":[
+            "string",
+            "null"
+          ]
+        },
+
+        "sourceIds":{
+          "type":"array",
+          "items":{
+            "type":"string"
+          }
+        },
+
+        "isDirectQuote":{
+          "type":"boolean"
+        }
+
+      }
+
+    },
+
+    "editorial":{
+
+      "type":"object",
+
+      "required":[
+        "status",
+        "sensitivity"
+      ],
+
+      "properties":{
+
+        "status":{
+          "type":"string",
+          "enum":[
+            "draft",
+            "review",
+            "approved",
+            "published",
+            "archived"
+          ]
+        },
+
+        "sensitivity":{
+          "type":"array",
+          "uniqueItems":true,
+          "items":{
+            "type":"string",
+            "enum":[
+              "none",
+              "grief",
+              "death",
+              "identity",
+              "trauma",
+              "self_blame",
+              "strong_emotion",
+              "existential"
+            ]
+          }
+        }
+
+      }
+
+    },
+
+    "metadata":{
+
+      "type":"object",
+
+      "required":[
+        "created",
+        "reviewDate",
+        "reviewerNotes",
+        "version"
+      ],
+
+      "properties":{
+
+        "created":{
+          "type":"string",
+          "format":"date"
+        },
+
+        "reviewDate":{
+          "type":"string",
+          "format":"date"
+        },
+
+        "reviewerNotes":{
+          "type":"string"
+        },
+
+        "version":{
+          "type":"string",
+          "pattern":"^v\\d+\\.\\d+$"
+        }
+
+      }
+
+    }
+
+  },
+
+  "$defs":{
+
+    "theme":{
+
+      "type":"string",
+
+      "enum":[
+        "impermanence",
+        "attachment",
+        "suffering",
+        "non_self",
+        "dependent_origination",
+        "compassion",
+        "self_compassion",
+        "mindfulness",
+        "breath",
+        "emotions",
+        "fear",
+        "anger",
+        "forgiveness",
+        "deep_listening",
+        "interbeing",
+        "gratitude",
+        "letting_go",
+        "mortality",
+        "happiness",
+        "conscious_action"
+      ]
+
+    }
+
+  }
+
+}

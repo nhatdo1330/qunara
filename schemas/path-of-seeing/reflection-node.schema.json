@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qunara.local/schemas/path-of-seeing/reflection-node.schema.json",
+  "title": "Path of Seeing reflection-node library",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "entry_node_ids", "nodes"],
+  "properties": {
+    "version": { "type": "string", "minLength": 1 },
+    "entry_node_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nodeId" }
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/reflectionNode" }
+    }
+  },
+  "$defs": {
+    "nodeId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "reflectionText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["full", "medium", "short"],
+      "properties": {
+        "full": { "type": "string", "minLength": 1 },
+        "medium": { "type": "string", "minLength": 1 },
+        "short": { "type": "string", "minLength": 1 }
+      }
+    },
+    "translations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "vi"],
+      "properties": {
+        "en": { "$ref": "#/$defs/reflectionText" },
+        "vi": { "$ref": "#/$defs/reflectionText" }
+      }
+    },
+    "reviewDecision": {
+      "enum": ["pending", "approved", "changes_requested", "not_required"]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_basis", "teacher_basis", "modern_commentary",
+        "qunara_interpretation", "tradition_label", "direct_quote",
+        "quote_attribution", "quote_verified", "copyright_review",
+        "doctrinal_review", "content_safety_review"
+      ],
+      "properties": {
+        "canonical_basis": { "type": "string" },
+        "teacher_basis": { "type": "string" },
+        "modern_commentary": { "type": "string" },
+        "qunara_interpretation": { "type": "string" },
+        "tradition_label": { "type": "string", "minLength": 1 },
+        "direct_quote": { "type": "boolean" },
+        "quote_attribution": { "type": ["string", "null"] },
+        "quote_verified": { "type": "boolean" },
+        "copyright_review": { "$ref": "#/$defs/reviewDecision" },
+        "doctrinal_review": { "$ref": "#/$defs/reviewDecision" },
+        "content_safety_review": { "$ref": "#/$defs/reviewDecision" }
+      }
+    },
+    "reflectionNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "translations", "theme_ids", "stage_id", "intensity",
+        "connections", "source_ids", "provenance", "safety_flags", "review_status"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/nodeId" },
+        "translations": { "$ref": "#/$defs/translations" },
+        "theme_ids": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^T(?:0[1-9]|1[0-9]|20)$" }
+        },
+        "stage_id": { "type": "string", "pattern": "^S[1-8]$" },
+        "intensity": { "enum": ["very_gentle", "gentle", "moderate", "deep"] },
+        "connections": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "$ref": "#/$defs/nodeId" }
+        },
+        "source_ids": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^(?:SC|DL|PV)-[0-9]{3}$" }
+        },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "safety_flags": {
+          "type": "array", "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "review_status": { "enum": ["draft", "in_review", "approved", "rejected"] }
+      }
+    }
+  }
+}

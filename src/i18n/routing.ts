@@ -22,6 +22,7 @@ export const pathnames = {
   "/about": { en: "/about", vi: "/gioi-thieu" },
   "/community": { en: "/community", vi: "/cong-dong" },
   "/practice": "/practice",
+  "/practice/path-of-seeing": "/practice/path-of-seeing",
   "/research": "/research",
   "/contact": "/contact",
   "/search": "/search",
