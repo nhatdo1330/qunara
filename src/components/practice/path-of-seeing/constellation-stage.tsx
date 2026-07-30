@@ -8,12 +8,12 @@ import styles from "./path-of-seeing.module.css";
 import { constellationNavigationKeys, nextConstellationIndex, reflectionTextVariant } from "./interaction-state";
 
 export function ConstellationStage({locale,focus,related,historical,selectedId,quieting,onSelect}:{locale:PathLocale;focus:ReflectionNodeData;related:ReflectionNodeData[];historical:string[];selectedId:string|null;quieting:boolean;onSelect:(node:ReflectionNodeData)=>void}){
-  const stageRef=useRef<HTMLDivElement>(null),sizes=useRef(new Map<string,NodeSize>()),[stage,setStage]=useState({width:800,height:700}),[positions,setPositions]=useState<NodePosition[]>([]),[variants,setVariants]=useState<Record<string,TextVariant>>({});
+  const stageRef=useRef<HTMLDivElement>(null),sizes=useRef(new Map<string,NodeSize>()),[stage,setStage]=useState({width:800,height:700}),[positions,setPositions]=useState<NodePosition[]>([]),[variants,setVariants]=useState<Record<string,TextVariant>>({}),[measurementVersion,setMeasurementVersion]=useState(0);
   const nodes=useMemo(()=>[focus,...related.slice(0,3)],[focus,related]);
   useEffect(()=>setVariants(Object.fromEntries(nodes.map((node,index)=>[node.id,reflectionTextVariant(index)]))),[nodes]);
   useEffect(()=>{const element=stageRef.current;if(!element)return;const update=()=>setStage({width:element.clientWidth,height:element.clientHeight});update();const observer=new ResizeObserver(update);observer.observe(element);return()=>observer.disconnect()},[]);
-  const measure=useCallback((id:string)=>(element:HTMLButtonElement|null)=>{if(!element)return;const rect=element.getBoundingClientRect();sizes.current.set(id,{width:rect.width,height:rect.height})},[]);
-  useLayoutEffect(()=>{const next=guidedConstellationLayout(stage,focus.id,related.map(node=>node.id),sizes.current);setPositions(next);const missing=related.find(node=>!next.some(position=>position.id===node.id)&&variants[node.id]!=="short");if(missing)setVariants(current=>({...current,[missing.id]:"short"}))},[stage,focus.id,related,variants]);
+  const measure=useCallback((id:string)=>(element:HTMLButtonElement|null)=>{if(!element)return;const rect=element.getBoundingClientRect(),previous=sizes.current.get(id),next={width:rect.width,height:rect.height};if(!previous||Math.abs(previous.width-next.width)>1||Math.abs(previous.height-next.height)>1){sizes.current.set(id,next);setMeasurementVersion(version=>version+1)}},[]);
+  useLayoutEffect(()=>{const next=guidedConstellationLayout(stage,focus.id,related.map(node=>node.id),sizes.current);setPositions(next)},[stage,focus.id,related,variants,measurementVersion]);
   const byId=new Map(positions.map(position=>[position.id,position]));
   const ambientCount=Math.max(0,8-Math.min(8,historical.length));
   function keyboard(event:React.KeyboardEvent){if(!constellationNavigationKeys.includes(event.key as typeof constellationNavigationKeys[number]))return;event.preventDefault();const buttons=Array.from(stageRef.current?.querySelectorAll<HTMLButtonElement>("[data-reflection-node]")??[]),index=buttons.indexOf(document.activeElement as HTMLButtonElement);buttons[nextConstellationIndex(event.key,index,buttons.length)]?.focus()}
