@@ -16,7 +16,7 @@ function layout(stage:{width:number;height:number},sizes:NodeSize[]){return guid
 
 test("small mobile and long Vietnamese layouts do not overlap",()=>{
   const stage={width:320,height:568},positions=layout(stage,[{width:230,height:132},{width:126,height:92},{width:128,height:108},{width:124,height:96}]);
-  assertNoOverlap(positions);for(const position of positions)assert.ok(positionWithinSafeArea(position,stage));
+  assert.ok(positions.length>=3,"focus plus at least two choices must remain visible");assertNoOverlap(positions);for(const position of positions)assert.ok(positionWithinSafeArea(position,stage));
 });
 
 test("portrait and landscape orientations remain bounded and collision-free",()=>{
@@ -25,7 +25,7 @@ test("portrait and landscape orientations remain bounded and collision-free",()=
 });
 
 test("constellation exposes one full question and never exceeds twelve active nodes",()=>{
-  assert.deepEqual([0,1,2,3].map(reflectionTextVariant),["full","medium","medium","medium"]);
+  assert.deepEqual([0,1,2,3].map(reflectionTextVariant),["full","short","short","short"]);
   assert.equal(visibleNodeCount(3,8),12);assert.ok(visibleNodeCount(99,99)<=MAX_ACTIVE_NODES);
 });
 
