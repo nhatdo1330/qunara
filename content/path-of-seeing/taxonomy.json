@@ -1,0 +1,114 @@
+{
+  "version": "1.0",
+  "themes": [
+    {
+      "id": "T01",
+      "name": "Impermanence",
+      "stages": ["S1","S2","S3","S4","S5","S6","S7","S8"],
+      "connections": ["T02","T16","T17","T18","T19"],
+      "defaultIntensity": "gentle",
+      "subtopics": [
+        "change",
+        "aging",
+        "cycles",
+        "renewal",
+        "uncertainty",
+        "beginnings",
+        "endings"
+      ]
+    },
+    {
+      "id":"T02",
+      "name":"Attachment"
+    },
+    {
+      "id":"T03",
+      "name":"Suffering"
+    },
+    {
+      "id":"T04",
+      "name":"NonSelf"
+    },
+    {
+      "id":"T05",
+      "name":"DependentOrigination"
+    },
+    {
+      "id":"T06",
+      "name":"Compassion"
+    },
+    {
+      "id":"T07",
+      "name":"SelfCompassion"
+    },
+    {
+      "id":"T08",
+      "name":"Mindfulness"
+    },
+    {
+      "id":"T09",
+      "name":"Breath"
+    },
+    {
+      "id":"T10",
+      "name":"Emotions"
+    },
+    {
+      "id":"T11",
+      "name":"Fear"
+    },
+    {
+      "id":"T12",
+      "name":"Anger"
+    },
+    {
+      "id":"T13",
+      "name":"Forgiveness"
+    },
+    {
+      "id":"T14",
+      "name":"DeepListening"
+    },
+    {
+      "id":"T15",
+      "name":"Interbeing"
+    },
+    {
+      "id":"T16",
+      "name":"Gratitude"
+    },
+    {
+      "id":"T17",
+      "name":"LettingGo"
+    },
+    {
+      "id":"T18",
+      "name":"Mortality",
+      "protected": true
+    },
+    {
+      "id":"T19",
+      "name":"Happiness"
+    },
+    {
+      "id":"T20",
+      "name":"ConsciousAction"
+    }
+  ],
+  "stages": [
+    {"id":"S1","name":"Noticing"},
+    {"id":"S2","name":"Staying"},
+    {"id":"S3","name":"Conditions"},
+    {"id":"S4","name":"Loosening"},
+    {"id":"S5","name":"Perspective"},
+    {"id":"S6","name":"Connection"},
+    {"id":"S7","name":"LettingGo"},
+    {"id":"S8","name":"DailyLife"}
+  ],
+  "intensity":[
+    "very_gentle",
+    "gentle",
+    "moderate",
+    "deep"
+  ]
+}
