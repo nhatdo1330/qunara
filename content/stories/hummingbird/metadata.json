@@ -1,30 +1,56 @@
 {
-  "id": "hummingbird",
+  "id": "little-friend-in-the-garden",
   "type": "personal-story",
   "author": "Qunara Founder",
+
   "slug": {
-    "en": "the-hummingbird-that-learned-not-to-fear-me",
-    "vi": "chu-chim-ruoi-khong-con-so-toi"
+    "en": "the-little-friend-in-the-garden",
+    "vi": "nguoi-ban-nho-trong-khu-vuon"
   },
+
   "title": {
-    "en": "The Hummingbird That Learned Not to Fear Me",
-    "vi": "Chú chim ruồi không còn sợ tôi"
+    "en": "The Little Friend in the Garden",
+    "vi": "Người bạn nhỏ trong khu vườn"
   },
+
   "subtitle": {
-    "en": "A hummingbird didn't change my life. It simply arrived after I learned to stop asking the world to move at my pace.",
-    "vi": "Một câu chuyện về sự kiên nhẫn, hiện diện và học cách sống cùng nhịp điệu của thiên nhiên."
+    "en": "A difficult garden, a tiny hummingbird, and a quiet lesson about changing how we meet the world instead of trying to control it.",
+    "vi": "Một khu vườn nhiều thử thách, một chú chim ruồi nhỏ và bài học về việc thay đổi cách ta hiện diện trong thế giới thay vì cố gắng kiểm soát nó."
   },
+
+  "description": {
+    "en": "After moving into a rocky, shaded backyard, I slowly learned that gardening was less about changing nature than learning to live alongside it. Along the way, an unexpected friendship with a hummingbird became a quiet reflection on patience, presence, and the way our experience of the world changes when we do.",
+    "vi": "Sau khi chuyển đến một ngôi nhà với khu vườn đầy đá và ít nắng, tôi dần nhận ra làm vườn không phải là chinh phục thiên nhiên mà là học cách sống cùng nó. Trên hành trình ấy, một chú chim ruồi nhỏ trở thành lời nhắc nhẹ nhàng về sự kiên nhẫn, sự hiện diện và cách thế giới ta trải nghiệm đổi thay khi chính ta đổi thay."
+  },
+
   "image": "/images/stories/hummingbird-reading-quantum.jpg",
+
   "readingTime": {
     "en": "7 min",
     "vi": "7 phút"
   },
+
   "featured": true,
   "published": true,
+
   "editorialStatus": "reviewed",
+
+  "categories": [
+    "Personal Stories",
+    "Nature",
+    "Reflection"
+  ],
+
   "tags": [
+    "hummingbird",
+    "garden",
     "nature",
+    "presence",
     "mindfulness",
-    "reflection"
+    "patience",
+    "letting-go",
+    "reflection",
+    "buddhist-inspired",
+    "everyday-life"
   ]
 }

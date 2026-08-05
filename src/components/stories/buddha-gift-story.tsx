@@ -30,7 +30,7 @@ const storyCopy = {
       lesson: "Mâu thuẫn không nói lên toàn bộ một con người.", buddhist: "Khi nhu cầu hơn thua, nắm giữ và bảo vệ cái tôi trở nên nhẹ hơn, lòng tử tế có thêm không gian để xuất hiện.", question: "Có ai trong đời mà bạn đang chỉ nhìn họ qua lăng kính của một sự bất đồng?",
     },
   },
-  hummingbird: {
+  "little-friend-in-the-garden": {
     en: {
       imageAlt: "A hummingbird hovering near the author as he reads in the garden.", caption: "The moment described in this story.",
       lesson: "The photograph reminds me of how easily we confuse control with connection.", buddhist: "Buddhist practice often invites us to loosen our grip on control and to meet each moment with greater presence.", question: "If nothing around you changed tomorrow, but the way you met the world did, what might you begin to notice for the first time?",
