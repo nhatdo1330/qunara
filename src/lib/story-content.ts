@@ -1,6 +1,6 @@
 import "server-only";
 
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 export type StoryLocale = "en" | "vi";
@@ -39,32 +39,67 @@ export type StoryDocument = {
   blocks: StoryBlock[];
 };
 
-const storyRoot = join(process.cwd(), "content", "stories", "buddha-gift");
+const storiesRoot = join(process.cwd(), "content", "stories");
 
-export function loadBuddhaGiftStory(locale: StoryLocale): StoryDocument {
+type StoryMatch = { id: string; locale: StoryLocale };
+
+export function loadEditorialStory(id: string, locale: StoryLocale): StoryDocument {
+  const storyRoot = join(storiesRoot, id);
   const metadata = JSON.parse(readFileSync(join(storyRoot, "metadata.json"), "utf8")) as StoryMetadata;
   const sources = JSON.parse(readFileSync(join(storyRoot, "sources.json"), "utf8")) as StorySources;
   const raw = readFileSync(join(storyRoot, `${locale}.md`), "utf8");
   const { frontmatter, body } = splitFrontmatter(raw);
-  const lines = body.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
-  const headingIndex = lines.findIndex((line) => line.startsWith("# "));
-  const title = headingIndex >= 0 ? lines[headingIndex].slice(2).trim() : metadata.title[locale];
-  const contentLines = headingIndex >= 0 ? lines.slice(headingIndex + 1) : lines;
-  const blocks = contentLines.map<StoryBlock>((line) => {
-    if (line.startsWith("*") && line.endsWith("*") && !line.startsWith("**")) {
-      return { type: "opening", text: line.slice(1, -1) };
-    }
-    return { type: "paragraph", text: line };
-  });
+  const parsed = parseStoryBody(body, metadata.title[locale]);
 
-  return { metadata, sources, locale, frontmatter, title, blocks };
+  return { metadata, sources, locale, frontmatter, title: parsed.title, blocks: parsed.blocks };
+}
+
+export function resolveEditorialStory(slug: string): StoryMatch | null {
+  for (const id of editorialStoryIds()) {
+    const metadata = JSON.parse(readFileSync(join(storiesRoot, id, "metadata.json"), "utf8")) as StoryMetadata;
+    if (slug === metadata.slug.en) return { id, locale: "en" };
+    if (slug === metadata.slug.vi) return { id, locale: "vi" };
+  }
+  return null;
+}
+
+function editorialStoryIds(): string[] {
+  return readdirSync(storiesRoot).filter((entry) => {
+    const directory = join(storiesRoot, entry);
+    return statSync(directory).isDirectory()
+      && ["metadata.json", "sources.json", "en.md", "vi.md"].every((file) => {
+        try { return statSync(join(directory, file)).isFile(); } catch { return false; }
+      });
+  });
+}
+
+export function loadBuddhaGiftStory(locale: StoryLocale): StoryDocument {
+  return loadEditorialStory("buddha-gift", locale);
 }
 
 export function resolveBuddhaGiftLocale(slug: string): StoryLocale | null {
-  const metadata = JSON.parse(readFileSync(join(storyRoot, "metadata.json"), "utf8")) as StoryMetadata;
-  if (slug === metadata.slug.en) return "en";
-  if (slug === metadata.slug.vi) return "vi";
-  return null;
+  const match = resolveEditorialStory(slug);
+  return match?.id === "buddha-gift" ? match.locale : null;
+}
+
+function parseStoryBody(body: string, fallbackTitle: string): { title: string; blocks: StoryBlock[] } {
+  const lines = body.split(/\r?\n/).map((line) => line.trim());
+  const headings = lines
+    .map((line, index) => ({ line, index }))
+    .filter(({ line }) => line.startsWith("# ") && line !== "# Title");
+  const heading = headings.at(-1);
+  const start = heading ? heading.index + 1 : 0;
+  const endMarker = lines.findIndex((line, index) => index >= start && line === "---");
+  const contentLines = lines.slice(start, endMarker >= 0 ? endMarker : undefined).filter(Boolean);
+  const blocks = contentLines
+    .filter((line) => !line.startsWith("## "))
+    .map<StoryBlock>((line) => {
+      if (line.startsWith("*") && line.endsWith("*") && !line.startsWith("**")) {
+        return { type: "opening", text: line.slice(1, -1) };
+      }
+      return { type: "paragraph", text: line.replace(/^\*\*(.*)\*\*$/, "$1") };
+    });
+  return { title: heading?.line.slice(2).trim() ?? fallbackTitle, blocks };
 }
 
 function splitFrontmatter(source: string) {
