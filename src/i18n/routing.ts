@@ -71,6 +71,7 @@ const exploreSlugs = {
 
 const storySlugs = {
   "the-buddha-i-never-expected-to-receive": "buc-tuong-phat-toi-khong-bao-gio-nghi-minh-se-co",
+  "the-little-friend-in-the-garden": "nguoi-ban-nho-trong-khu-vuon",
 } as const;
 
 const learnPaths = {quantum: "vat-ly-luong-tu", buddhism: "phat-hoc"} as const;

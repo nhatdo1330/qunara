@@ -5,15 +5,15 @@ import { getLocale } from "next-intl/server";
 import { StoryDetail } from "@/components/explore/collection-detail";
 import { BuddhaGiftStory } from "@/components/stories/buddha-gift-story";
 import { findStory } from "@/lib/explore-collections";
-import { loadBuddhaGiftStory, resolveBuddhaGiftLocale } from "@/lib/story-content";
+import { loadEditorialStory, resolveEditorialStory } from "@/lib/story-content";
 
 type Props = { params: { slug: string } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const buddhaGiftLocale = resolveBuddhaGiftLocale(params.slug);
-  if (buddhaGiftLocale) {
-    const story = loadBuddhaGiftStory(buddhaGiftLocale);
-    const isVietnamese = buddhaGiftLocale === "vi";
+  const match = resolveEditorialStory(params.slug);
+  if (match) {
+    const story = loadEditorialStory(match.id, match.locale);
+    const isVietnamese = match.locale === "vi";
     const canonical = isVietnamese
       ? `/vi/cau-chuyen/${story.metadata.slug.vi}`
       : `/en/stories/${story.metadata.slug.en}`;
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : `${story.metadata.title.en} | Qunara Stories`;
     return {
       title: { absolute: title },
-      description: story.metadata.subtitle[buddhaGiftLocale],
+      description: story.metadata.subtitle[match.locale],
       alternates: {
         canonical,
         languages: {
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           vi: `/vi/cau-chuyen/${story.metadata.slug.vi}`,
         },
       },
-      openGraph: { title, description: story.metadata.subtitle[buddhaGiftLocale], type: "article", locale: isVietnamese ? "vi_VN" : "en_US", images: [story.metadata.image] },
-      twitter: { card: "summary_large_image", title, description: story.metadata.subtitle[buddhaGiftLocale], images: [story.metadata.image] },
+      openGraph: { title, description: story.metadata.subtitle[match.locale], type: "article", locale: isVietnamese ? "vi_VN" : "en_US", images: [story.metadata.image] },
+      twitter: { card: "summary_large_image", title, description: story.metadata.subtitle[match.locale], images: [story.metadata.image] },
     };
   }
   const story = findStory(params.slug);
@@ -40,10 +40,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function StoryPage({ params }: Props) {
   const requestedLocale = await getLocale();
-  const buddhaGiftLocale = resolveBuddhaGiftLocale(params.slug);
-  if (buddhaGiftLocale) {
-    if (requestedLocale !== buddhaGiftLocale) notFound();
-    return <BuddhaGiftStory story={loadBuddhaGiftStory(buddhaGiftLocale)}/>;
+  const match = resolveEditorialStory(params.slug);
+  if (match) {
+    if (requestedLocale !== match.locale) notFound();
+    return <BuddhaGiftStory story={loadEditorialStory(match.id, match.locale)}/>;
   }
   const story = findStory(params.slug);
   if (!story) notFound();
