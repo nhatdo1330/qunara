@@ -40,6 +40,16 @@ const storyCopy = {
       lesson: "Có lẽ điều duy nhất thay đổi là chính tôi.", buddhist: "Tôi bớt vội vàng, bớt muốn kiểm soát, biết quan sát nhiều hơn và biết chờ đợi nhiều hơn.", question: "Có lẽ thế giới không hề thay đổi. Chỉ là tôi đã thay đổi cách bước vào thế giới ấy.",
     },
   },
+  lotus: {
+    en: {
+      imageAlt: "A broad lotus pond beneath an evening sky.", caption: "A lotus pond at dusk.",
+      lesson: "Some things remain with us because we are not finished understanding them.", buddhist: "These are reflections inspired by Buddhism, not quotations from scripture or claims about a single official meaning of the lotus.", question: "Is there an image from your childhood that you only began to understand after you grew older?",
+    },
+    vi: {
+      imageAlt: "Một hồ sen rộng dưới bầu trời chiều.", caption: "Hồ sen lúc chiều xuống.",
+      lesson: "Có những điều ở lại với chúng ta bởi vì chúng ta vẫn chưa hiểu hết về chúng.", buddhist: "Đây là những suy ngẫm lấy cảm hứng từ Phật học, không phải lời kinh hay một định nghĩa duy nhất về ý nghĩa của hoa sen.", question: "Có hình ảnh nào từ tuổi thơ mà chỉ đến khi trưởng thành bạn mới bắt đầu hiểu ý nghĩa của nó?",
+    },
+  },
 } as const;
 
 const dividerStarts = {
