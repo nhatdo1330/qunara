@@ -1,0 +1,41 @@
+{
+  "id": "lotus",
+  "type": "personal-story",
+  "author": "Qunara Founder",
+
+  "slug": {
+    "en": "the-lotus-a-flower-of-compassion",
+    "vi": "hoa-sen-doa-hoa-cua-long-tu-bi"
+  },
+
+  "title": {
+    "en": "The Lotus — A Flower of Compassion",
+    "vi": "Hoa Sen — Đóa Hoa của Lòng Từ Bi"
+  },
+
+  "subtitle": {
+    "en": "Some symbols stay with us long before we understand them.",
+    "vi": "Có những biểu tượng ở bên ta từ rất lâu trước khi ta hiểu ý nghĩa của chúng."
+  },
+
+  "image": "/images/stories/lotus-childhood.jpg",
+
+  "readingTime": {
+    "en": "8 min",
+    "vi": "8 phút"
+  },
+
+  "featured": true,
+
+  "published": true,
+
+  "editorialStatus": "reviewed",
+
+  "tags": [
+    "lotus",
+    "childhood",
+    "compassion",
+    "nature",
+    "reflection"
+  ]
+}
