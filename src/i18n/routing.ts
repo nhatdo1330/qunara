@@ -73,6 +73,7 @@ const storySlugs = {
   "the-buddha-i-never-expected-to-receive": "buc-tuong-phat-toi-khong-bao-gio-nghi-minh-se-co",
   "the-little-friend-in-the-garden": "nguoi-ban-nho-trong-khu-vuon",
   "the-lotus-a-flower-of-compassion": "hoa-sen-doa-hoa-cua-long-tu-bi",
+  "the-flowers-were-already-there": "nhung-doa-hoa-van-luon-o-do",
 } as const;
 
 const learnPaths = {quantum: "vat-ly-luong-tu", buddhism: "phat-hoc"} as const;
