@@ -50,6 +50,16 @@ const storyCopy = {
       lesson: "Có những điều ở lại với chúng ta bởi vì chúng ta vẫn chưa hiểu hết về chúng.", buddhist: "Đây là những suy ngẫm lấy cảm hứng từ Phật học, không phải lời kinh hay một định nghĩa duy nhất về ý nghĩa của hoa sen.", question: "Có hình ảnh nào từ tuổi thơ mà chỉ đến khi trưởng thành bạn mới bắt đầu hiểu ý nghĩa của nó?",
     },
   },
+  "flowers-were-already-there": {
+    en: {
+      imageAlt: "Bright yellow flowers along the author's lunchtime walking route near the office.", caption: "The flowers along the author's lunchtime walking route.",
+      lesson: "The flowers had not suddenly appeared. They had already been there.", buddhist: "I do not take this as proof of any spiritual doctrine. It is simply a small experience that helps me understand why mindfulness places so much importance on attention.", question: "What might you notice tomorrow if you gave your mind ten quiet minutes before giving it to the world?",
+    },
+    vi: {
+      imageAlt: "Những khóm hoa vàng rực trên con đường tác giả thường đi bộ vào giờ nghỉ trưa gần văn phòng.", caption: "Những khóm hoa trên con đường tác giả thường đi bộ vào giờ nghỉ trưa.",
+      lesson: "Những bông hoa ấy không vừa mới nở. Chúng đã ở đó từ lâu.", buddhist: "Tôi không xem trải nghiệm này như một bằng chứng cho bất kỳ giáo lý nào.", question: "Nếu sáng mai bạn dành cho tâm trí mình mười phút yên tĩnh trước khi trao nó cho thế giới, bạn sẽ nhìn thấy điều gì khác đi?",
+    },
+  },
 } as const;
 
 const dividerStarts = {

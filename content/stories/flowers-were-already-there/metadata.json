@@ -1,0 +1,25 @@
+{
+  "id": "flowers-were-already-there",
+  "type": "personal-story",
+  "author": "Qunara Founder",
+  "title": {
+    "en": "The Flowers Were Already There",
+    "vi": "Những Đóa Hoa Vẫn Luôn Ở Đó"
+  },
+  "subtitle": {
+    "en": "What changed was not the road I walked, but the mind that was walking through it.",
+    "vi": "Điều thay đổi không phải là con đường tôi đi qua, mà là tâm trí đang bước trên con đường ấy."
+  },
+  "slug": {
+    "en": "the-flowers-were-already-there",
+    "vi": "nhung-doa-hoa-van-luon-o-do"
+  },
+  "image": "/images/stories/flowers-were-already-there.jpg",
+  "readingTime": {
+    "en": "8 min",
+    "vi": "8 phút"
+  },
+  "featured": true,
+  "published": true,
+  "editorialStatus": "reviewed"
+}

@@ -94,6 +94,9 @@ function parseStoryBody(body: string, fallbackTitle: string): { title: string; b
   const blocks = contentLines
     .filter((line) => !line.startsWith("## "))
     .map<StoryBlock>((line) => {
+      if (line.startsWith("> *") && line.endsWith("*")) {
+        return { type: "opening", text: line.slice(3, -1) };
+      }
       if (line.startsWith("*") && line.endsWith("*") && !line.startsWith("**")) {
         return { type: "opening", text: line.slice(1, -1) };
       }
