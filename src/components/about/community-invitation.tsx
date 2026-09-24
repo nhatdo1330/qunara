@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, Compass, Users } from "lucide-react";
+import { ArrowRight, BookOpen, Compass, ExternalLink, Users } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -7,7 +7,7 @@ export async function CommunityInvitation() {
   return <section className="about-community-invitation" id="community-invitation">
     <FinalInvitationStudy/><div className="q-shell"><p className="q-kicker">{t("kicker")}</p><h2>{t("titleOne")}<br/><em>{t("titleTwo")}</em></h2><p>{t("body")}</p>
       <div className="about-invitation-actions"><Link href="/explore"><Compass/>{t("explore")} <ArrowRight/></Link><Link href="/learn"><BookOpen/>{t("learn")} <ArrowRight/></Link><Link href="/community"><Users/>{t("community")} <ArrowRight/></Link></div>
-      <blockquote>{t("quote")}</blockquote></div>
+      <blockquote>{t("quote")}</blockquote><a className="about-engineering-link" href="https://hoang.qunara.ai">{t("engineering")}<ExternalLink/></a></div>
   </section>;
 }
 

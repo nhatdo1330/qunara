@@ -12,6 +12,21 @@ function preferredLocale(request: NextRequest): Locale {
 }
 
 export function middleware(request: NextRequest) {
+  const hostname = request.headers.get("host")?.split(":")[0].toLowerCase();
+  const isHoangHost = hostname === "hoang.qunara.ai";
+  const isPortfolioPreview = request.nextUrl.pathname === "/hoang";
+
+  if ((isHoangHost && request.nextUrl.pathname === "/") || isPortfolioPreview) {
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set("x-hoang-portfolio", "1");
+    if (isPortfolioPreview) {
+      return NextResponse.next({ request: { headers: requestHeaders } });
+    }
+    const destination = request.nextUrl.clone();
+    destination.pathname = "/hoang";
+    return NextResponse.rewrite(destination, { request: { headers: requestHeaders } });
+  }
+
   const resolved = getInternalPathname(request.nextUrl.pathname);
 
   if (!resolved) {
