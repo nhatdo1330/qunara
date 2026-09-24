@@ -52,3 +52,9 @@ export const echoMission = [
 
 export const evalDimensions = ["Correctness", "Consistency", "Alignment", "Completeness", "Helpfulness"] as const;
 
+export const loadSkillResults = [
+  { name: "Plan Program", requests: 160, averageToolCalls: 8.3 },
+  { name: "Plan Campaigns", requests: 109, averageToolCalls: 9.6 },
+  { name: "Create Program", requests: 177, averageToolCalls: 14.1 },
+  { name: "Standardize Data", requests: 118, averageToolCalls: 8.7 },
+] as const;
