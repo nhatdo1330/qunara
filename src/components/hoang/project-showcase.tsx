@@ -71,7 +71,7 @@ function Architecture({ project }: { project: WorkflowProject }) {
 }
 
 function WorkflowDemo({ project }: { project: WorkflowProject }) {
-  const [scene, setScene] = useState(0);
+  const [scene, setScene] = useState(-1);
   const [playing, setPlaying] = useState(false);
   const canvasRef = useRef<HTMLDivElement>(null);
   const nodeRefs = useRef(new Map<string, HTMLElement>());
@@ -141,12 +141,20 @@ function WorkflowDemo({ project }: { project: WorkflowProject }) {
   const nodeState = (reveal: number) => scene < reveal ? styles.flowHidden : scene === reveal ? styles.flowCurrent : styles.flowPast;
 
   const selectScene = (next: number) => { setPlaying(false); setScene(next); };
-  const reset = () => { setPlaying(false); setScene(0); };
+  const reset = () => { setPlaying(false); setScene(-1); };
+  const togglePlayback = () => {
+    if (playing) {
+      setPlaying(false);
+      return;
+    }
+    if (scene < 0 || scene >= sceneCount - 1) setScene(0);
+    setPlaying(true);
+  };
 
   return <>
     <div className={styles.demoToolbar}>
       <p><strong>{project.title} in motion.</strong> Playback reveals one evidence path at a time; earlier evidence remains visible.</p>
-      <div><button type="button" className={styles.playButton} aria-label={playing ? "Pause workflow" : "Play workflow"} onClick={() => setPlaying((value) => !value)}>{playing ? <Pause aria-hidden="true"/> : <Play aria-hidden="true"/>}{playing ? "Pause" : "Play"}</button><button type="button" className={styles.resetButton} onClick={reset}><RotateCcw aria-hidden="true"/>Reset</button></div>
+      <div><button type="button" className={styles.playButton} aria-label={playing ? "Pause workflow" : "Play workflow"} onClick={togglePlayback}>{playing ? <Pause aria-hidden="true"/> : <Play aria-hidden="true"/>}{playing ? "Pause" : "Play"}</button><button type="button" className={styles.resetButton} onClick={reset}><RotateCcw aria-hidden="true"/>Reset</button></div>
     </div>
     <div className={styles.flowCanvas} ref={canvasRef}>
       <svg className={styles.connectorLayer} aria-hidden="true" width="100%" height="100%">
@@ -163,7 +171,7 @@ function WorkflowDemo({ project }: { project: WorkflowProject }) {
     </div>
     <div className={styles.sceneControls}>
       <div role="group" aria-label="Choose workflow scene">{Array.from({ length: sceneCount }, (_, index) => <button type="button" key={index} aria-current={scene === index ? "step" : undefined} aria-label={`Show scene ${index + 1}: ${getSceneNarration(project, index).label}`} onClick={() => selectScene(index)}>{index + 1}</button>)}</div>
-      <span>{String(scene + 1).padStart(2, "0")} / {sceneCount}</span>
+      <span>{scene < 0 ? "Ready" : `${String(scene + 1).padStart(2, "0")} / ${sceneCount}`}</span>
     </div>
     <div className={styles.sceneNarration} aria-live="polite"><div><small>{narration.label}</small><h4>{narration.title}</h4><p>{narration.detail}</p></div><aside><small>Current data path</small><p>{narration.path}</p></aside></div>
   </>;
@@ -175,6 +183,7 @@ function connectorPath(from: Point, to: Point) {
 }
 
 function getSceneNarration(project: WorkflowProject, scene: number) {
+  if (scene < 0) return { label: "Ready", title: "Begin the workflow", detail: "Press Play to reveal the first input. No process is running before you begin.", path: "Waiting for user input" };
   if (scene === 0) return { label: project.inputLabel, title: project.input, detail: "The synthetic input enters this workflow.", path: "Input ready" };
   if (scene === 1) return { label: "Orchestration", title: project.orchestrator, detail: project.orchestratorNote, path: "Input → orchestrator" };
   if (scene >= 2 && scene <= 9) {
