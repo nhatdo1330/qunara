@@ -7,7 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { TranslationProvider } from "@/components/i18n/translation-provider";
 import { isLocale, defaultLocale } from "@/i18n/config";
 
-export const metadata:Metadata={metadataBase:new URL("https://qunara.org"),title:{default:"Qunara — Explore Reality Through Science and Wisdom",template:"%s | Qunara"},description:"A premium educational and community platform exploring quantum physics, Buddhist philosophy, consciousness, and the practice of living wisely.",openGraph:{title:"Qunara",description:"Explore Reality Through Science and Wisdom.",type:"website"},robots:{index:true,follow:true}};
+export const metadata:Metadata={metadataBase:new URL("https://www.qunara.ai"),title:{default:"Qunara — Explore Reality Through Science and Wisdom",template:"%s | Qunara"},description:"A premium educational and community platform exploring quantum physics, Buddhist philosophy, consciousness, and the practice of living wisely.",openGraph:{title:"Qunara",description:"Explore Reality Through Science and Wisdom.",type:"website"},robots:{index:true,follow:true}};
 export default async function RootLayout({children}:{children:React.ReactNode}){
   const isHoangPortfolio = headers().get("x-hoang-portfolio") === "1";
   const requestedLocale = await getLocale();

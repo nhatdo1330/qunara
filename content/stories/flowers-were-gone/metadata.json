@@ -1,0 +1,51 @@
+{
+  "id": "flowers-were-gone",
+  "type": "personal-story",
+  "author": "Qunara Founder",
+  "slug": {
+    "en": "the-flowers-were-gone-the-next-day",
+    "vi": "ngay-hom-sau-nhung-doa-hoa-khong-con-nua"
+  },
+  "title": {
+    "en": "The Flowers Were Gone the Next Day",
+    "vi": "Ngày Hôm Sau, Những Đóa Hoa Không Còn Nữa"
+  },
+  "subtitle": {
+    "en": "The flowers changed, the plants remained green, and I began to wonder how much of life exists through change and relationship.",
+    "vi": "Hoa đã đổi thay, cây vẫn còn xanh, và tôi bắt đầu nghĩ về cách cuộc sống luôn tồn tại trong sự thay đổi và những mối liên hệ."
+  },
+  "description": {
+    "en": "Returning to the same road where yellow flowers had recently bloomed, I found most of them gone while the plants remained green. A personal reflection on impermanence, dependent origination, marriage, and the careful boundary between Buddhist thought and quantum entanglement.",
+    "vi": "Trở lại con đường nơi những đóa hoa vàng vừa nở rực ít lâu trước đó, tôi thấy phần lớn hoa đã không còn nhưng cây vẫn xanh. Một suy ngẫm cá nhân về vô thường, duyên khởi, duyên vợ chồng và ranh giới cần giữ khi đặt tư tưởng Phật giáo bên cạnh hiện tượng vướng víu lượng tử."
+  },
+  "image": "/images/stories/change/flowers-after.jpg",
+  "readingTime": {
+    "en": "9 min",
+    "vi": "10 phút"
+  },
+  "featured": true,
+  "published": true,
+  "editorialStatus": "reviewed",
+  "categories": [
+    "Personal Stories",
+    "Buddhism",
+    "Quantum",
+    "Relationships"
+  ],
+  "tags": [
+    "impermanence",
+    "anicca",
+    "dependent-origination",
+    "pratityasamutpada",
+    "lotus-sutra",
+    "marriage",
+    "relationships",
+    "causes-and-conditions",
+    "quantum",
+    "quantum-entanglement",
+    "change",
+    "interdependence",
+    "buddhist-inspired",
+    "everyday-life"
+  ]
+}

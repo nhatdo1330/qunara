@@ -74,6 +74,7 @@ const storySlugs = {
   "the-little-friend-in-the-garden": "nguoi-ban-nho-trong-khu-vuon",
   "the-lotus-a-flower-of-compassion": "hoa-sen-doa-hoa-cua-long-tu-bi",
   "the-flowers-were-already-there": "nhung-doa-hoa-van-luon-o-do",
+  "the-flowers-were-gone-the-next-day": "ngay-hom-sau-nhung-doa-hoa-khong-con-nua",
 } as const;
 
 const learnPaths = {quantum: "vat-ly-luong-tu", buddhism: "phat-hoc"} as const;

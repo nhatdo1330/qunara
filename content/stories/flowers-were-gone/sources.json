@@ -1,0 +1,85 @@
+{
+  "sourceType": "personal-experience-and-research",
+  "author": "Qunara Founder",
+  "imageOwnership": "Provided by the author",
+  "primaryImages": [
+    {
+      "path": "/images/stories/change/flowers-before.jpg",
+      "description": {
+        "en": "The same plants during an earlier lunchtime walk, when yellow flowers were blooming abundantly.",
+        "vi": "Cùng những hàng cây trong một lần đi bộ trước đó vào giờ nghỉ trưa, khi hoa vàng đang nở rực."
+      }
+    },
+    {
+      "path": "/images/stories/change/flowers-after.jpg",
+      "description": {
+        "en": "The same area later, with most of the yellow flowers gone while the plants remained green.",
+        "vi": "Cùng khu vực vào một ngày sau đó, khi phần lớn hoa vàng đã không còn nhưng cây vẫn xanh."
+      }
+    }
+  ],
+  "references": [
+    {
+      "id": "suttacentral-dependent-origination",
+      "type": "buddhist-text",
+      "title": "Paṭhamabodhisutta — Udāna 1.1",
+      "author": "Translated by Bhikkhu Sujato",
+      "publisher": "SuttaCentral",
+      "url": "https://suttacentral.net/ud1.1/en/sujato",
+      "usedFor": [
+        "dependent origination",
+        "causes and conditions",
+        "when this exists, this comes to be"
+      ]
+    },
+    {
+      "id": "suttacentral-sn12-41",
+      "type": "buddhist-text",
+      "title": "Pañcaverabhayasutta — Saṃyutta Nikāya 12.41",
+      "author": "Translated by Bhikkhu Sujato",
+      "publisher": "SuttaCentral",
+      "url": "https://suttacentral.net/sn12.41/en/sujato",
+      "usedFor": [
+        "dependent origination",
+        "arising and cessation through conditions"
+      ]
+    },
+    {
+      "id": "nist-quantum-computing",
+      "type": "science",
+      "title": "Quantum Computing Explained",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/quantum-information-science/quantum-computing-explained",
+      "usedFor": [
+        "quantum entanglement",
+        "shared quantum states",
+        "scientific boundary"
+      ]
+    },
+    {
+      "id": "nist-quantum-concepts",
+      "type": "science",
+      "title": "5 Concepts Can Help You Understand Quantum Mechanics and Technology — Without Math!",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/blogs/taking-measure/5-concepts-can-help-you-understand-quantum-mechanics-and-technology-without",
+      "usedFor": [
+        "simple explanation of entanglement",
+        "quantum correlations"
+      ]
+    }
+  ],
+  "editorialNotes": [
+    "This story begins with the author's personal observation of the same plants on different days: abundant yellow flowers in the earlier photograph and far fewer flowers in the later photograph.",
+    "Impermanence and dependent origination are related Buddhist concepts but should not be treated as identical.",
+    "Dependent origination is a broad and foundational Buddhist teaching and should not be attributed exclusively to the Lotus Sutra.",
+    "Any discussion of the Lotus Sutra must use a verified passage from an authoritative translation before attributing a specific teaching or quotation to that text.",
+    "The discussion of marriage is a personal reflection on relationships changing through many conditions. It is not presented as canonical Buddhist doctrine.",
+    "The phrase 'duyên vợ chồng' is used in its ordinary Vietnamese cultural and reflective sense and must not be treated as identical to the technical Buddhist doctrine of dependent origination.",
+    "The story must not suggest that difficulties in a marriage are simply the karma or fault of either spouse.",
+    "Quantum entanglement describes particular quantum systems with strongly correlated or shared quantum states. It does not mean that every particle in the universe is entangled with every other particle.",
+    "Quantum entanglement and Buddhist dependent origination are not equivalent concepts.",
+    "Quantum physics is not presented as scientific proof of Buddhism, and Buddhism is not presented as having predicted quantum mechanics.",
+    "A husband and wife are not described as physically quantum-entangled systems. Entanglement is used only as a carefully bounded scientific comparison that can inspire reflection about independence and relationship.",
+    "The comparison between Buddhism and quantum physics is philosophical and exploratory, not evidence that the two traditions describe the same phenomenon."
+  ]
+}

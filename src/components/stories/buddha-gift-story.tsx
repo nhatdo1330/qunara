@@ -10,12 +10,16 @@ const copy = {
     reflections: "Editorial reflections", reflectionBoundary: "Personal and editorial reflection—not canonical Buddhist teaching.",
     lessonTitle: "What this experience taught me", buddhistTitle: "A Buddhist reflection", questionTitle: "Question for the reader",
     disclosure: "About this story", source: "Personal experience", ownership: "Photograph provided by the author",
+    before: "Before", after: "After", sources: "Sources and editorial notes",
+    comparisonCaption: "The same plants, on different days. The flowers changed; the green remained — for now.",
   },
   vi: {
     stories: "Câu chuyện", personal: "Câu chuyện cá nhân", back: "Trở lại Câu chuyện",
     reflections: "Suy ngẫm biên tập", reflectionBoundary: "Suy ngẫm cá nhân và biên tập—không phải giáo lý Phật giáo chính thống.",
     lessonTitle: "Điều trải nghiệm này dạy tôi", buddhistTitle: "Một suy ngẫm Phật học", questionTitle: "Câu hỏi dành cho bạn",
     disclosure: "Về câu chuyện này", source: "Trải nghiệm cá nhân", ownership: "Ảnh do tác giả cung cấp",
+    before: "Trước", after: "Sau", sources: "Nguồn và ghi chú biên tập",
+    comparisonCaption: "Cùng những hàng cây, vào những ngày khác nhau. Hoa đã đổi thay; màu xanh vẫn còn — ít nhất là lúc này.",
   },
 } as const;
 
@@ -80,7 +84,11 @@ export function BuddhaGiftStory({ story }: { story: StoryDocument }) {
   const locale = story.locale;
   const labels = copy[locale];
   const metadata = story.metadata;
-  const presentation = storyCopy[metadata.id as keyof typeof storyCopy]?.[locale] ?? storyCopy["buddha-gift"][locale];
+  const presentation = storyCopy[metadata.id as keyof typeof storyCopy]?.[locale];
+  const sourceImages = story.sources.primaryImages ?? [];
+  const heroSource = sourceImages.find((image) => image.path === metadata.image);
+  const heroAlt = presentation?.imageAlt ?? heroSource?.description[locale] ?? metadata.title[locale];
+  const heroCaption = presentation?.caption ?? metadata.subtitle[locale];
   const backHref = locale === "vi" ? "/vi/kham-pha#stories" : "/en/explore#stories";
   return <article className="buddha-gift-story">
     <header className="buddha-gift-hero">
@@ -93,11 +101,19 @@ export function BuddhaGiftStory({ story }: { story: StoryDocument }) {
           <div className="buddha-gift-meta"><span><BookOpen/>{labels.personal}</span><span><Clock3/>{metadata.readingTime[locale]}</span></div>
         </div>
         <figure className="buddha-gift-photo">
-          <Image src={metadata.image} alt={presentation.imageAlt} fill priority sizes="(max-width: 760px) 100vw, 48vw"/>
-          <figcaption>{presentation.caption}</figcaption>
+          <Image src={metadata.image} alt={heroAlt} fill priority sizes="(max-width: 760px) 100vw, 48vw"/>
+          <figcaption>{heroCaption}</figcaption>
         </figure>
       </div>
     </header>
+
+    {sourceImages.length > 1&&<figure className="story-image-comparison q-shell">
+      <div>{sourceImages.slice(0,2).map((image,index)=><figure key={image.path}>
+        <div><Image src={image.path} alt={image.description[locale]} fill sizes="(max-width: 700px) 100vw, 50vw"/></div>
+        <figcaption>{index===0?labels.before:labels.after}</figcaption>
+      </figure>)}</div>
+      <figcaption>{labels.comparisonCaption}</figcaption>
+    </figure>}
 
     <div className="buddha-gift-reading q-shell">
       <div className="buddha-gift-prose">
@@ -112,15 +128,20 @@ export function BuddhaGiftStory({ story }: { story: StoryDocument }) {
       </div>
     </div>
 
-    <section className="buddha-gift-reflections" aria-labelledby="story-reflections-title">
+    {presentation&&<section className="buddha-gift-reflections" aria-labelledby="story-reflections-title">
       <div className="q-shell"><header><p className="q-kicker">{labels.reflections}</p><h2 id="story-reflections-title">{labels.reflectionBoundary}</h2></header><div className="buddha-gift-reflection-grid">
         <ReflectionPanel icon={Compass} title={labels.lessonTitle} text={presentation.lesson}/>
         <ReflectionPanel icon={Heart} title={labels.buddhistTitle} text={presentation.buddhist}/>
         <ReflectionPanel icon={HelpCircle} title={labels.questionTitle} text={presentation.question}/>
       </div></div>
-    </section>
+    </section>}
 
-    <section className="buddha-gift-disclosure q-shell" aria-labelledby="story-disclosure-title"><BookOpen/><div><p className="q-kicker" id="story-disclosure-title">{labels.disclosure}</p><p>{labels.source} · {labels.ownership}</p></div></section>
+    <section className="buddha-gift-disclosure q-shell" aria-labelledby="story-disclosure-title"><BookOpen/><div><p className="q-kicker" id="story-disclosure-title">{labels.disclosure}</p><p>{story.sources.sourceType.replaceAll("-"," ")} · {story.sources.imageOwnership}</p>
+      {(story.sources.references?.length||story.sources.editorialNotes.length>0)&&<details><summary>{labels.sources}</summary>
+        {story.sources.references?.length?<ul>{story.sources.references.map((source)=><li key={source.id}><a href={source.url} rel="noreferrer" target="_blank">{source.title}</a><span>{source.author?`${source.author} · `:""}{source.publisher}</span></li>)}</ul>:null}
+        {story.sources.editorialNotes.length>0?<ul>{story.sources.editorialNotes.map((note)=><li key={note}>{note}</li>)}</ul>:null}
+      </details>}
+    </div></section>
   </article>;
 }
 

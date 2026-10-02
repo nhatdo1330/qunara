@@ -24,6 +24,19 @@ export type StorySources = {
   author: string;
   imageOwnership: string;
   editorialNotes: string[];
+  primaryImages?: Array<{
+    path: string;
+    description: Record<StoryLocale, string>;
+  }>;
+  references?: Array<{
+    id: string;
+    type: string;
+    title: string;
+    author?: string;
+    publisher: string;
+    url: string;
+    usedFor: string[];
+  }>;
 };
 
 export type StoryBlock =
