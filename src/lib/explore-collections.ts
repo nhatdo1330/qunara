@@ -4,6 +4,13 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const contentRoot = join(process.cwd(), "content");
+const storyOrder = [
+  "buddha-gift",
+  "hummingbird",
+  "lotus",
+  "flowers-were-already-there",
+  "flowers-were-gone",
+];
 
 export type StoryCard = {
   slug: string;
@@ -35,7 +42,7 @@ function loadCollection<T>(directory: "stories" | "interactive"): T[] {
 export function loadStories(locale: "en" | "vi" = "en"): StoryCard[] {
   const stories = loadCollection<StoryCard>("stories");
   const storyRoot = join(contentRoot, "stories");
-  type RankedStory = StoryCard & { featured: boolean };
+  type RankedStory = StoryCard & { featured: boolean; order: number };
   const nested = readdirSync(storyRoot)
     .filter((entry) => statSync(join(storyRoot, entry)).isDirectory())
     .map((entry) => {
@@ -60,6 +67,7 @@ export function loadStories(locale: "en" | "vi" = "en"): StoryCard[] {
           visual: "journey",
           image: metadata.image,
           featured: metadata.featured ?? false,
+          order: storyOrder.includes(entry) ? storyOrder.indexOf(entry) : storyOrder.length,
         };
         return story;
       } catch {
@@ -67,7 +75,7 @@ export function loadStories(locale: "en" | "vi" = "en"): StoryCard[] {
       }
     })
     .filter((story): story is RankedStory => story !== null)
-    .sort((a, b) => Number(b.featured) - Number(a.featured))
+    .sort((a, b) => a.order - b.order || Number(b.featured) - Number(a.featured))
     .map((story): StoryCard => ({
       slug: story.slug,
       category: story.category,
